@@ -9,14 +9,8 @@
 #ifndef ZADANIEREKRUTACYJNE_Lamp_generated_h
 	#include "Lamp.h"
 #endif
-#ifndef ZADANIEREKRUTACYJNE_LampBody_generated_h
-	#include "LampBody.h"
-#endif
 #ifndef ZADANIEREKRUTACYJNE_LightBulb_generated_h
 	#include "LightBulb.h"
-#endif
-#ifndef ZADANIEREKRUTACYJNE_Spawner_generated_h
-	#include "Spawner.h"
 #endif
 #ifndef ZADANIEREKRUTACYJNE_ZadanieRekrutacyjneGameModeBase_generated_h
 	#include "ZadanieRekrutacyjneGameModeBase.h"

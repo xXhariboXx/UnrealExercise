@@ -23,9 +23,9 @@
 /wd4838
 /w44668
 /I "C:\Program Files\Epic Games\UE_4.15\Engine\Source"
-/I F:\TheFarm51\ZadanieRekrutacyjne\Source
-/I F:\TheFarm51\ZadanieRekrutacyjne\Intermediate\Build\Win64\UE4Editor\Inc\ZadanieRekrutacyjne
-/I F:\TheFarm51\ZadanieRekrutacyjne\Source\ZadanieRekrutacyjne
+/I "F:\GIT foldery\UnrealExercise\Source"
+/I "F:\GIT foldery\UnrealExercise\Intermediate\Build\Win64\UE4Editor\Inc\ZadanieRekrutacyjne"
+/I "F:\GIT foldery\UnrealExercise\Source\ZadanieRekrutacyjne"
 /I "C:\Program Files\Epic Games\UE_4.15\Engine\Source\Runtime\Core\Public"
 /I "C:\Program Files\Epic Games\UE_4.15\Engine\Source\Runtime\Core\Public\Internationalization"
 /I "C:\Program Files\Epic Games\UE_4.15\Engine\Source\Runtime\Core\Public\Async"
@@ -303,11 +303,11 @@
 /I "C:\Program Files\Epic Games\UE_4.15\Engine\Source\Editor\Kismet"
 /I "C:\Program Files\Epic Games\UE_4.15\Engine\Source\Runtime\NetworkReplayStreaming\NetworkReplayStreaming\Public"
 /I "C:\Program Files\Epic Games\UE_4.15\Engine\Source\Runtime\NetworkReplayStreaming\NetworkReplayStreaming"
-/FI"F:\TheFarm51\ZadanieRekrutacyjne\Source\ZadanieRekrutacyjne\ZadanieRekrutacyjne.h"
-/Yu"F:\TheFarm51\ZadanieRekrutacyjne\Source\ZadanieRekrutacyjne\ZadanieRekrutacyjne.h"
-/Fp"F:\TheFarm51\ZadanieRekrutacyjne\Intermediate\Build\Win64\UE4Editor\Development\ZadanieRekrutacyjne\PCH.ZadanieRekrutacyjne.h.pch"
-"F:\TheFarm51\ZadanieRekrutacyjne\Source\ZadanieRekrutacyjne\LightBulb.cpp"
-/Fo"F:\TheFarm51\ZadanieRekrutacyjne\Intermediate\Build\Win64\UE4Editor\Development\ZadanieRekrutacyjne\LightBulb.cpp.obj"
+/FI"F:\GIT foldery\UnrealExercise\Source\ZadanieRekrutacyjne\ZadanieRekrutacyjne.h"
+/Yu"F:\GIT foldery\UnrealExercise\Source\ZadanieRekrutacyjne\ZadanieRekrutacyjne.h"
+/Fp"F:\GIT foldery\UnrealExercise\Intermediate\Build\Win64\UE4Editor\Development\ZadanieRekrutacyjne\PCH.ZadanieRekrutacyjne.h.pch"
+"F:\GIT foldery\UnrealExercise\Source\ZadanieRekrutacyjne\LightBulb.cpp"
+/Fo"F:\GIT foldery\UnrealExercise\Intermediate\Build\Win64\UE4Editor\Development\ZadanieRekrutacyjne\LightBulb.cpp.obj"
 /TP
 /GR-
 /W4

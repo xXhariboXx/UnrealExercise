@@ -4,6 +4,7 @@
 
 #include "GameFramework/Actor.h"
 #include <ctime>
+#include <string>
 #include "LightBulb.generated.h"
 
 UCLASS()
@@ -13,15 +14,42 @@ class ZADANIEREKRUTACYJNE_API ALightBulb : public AActor
 
 
 private:
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "LightBulb", meta = (AllowPrivateAccess = "true"))
-		class UStaticMeshComponent *LightBulbMeshComponent;
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "LightBulb", meta = (AllowPrivateAccess = "true"))
-		class UPointLightComponent *LightSource;
-
+	/////////////////////////////////////////////////////
+	//Light values
 	/** Base light intensity value */
-	float fBaseIntensity;
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Light values", meta = (AllowPrivateAccess = "true"))
+		float fBaseIntensity = 5000;
 	/** True when light is switched on */
-	bool bIsLightSourceSwitchedOn;
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Light values", meta = (AllowPrivateAccess = "true"))
+		bool bIsLightSourceSwitchedOn;
+
+	/////////////////////////////////////////////////////
+	//Pulsing values
+	/** Maximim light intensity */
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Pulsing values", meta = (AllowPrivateAccess = "true"))
+	float fMaxIntensity;
+	/** Minimum light intensity */
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Pulsing values", meta = (AllowPrivateAccess = "true"))
+	float fMinIntensity;
+	/** Pulsing speed. 5000 is very fast, 500 is very slow */
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Pulsing values", meta = (AllowPrivateAccess = "true"))
+		float fPulsingSpeed;
+	/** True when light pulsing is enabled */
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Pulsing values", meta = (AllowPrivateAccess = "true"))
+		bool bIsLightPulsingEnabled;
+	/** True when light is brightning up */
+	bool bIsPoolsingUp;
+
+	/////////////////////////////////////////////////////
+	//Light bulb components
+	/** Const with filepath to Light Bulb mesh */
+		const FString LightBulbMeshPath = FString(TEXT("/Game/Blueprints/Bulb"));
+	/** Light Bulb mesh component */
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "LightBulbComponents", meta = (AllowPrivateAccess = "true"))
+		class UStaticMeshComponent *LightBulbMeshComponent;
+	/** Point Light component */
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "LightBulbComponents", meta = (AllowPrivateAccess = "true"))
+		class UPointLightComponent *LightSource;
 
 public:
 	// Sets default values for this actor's properties
@@ -37,16 +65,38 @@ public:
 
 	/** Return the LightBulb mesh*/
 	FORCEINLINE class UStaticMeshComponent* GetMesh() const { return LightBulbMeshComponent; }
-
 	/** Returns base intensity value */
 	float GetBaseIntensity() { return fBaseIntensity; }
 	/** Returns if light is switched on */
 	bool IsLightSourceSwitchedOn() { return bIsLightSourceSwitchedOn; }
+	/** Returns maximum light intensity */
+	float GetMaxIntensity() { return fMaxIntensity; }
+	/** Sets maximum light intensity */
+	void SetMaxIntensity(float fmax) { fMaxIntensity = fmax; }
+	/** Returns minimum light intensity */
+	float GetMMinIntensity() { return fMinIntensity; }
+	/** Sets maximum light intensity */
+	void SetMMinIntensity(float fmin) { fMinIntensity = fmin; }
+	/** Returns pulsing speed */
+	float GetPulsingSpeed() { return fPulsingSpeed; }
+	/** Sets pulsing speed */
+	void SetPulsingSpeed(float fSpeed) { fPulsingSpeed = fSpeed; }
+	/** Toggle pulsing */
+	void TogglePulsing();
+	/** Toggles light */
+	void ToggleLight();
 
 private:
+	/** Initializes components */
+	void InitializeComponents();
+	/** Sets default values to fields */
+	void SetupDefaultValues();
 	/** Initialize sterring input */
 	void SetupInput();
 
+	void LightPulsing(float fDeltaTime);
+	void Pulsing(float fDeltaTime);
+	bool CanPulse();
 	/** Sets the light colour to red */
 	void SetLightColourRed();
 	/** Sets the light colour to green */
@@ -55,6 +105,4 @@ private:
 	void SetLightColourBlue();
 	/** Sets the light colour to random generated colour */
 	void SetLightColourRandom();
-	/** Toggles light */
-	void ToggleLight();
 };

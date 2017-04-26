@@ -15,20 +15,10 @@ void EmptyLinkFunctionForGeneratedCode1ZadanieRekrutacyjne() {}
 	{
 	}
 	IMPLEMENT_CLASS(ALamp, 3272584708);
-	void ALampBody::StaticRegisterNativesALampBody()
-	{
-	}
-	IMPLEMENT_CLASS(ALampBody, 3756420378);
 	void ALightBulb::StaticRegisterNativesALightBulb()
 	{
 	}
-	IMPLEMENT_CLASS(ALightBulb, 4006777656);
-	void ASpawner::StaticRegisterNativesASpawner()
-	{
-		FNativeFunctionRegistrar::RegisterFunction(ASpawner::StaticClass(), "GetRandomPointInVolume",(Native)&ASpawner::execGetRandomPointInVolume);
-		FNativeFunctionRegistrar::RegisterFunction(ASpawner::StaticClass(), "SetSpawningActive",(Native)&ASpawner::execSetSpawningActive);
-	}
-	IMPLEMENT_CLASS(ASpawner, 2036549285);
+	IMPLEMENT_CLASS(ALightBulb, 3707820489);
 	void AZadanieRekrutacyjneGameModeBase::StaticRegisterNativesAZadanieRekrutacyjneGameModeBase()
 	{
 	}
@@ -39,20 +29,12 @@ void EmptyLinkFunctionForGeneratedCode1ZadanieRekrutacyjne() {}
 	ENGINE_API class UClass* Z_Construct_UClass_UPointLightComponent_NoRegister();
 	ENGINE_API class UClass* Z_Construct_UClass_UDestructibleComponent_NoRegister();
 	ENGINE_API class UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
-	COREUOBJECT_API class UScriptStruct* Z_Construct_UScriptStruct_FVector();
-	ENGINE_API class UClass* Z_Construct_UClass_UBoxComponent_NoRegister();
 	ENGINE_API class UClass* Z_Construct_UClass_AGameModeBase();
 
 	ZADANIEREKRUTACYJNE_API class UClass* Z_Construct_UClass_ALamp_NoRegister();
 	ZADANIEREKRUTACYJNE_API class UClass* Z_Construct_UClass_ALamp();
-	ZADANIEREKRUTACYJNE_API class UClass* Z_Construct_UClass_ALampBody_NoRegister();
-	ZADANIEREKRUTACYJNE_API class UClass* Z_Construct_UClass_ALampBody();
 	ZADANIEREKRUTACYJNE_API class UClass* Z_Construct_UClass_ALightBulb_NoRegister();
 	ZADANIEREKRUTACYJNE_API class UClass* Z_Construct_UClass_ALightBulb();
-	ZADANIEREKRUTACYJNE_API class UFunction* Z_Construct_UFunction_ASpawner_GetRandomPointInVolume();
-	ZADANIEREKRUTACYJNE_API class UFunction* Z_Construct_UFunction_ASpawner_SetSpawningActive();
-	ZADANIEREKRUTACYJNE_API class UClass* Z_Construct_UClass_ASpawner_NoRegister();
-	ZADANIEREKRUTACYJNE_API class UClass* Z_Construct_UClass_ASpawner();
 	ZADANIEREKRUTACYJNE_API class UClass* Z_Construct_UClass_AZadanieRekrutacyjneGameModeBase_NoRegister();
 	ZADANIEREKRUTACYJNE_API class UClass* Z_Construct_UClass_AZadanieRekrutacyjneGameModeBase();
 	ZADANIEREKRUTACYJNE_API class UPackage* Z_Construct_UPackage__Script_ZadanieRekrutacyjne();
@@ -100,37 +82,6 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_ALamp(Z_Construct_UClass_ALamp, &ALamp::StaticClass, TEXT("ALamp"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(ALamp);
-	UClass* Z_Construct_UClass_ALampBody_NoRegister()
-	{
-		return ALampBody::StaticClass();
-	}
-	UClass* Z_Construct_UClass_ALampBody()
-	{
-		static UClass* OuterClass = NULL;
-		if (!OuterClass)
-		{
-			Z_Construct_UClass_AActor();
-			Z_Construct_UPackage__Script_ZadanieRekrutacyjne();
-			OuterClass = ALampBody::StaticClass();
-			if (!(OuterClass->ClassFlags & CLASS_Constructed))
-			{
-				UObjectForceRegistration(OuterClass);
-				OuterClass->ClassFlags |= 0x20900080;
-
-
-				OuterClass->StaticLink();
-#if WITH_METADATA
-				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
-				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("LampBody.h"));
-				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("LampBody.h"));
-#endif
-			}
-		}
-		check(OuterClass->GetClass());
-		return OuterClass;
-	}
-	static FCompiledInDefer Z_CompiledInDefer_UClass_ALampBody(Z_Construct_UClass_ALampBody, &ALampBody::StaticClass, TEXT("ALampBody"), false, nullptr, nullptr, nullptr);
-	DEFINE_VTABLE_PTR_HELPER_CTOR(ALampBody);
 	UClass* Z_Construct_UClass_ALightBulb_NoRegister()
 	{
 		return ALightBulb::StaticClass();
@@ -152,6 +103,14 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 				UProperty* NewProp_LightSource = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("LightSource"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(LightSource, ALightBulb), 0x00400000000a001d, Z_Construct_UClass_UPointLightComponent_NoRegister());
 				UProperty* NewProp_LightBulbMeshComponent = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("LightBulbMeshComponent"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(LightBulbMeshComponent, ALightBulb), 0x00400000000a001d, Z_Construct_UClass_UStaticMeshComponent_NoRegister());
+				CPP_BOOL_PROPERTY_BITMASK_STRUCT(bIsLightPulsingEnabled, ALightBulb, bool);
+				UProperty* NewProp_bIsLightPulsingEnabled = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("bIsLightPulsingEnabled"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bIsLightPulsingEnabled, ALightBulb), 0x0040000000020005, CPP_BOOL_PROPERTY_BITMASK(bIsLightPulsingEnabled, ALightBulb), sizeof(bool), true);
+				UProperty* NewProp_fPulsingSpeed = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("fPulsingSpeed"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(fPulsingSpeed, ALightBulb), 0x0040000000020005);
+				UProperty* NewProp_fMinIntensity = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("fMinIntensity"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(fMinIntensity, ALightBulb), 0x0040000000020005);
+				UProperty* NewProp_fMaxIntensity = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("fMaxIntensity"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(fMaxIntensity, ALightBulb), 0x0040000000020005);
+				CPP_BOOL_PROPERTY_BITMASK_STRUCT(bIsLightSourceSwitchedOn, ALightBulb, bool);
+				UProperty* NewProp_bIsLightSourceSwitchedOn = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("bIsLightSourceSwitchedOn"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bIsLightSourceSwitchedOn, ALightBulb), 0x0040000000020005, CPP_BOOL_PROPERTY_BITMASK(bIsLightSourceSwitchedOn, ALightBulb), sizeof(bool), true);
+				UProperty* NewProp_fBaseIntensity = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("fBaseIntensity"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(fBaseIntensity, ALightBulb), 0x0040000000020005);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				OuterClass->StaticLink();
 #if WITH_METADATA
@@ -159,13 +118,39 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("LightBulb.h"));
 				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("LightBulb.h"));
 				MetaData->SetValue(NewProp_LightSource, TEXT("AllowPrivateAccess"), TEXT("true"));
-				MetaData->SetValue(NewProp_LightSource, TEXT("Category"), TEXT("LightBulb"));
+				MetaData->SetValue(NewProp_LightSource, TEXT("Category"), TEXT("LightBulbComponents"));
 				MetaData->SetValue(NewProp_LightSource, TEXT("EditInline"), TEXT("true"));
 				MetaData->SetValue(NewProp_LightSource, TEXT("ModuleRelativePath"), TEXT("LightBulb.h"));
+				MetaData->SetValue(NewProp_LightSource, TEXT("ToolTip"), TEXT("Point Light component"));
 				MetaData->SetValue(NewProp_LightBulbMeshComponent, TEXT("AllowPrivateAccess"), TEXT("true"));
-				MetaData->SetValue(NewProp_LightBulbMeshComponent, TEXT("Category"), TEXT("LightBulb"));
+				MetaData->SetValue(NewProp_LightBulbMeshComponent, TEXT("Category"), TEXT("LightBulbComponents"));
 				MetaData->SetValue(NewProp_LightBulbMeshComponent, TEXT("EditInline"), TEXT("true"));
 				MetaData->SetValue(NewProp_LightBulbMeshComponent, TEXT("ModuleRelativePath"), TEXT("LightBulb.h"));
+				MetaData->SetValue(NewProp_LightBulbMeshComponent, TEXT("ToolTip"), TEXT("Light Bulb mesh component"));
+				MetaData->SetValue(NewProp_bIsLightPulsingEnabled, TEXT("AllowPrivateAccess"), TEXT("true"));
+				MetaData->SetValue(NewProp_bIsLightPulsingEnabled, TEXT("Category"), TEXT("Pulsing values"));
+				MetaData->SetValue(NewProp_bIsLightPulsingEnabled, TEXT("ModuleRelativePath"), TEXT("LightBulb.h"));
+				MetaData->SetValue(NewProp_bIsLightPulsingEnabled, TEXT("ToolTip"), TEXT("True when light pulsing is enabled"));
+				MetaData->SetValue(NewProp_fPulsingSpeed, TEXT("AllowPrivateAccess"), TEXT("true"));
+				MetaData->SetValue(NewProp_fPulsingSpeed, TEXT("Category"), TEXT("Pulsing values"));
+				MetaData->SetValue(NewProp_fPulsingSpeed, TEXT("ModuleRelativePath"), TEXT("LightBulb.h"));
+				MetaData->SetValue(NewProp_fPulsingSpeed, TEXT("ToolTip"), TEXT("Pulsing speed. 5000 is very fast, 500 is very slow"));
+				MetaData->SetValue(NewProp_fMinIntensity, TEXT("AllowPrivateAccess"), TEXT("true"));
+				MetaData->SetValue(NewProp_fMinIntensity, TEXT("Category"), TEXT("Pulsing values"));
+				MetaData->SetValue(NewProp_fMinIntensity, TEXT("ModuleRelativePath"), TEXT("LightBulb.h"));
+				MetaData->SetValue(NewProp_fMinIntensity, TEXT("ToolTip"), TEXT("Minimum light intensity"));
+				MetaData->SetValue(NewProp_fMaxIntensity, TEXT("AllowPrivateAccess"), TEXT("true"));
+				MetaData->SetValue(NewProp_fMaxIntensity, TEXT("Category"), TEXT("Pulsing values"));
+				MetaData->SetValue(NewProp_fMaxIntensity, TEXT("ModuleRelativePath"), TEXT("LightBulb.h"));
+				MetaData->SetValue(NewProp_fMaxIntensity, TEXT("ToolTip"), TEXT("Maximim light intensity"));
+				MetaData->SetValue(NewProp_bIsLightSourceSwitchedOn, TEXT("AllowPrivateAccess"), TEXT("true"));
+				MetaData->SetValue(NewProp_bIsLightSourceSwitchedOn, TEXT("Category"), TEXT("Light values"));
+				MetaData->SetValue(NewProp_bIsLightSourceSwitchedOn, TEXT("ModuleRelativePath"), TEXT("LightBulb.h"));
+				MetaData->SetValue(NewProp_bIsLightSourceSwitchedOn, TEXT("ToolTip"), TEXT("True when light is switched on"));
+				MetaData->SetValue(NewProp_fBaseIntensity, TEXT("AllowPrivateAccess"), TEXT("true"));
+				MetaData->SetValue(NewProp_fBaseIntensity, TEXT("Category"), TEXT("Light values"));
+				MetaData->SetValue(NewProp_fBaseIntensity, TEXT("ModuleRelativePath"), TEXT("LightBulb.h"));
+				MetaData->SetValue(NewProp_fBaseIntensity, TEXT("ToolTip"), TEXT("Base light intensity value"));
 #endif
 			}
 		}
@@ -174,108 +159,6 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_ALightBulb(Z_Construct_UClass_ALightBulb, &ALightBulb::StaticClass, TEXT("ALightBulb"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(ALightBulb);
-	UFunction* Z_Construct_UFunction_ASpawner_GetRandomPointInVolume()
-	{
-		struct Spawner_eventGetRandomPointInVolume_Parms
-		{
-			FVector ReturnValue;
-		};
-		UObject* Outer=Z_Construct_UClass_ASpawner();
-		static UFunction* ReturnFunction = NULL;
-		if (!ReturnFunction)
-		{
-			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("GetRandomPointInVolume"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x14820401, 65535, sizeof(Spawner_eventGetRandomPointInVolume_Parms));
-			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(ReturnValue, Spawner_eventGetRandomPointInVolume_Parms), 0x0010000000000580, Z_Construct_UScriptStruct_FVector());
-			ReturnFunction->Bind();
-			ReturnFunction->StaticLink();
-#if WITH_METADATA
-			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
-			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("Spawning"));
-			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Spawner.h"));
-			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Find a random point within the BoxComponent"));
-#endif
-		}
-		return ReturnFunction;
-	}
-	UFunction* Z_Construct_UFunction_ASpawner_SetSpawningActive()
-	{
-		struct Spawner_eventSetSpawningActive_Parms
-		{
-			bool bShouldSpawn;
-		};
-		UObject* Outer=Z_Construct_UClass_ASpawner();
-		static UFunction* ReturnFunction = NULL;
-		if (!ReturnFunction)
-		{
-			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("SetSpawningActive"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x04020401, 65535, sizeof(Spawner_eventSetSpawningActive_Parms));
-			CPP_BOOL_PROPERTY_BITMASK_STRUCT(bShouldSpawn, Spawner_eventSetSpawningActive_Parms, bool);
-			UProperty* NewProp_bShouldSpawn = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("bShouldSpawn"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bShouldSpawn, Spawner_eventSetSpawningActive_Parms), 0x0010000000000080, CPP_BOOL_PROPERTY_BITMASK(bShouldSpawn, Spawner_eventSetSpawningActive_Parms), sizeof(bool), true);
-			ReturnFunction->Bind();
-			ReturnFunction->StaticLink();
-#if WITH_METADATA
-			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
-			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("Spawning"));
-			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Spawner.h"));
-			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("This function toggles whether or not the spawn volume spawns pickups"));
-#endif
-		}
-		return ReturnFunction;
-	}
-	UClass* Z_Construct_UClass_ASpawner_NoRegister()
-	{
-		return ASpawner::StaticClass();
-	}
-	UClass* Z_Construct_UClass_ASpawner()
-	{
-		static UClass* OuterClass = NULL;
-		if (!OuterClass)
-		{
-			Z_Construct_UClass_AActor();
-			Z_Construct_UPackage__Script_ZadanieRekrutacyjne();
-			OuterClass = ASpawner::StaticClass();
-			if (!(OuterClass->ClassFlags & CLASS_Constructed))
-			{
-				UObjectForceRegistration(OuterClass);
-				OuterClass->ClassFlags |= 0x20900080;
-
-				OuterClass->LinkChild(Z_Construct_UFunction_ASpawner_GetRandomPointInVolume());
-				OuterClass->LinkChild(Z_Construct_UFunction_ASpawner_SetSpawningActive());
-
-PRAGMA_DISABLE_DEPRECATION_WARNINGS
-				UProperty* NewProp_WhereToSpawn = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("WhereToSpawn"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(WhereToSpawn, ASpawner), 0x00400000000a001d, Z_Construct_UClass_UBoxComponent_NoRegister());
-				UProperty* NewProp_SpawnDelayRangeHigh = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("SpawnDelayRangeHigh"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(SpawnDelayRangeHigh, ASpawner), 0x0020080000000005);
-				UProperty* NewProp_SpawnDelayRangeLow = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("SpawnDelayRangeLow"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(SpawnDelayRangeLow, ASpawner), 0x0020080000000005);
-				UProperty* NewProp_WhatToSpawn = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("WhatToSpawn"), RF_Public|RF_Transient|RF_MarkAsNative) UClassProperty(CPP_PROPERTY_BASE(WhatToSpawn, ASpawner), 0x0024080000000001, Z_Construct_UClass_ALightBulb_NoRegister(), UClass::StaticClass());
-PRAGMA_ENABLE_DEPRECATION_WARNINGS
-				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ASpawner_GetRandomPointInVolume(), "GetRandomPointInVolume"); // 1320621651
-				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ASpawner_SetSpawningActive(), "SetSpawningActive"); // 1776393271
-				OuterClass->StaticLink();
-#if WITH_METADATA
-				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
-				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("Spawner.h"));
-				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("Spawner.h"));
-				MetaData->SetValue(NewProp_WhereToSpawn, TEXT("AllowPrivateAccess"), TEXT("true"));
-				MetaData->SetValue(NewProp_WhereToSpawn, TEXT("Category"), TEXT("Spawning"));
-				MetaData->SetValue(NewProp_WhereToSpawn, TEXT("EditInline"), TEXT("true"));
-				MetaData->SetValue(NewProp_WhereToSpawn, TEXT("ModuleRelativePath"), TEXT("Spawner.h"));
-				MetaData->SetValue(NewProp_WhereToSpawn, TEXT("ToolTip"), TEXT("Box Component to specify where pickups should be spawned"));
-				MetaData->SetValue(NewProp_SpawnDelayRangeHigh, TEXT("Category"), TEXT("Spawning"));
-				MetaData->SetValue(NewProp_SpawnDelayRangeHigh, TEXT("ModuleRelativePath"), TEXT("Spawner.h"));
-				MetaData->SetValue(NewProp_SpawnDelayRangeHigh, TEXT("ToolTip"), TEXT("Maximum spawn delay"));
-				MetaData->SetValue(NewProp_SpawnDelayRangeLow, TEXT("Category"), TEXT("Spawning"));
-				MetaData->SetValue(NewProp_SpawnDelayRangeLow, TEXT("ModuleRelativePath"), TEXT("Spawner.h"));
-				MetaData->SetValue(NewProp_SpawnDelayRangeLow, TEXT("ToolTip"), TEXT("Minimum spawn delay"));
-				MetaData->SetValue(NewProp_WhatToSpawn, TEXT("Category"), TEXT("Spawning"));
-				MetaData->SetValue(NewProp_WhatToSpawn, TEXT("ModuleRelativePath"), TEXT("Spawner.h"));
-				MetaData->SetValue(NewProp_WhatToSpawn, TEXT("ToolTip"), TEXT("The pickup to spawn"));
-#endif
-			}
-		}
-		check(OuterClass->GetClass());
-		return OuterClass;
-	}
-	static FCompiledInDefer Z_CompiledInDefer_UClass_ASpawner(Z_Construct_UClass_ASpawner, &ASpawner::StaticClass, TEXT("ASpawner"), false, nullptr, nullptr, nullptr);
-	DEFINE_VTABLE_PTR_HELPER_CTOR(ASpawner);
 	UClass* Z_Construct_UClass_AZadanieRekrutacyjneGameModeBase_NoRegister()
 	{
 		return AZadanieRekrutacyjneGameModeBase::StaticClass();
@@ -317,8 +200,8 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), NULL, FName(TEXT("/Script/ZadanieRekrutacyjne")), false, false));
 			ReturnPackage->SetPackageFlags(PKG_CompiledIn | 0x00000000);
 			FGuid Guid;
-			Guid.A = 0xE30A4E26;
-			Guid.B = 0x88F1BBEF;
+			Guid.A = 0x5A584EB4;
+			Guid.B = 0xC97D67BB;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;
 			ReturnPackage->SetGuid(Guid);

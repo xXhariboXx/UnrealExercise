@@ -11,9 +11,9 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define ZADANIEREKRUTACYJNE_Lamp_generated_h
 
-#define ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_Lamp_h_13_RPC_WRAPPERS
-#define ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_Lamp_h_13_RPC_WRAPPERS_NO_PURE_DECLS
-#define ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_Lamp_h_13_INCLASS_NO_PURE_DECLS \
+#define UnrealExercise_Source_ZadanieRekrutacyjne_Lamp_h_13_RPC_WRAPPERS
+#define UnrealExercise_Source_ZadanieRekrutacyjne_Lamp_h_13_RPC_WRAPPERS_NO_PURE_DECLS
+#define UnrealExercise_Source_ZadanieRekrutacyjne_Lamp_h_13_INCLASS_NO_PURE_DECLS \
 	private: \
 	static void StaticRegisterNativesALamp(); \
 	friend ZADANIEREKRUTACYJNE_API class UClass* Z_Construct_UClass_ALamp(); \
@@ -24,7 +24,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
 
 
-#define ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_Lamp_h_13_INCLASS \
+#define UnrealExercise_Source_ZadanieRekrutacyjne_Lamp_h_13_INCLASS \
 	private: \
 	static void StaticRegisterNativesALamp(); \
 	friend ZADANIEREKRUTACYJNE_API class UClass* Z_Construct_UClass_ALamp(); \
@@ -35,7 +35,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
 
 
-#define ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_Lamp_h_13_STANDARD_CONSTRUCTORS \
+#define UnrealExercise_Source_ZadanieRekrutacyjne_Lamp_h_13_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API ALamp(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ALamp) \
@@ -48,7 +48,7 @@ private: \
 public:
 
 
-#define ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_Lamp_h_13_ENHANCED_CONSTRUCTORS \
+#define UnrealExercise_Source_ZadanieRekrutacyjne_Lamp_h_13_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API ALamp(ALamp&&); \
@@ -59,32 +59,32 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ALamp); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(ALamp)
 
 
-#define ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_Lamp_h_13_PRIVATE_PROPERTY_OFFSET
-#define ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_Lamp_h_10_PROLOG
-#define ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_Lamp_h_13_GENERATED_BODY_LEGACY \
+#define UnrealExercise_Source_ZadanieRekrutacyjne_Lamp_h_13_PRIVATE_PROPERTY_OFFSET
+#define UnrealExercise_Source_ZadanieRekrutacyjne_Lamp_h_10_PROLOG
+#define UnrealExercise_Source_ZadanieRekrutacyjne_Lamp_h_13_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_Lamp_h_13_PRIVATE_PROPERTY_OFFSET \
-	ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_Lamp_h_13_RPC_WRAPPERS \
-	ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_Lamp_h_13_INCLASS \
-	ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_Lamp_h_13_STANDARD_CONSTRUCTORS \
+	UnrealExercise_Source_ZadanieRekrutacyjne_Lamp_h_13_PRIVATE_PROPERTY_OFFSET \
+	UnrealExercise_Source_ZadanieRekrutacyjne_Lamp_h_13_RPC_WRAPPERS \
+	UnrealExercise_Source_ZadanieRekrutacyjne_Lamp_h_13_INCLASS \
+	UnrealExercise_Source_ZadanieRekrutacyjne_Lamp_h_13_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_Lamp_h_13_GENERATED_BODY \
+#define UnrealExercise_Source_ZadanieRekrutacyjne_Lamp_h_13_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_Lamp_h_13_PRIVATE_PROPERTY_OFFSET \
-	ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_Lamp_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
-	ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_Lamp_h_13_INCLASS_NO_PURE_DECLS \
-	ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_Lamp_h_13_ENHANCED_CONSTRUCTORS \
+	UnrealExercise_Source_ZadanieRekrutacyjne_Lamp_h_13_PRIVATE_PROPERTY_OFFSET \
+	UnrealExercise_Source_ZadanieRekrutacyjne_Lamp_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
+	UnrealExercise_Source_ZadanieRekrutacyjne_Lamp_h_13_INCLASS_NO_PURE_DECLS \
+	UnrealExercise_Source_ZadanieRekrutacyjne_Lamp_h_13_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_Lamp_h
+#define CURRENT_FILE_ID UnrealExercise_Source_ZadanieRekrutacyjne_Lamp_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

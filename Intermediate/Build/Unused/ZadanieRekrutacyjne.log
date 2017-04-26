@@ -1,14 +1,96 @@
-﻿  Compiling game modules for hot reload
+﻿  Creating makefile for ZadanieRekrutacyjneEditor (no existing makefile)
   Parsing headers for ZadanieRekrutacyjneEditor
-    Running UnrealHeaderTool "F:\TheFarm51\ZadanieRekrutacyjne\ZadanieRekrutacyjne.uproject" "F:\TheFarm51\ZadanieRekrutacyjne\Intermediate\Build\Win64\ZadanieRekrutacyjneEditor\Development\ZadanieRekrutacyjneEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
-  Reflection code generated for ZadanieRekrutacyjneEditor in 3,2666875 seconds
-  Performing 3 actions (4 in parallel)
+    Running UnrealHeaderTool "F:\GIT foldery\UnrealExercise\ZadanieRekrutacyjne.uproject" "F:\GIT foldery\UnrealExercise\Intermediate\Build\Win64\ZadanieRekrutacyjneEditor\Development\ZadanieRekrutacyjneEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+  Reflection code generated for ZadanieRekrutacyjneEditor in 2,8839564 seconds
+  Deleting old hot reload file: "F:\GIT foldery\UnrealExercise\Binaries\Win64\UE4Editor-ZadanieRekrutacyjne-1313.dll".
+  Deleting old hot reload file: "F:\GIT foldery\UnrealExercise\Binaries\Win64\UE4Editor-ZadanieRekrutacyjne-1313.pdb".
+  Deleting old hot reload file: "F:\GIT foldery\UnrealExercise\Binaries\Win64\UE4Editor-ZadanieRekrutacyjne-1320.dll".
+  Deleting old hot reload file: "F:\GIT foldery\UnrealExercise\Binaries\Win64\UE4Editor-ZadanieRekrutacyjne-1320.pdb".
+  Deleting old hot reload file: "F:\GIT foldery\UnrealExercise\Binaries\Win64\UE4Editor-ZadanieRekrutacyjne-1329.dll".
+  Deleting old hot reload file: "F:\GIT foldery\UnrealExercise\Binaries\Win64\UE4Editor-ZadanieRekrutacyjne-1329.pdb".
+  Deleting old hot reload file: "F:\GIT foldery\UnrealExercise\Binaries\Win64\UE4Editor-ZadanieRekrutacyjne-135.dll".
+  Deleting old hot reload file: "F:\GIT foldery\UnrealExercise\Binaries\Win64\UE4Editor-ZadanieRekrutacyjne-135.pdb".
+  Deleting old hot reload file: "F:\GIT foldery\UnrealExercise\Binaries\Win64\UE4Editor-ZadanieRekrutacyjne-1576.dll".
+  Deleting old hot reload file: "F:\GIT foldery\UnrealExercise\Binaries\Win64\UE4Editor-ZadanieRekrutacyjne-1710.dll".
+  Deleting old hot reload file: "F:\GIT foldery\UnrealExercise\Binaries\Win64\UE4Editor-ZadanieRekrutacyjne-1710.pdb".
+  Deleting old hot reload file: "F:\GIT foldery\UnrealExercise\Binaries\Win64\UE4Editor-ZadanieRekrutacyjne-1764.dll".
+  Deleting old hot reload file: "F:\GIT foldery\UnrealExercise\Binaries\Win64\UE4Editor-ZadanieRekrutacyjne-1764.pdb".
+  Deleting old hot reload file: "F:\GIT foldery\UnrealExercise\Binaries\Win64\UE4Editor-ZadanieRekrutacyjne-1772.dll".
+  Deleting old hot reload file: "F:\GIT foldery\UnrealExercise\Binaries\Win64\UE4Editor-ZadanieRekrutacyjne-1772.pdb".
+  Deleting old hot reload file: "F:\GIT foldery\UnrealExercise\Binaries\Win64\UE4Editor-ZadanieRekrutacyjne-2217.dll".
+  Deleting old hot reload file: "F:\GIT foldery\UnrealExercise\Binaries\Win64\UE4Editor-ZadanieRekrutacyjne-2217.pdb".
+  Deleting old hot reload file: "F:\GIT foldery\UnrealExercise\Binaries\Win64\UE4Editor-ZadanieRekrutacyjne-2281.dll".
+  Deleting old hot reload file: "F:\GIT foldery\UnrealExercise\Binaries\Win64\UE4Editor-ZadanieRekrutacyjne-2281.pdb".
+  Deleting old hot reload file: "F:\GIT foldery\UnrealExercise\Binaries\Win64\UE4Editor-ZadanieRekrutacyjne-3067.dll".
+  Deleting old hot reload file: "F:\GIT foldery\UnrealExercise\Binaries\Win64\UE4Editor-ZadanieRekrutacyjne-3067.pdb".
+  Deleting old hot reload file: "F:\GIT foldery\UnrealExercise\Binaries\Win64\UE4Editor-ZadanieRekrutacyjne-3115.dll".
+  Deleting old hot reload file: "F:\GIT foldery\UnrealExercise\Binaries\Win64\UE4Editor-ZadanieRekrutacyjne-3115.pdb".
+  Deleting old hot reload file: "F:\GIT foldery\UnrealExercise\Binaries\Win64\UE4Editor-ZadanieRekrutacyjne-3194.dll".
+  Deleting old hot reload file: "F:\GIT foldery\UnrealExercise\Binaries\Win64\UE4Editor-ZadanieRekrutacyjne-3194.pdb".
+  Deleting old hot reload file: "F:\GIT foldery\UnrealExercise\Binaries\Win64\UE4Editor-ZadanieRekrutacyjne-3287.dll".
+  Deleting old hot reload file: "F:\GIT foldery\UnrealExercise\Binaries\Win64\UE4Editor-ZadanieRekrutacyjne-3287.pdb".
+  Deleting old hot reload file: "F:\GIT foldery\UnrealExercise\Binaries\Win64\UE4Editor-ZadanieRekrutacyjne-3685.dll".
+  Deleting old hot reload file: "F:\GIT foldery\UnrealExercise\Binaries\Win64\UE4Editor-ZadanieRekrutacyjne-3685.pdb".
+  Deleting old hot reload file: "F:\GIT foldery\UnrealExercise\Binaries\Win64\UE4Editor-ZadanieRekrutacyjne-3717.dll".
+  Deleting old hot reload file: "F:\GIT foldery\UnrealExercise\Binaries\Win64\UE4Editor-ZadanieRekrutacyjne-3717.pdb".
+  Deleting old hot reload file: "F:\GIT foldery\UnrealExercise\Binaries\Win64\UE4Editor-ZadanieRekrutacyjne-3788.dll".
+  Deleting old hot reload file: "F:\GIT foldery\UnrealExercise\Binaries\Win64\UE4Editor-ZadanieRekrutacyjne-3788.pdb".
+  Deleting old hot reload file: "F:\GIT foldery\UnrealExercise\Binaries\Win64\UE4Editor-ZadanieRekrutacyjne-3921.dll".
+  Deleting old hot reload file: "F:\GIT foldery\UnrealExercise\Binaries\Win64\UE4Editor-ZadanieRekrutacyjne-3921.pdb".
+  Deleting old hot reload file: "F:\GIT foldery\UnrealExercise\Binaries\Win64\UE4Editor-ZadanieRekrutacyjne-4026.dll".
+  Deleting old hot reload file: "F:\GIT foldery\UnrealExercise\Binaries\Win64\UE4Editor-ZadanieRekrutacyjne-4026.pdb".
+  Deleting old hot reload file: "F:\GIT foldery\UnrealExercise\Binaries\Win64\UE4Editor-ZadanieRekrutacyjne-4288.dll".
+  Deleting old hot reload file: "F:\GIT foldery\UnrealExercise\Binaries\Win64\UE4Editor-ZadanieRekrutacyjne-4288.pdb".
+  Deleting old hot reload file: "F:\GIT foldery\UnrealExercise\Binaries\Win64\UE4Editor-ZadanieRekrutacyjne-4639.dll".
+  Deleting old hot reload file: "F:\GIT foldery\UnrealExercise\Binaries\Win64\UE4Editor-ZadanieRekrutacyjne-511.dll".
+  Deleting old hot reload file: "F:\GIT foldery\UnrealExercise\Binaries\Win64\UE4Editor-ZadanieRekrutacyjne-511.pdb".
+  Deleting old hot reload file: "F:\GIT foldery\UnrealExercise\Binaries\Win64\UE4Editor-ZadanieRekrutacyjne-5223.dll".
+  Deleting old hot reload file: "F:\GIT foldery\UnrealExercise\Binaries\Win64\UE4Editor-ZadanieRekrutacyjne-5223.pdb".
+  Deleting old hot reload file: "F:\GIT foldery\UnrealExercise\Binaries\Win64\UE4Editor-ZadanieRekrutacyjne-556.dll".
+  Deleting old hot reload file: "F:\GIT foldery\UnrealExercise\Binaries\Win64\UE4Editor-ZadanieRekrutacyjne-556.pdb".
+  Deleting old hot reload file: "F:\GIT foldery\UnrealExercise\Binaries\Win64\UE4Editor-ZadanieRekrutacyjne-5676.dll".
+  Deleting old hot reload file: "F:\GIT foldery\UnrealExercise\Binaries\Win64\UE4Editor-ZadanieRekrutacyjne-5676.pdb".
+  Deleting old hot reload file: "F:\GIT foldery\UnrealExercise\Binaries\Win64\UE4Editor-ZadanieRekrutacyjne-6718.dll".
+  Deleting old hot reload file: "F:\GIT foldery\UnrealExercise\Binaries\Win64\UE4Editor-ZadanieRekrutacyjne-6718.pdb".
+  Deleting old hot reload file: "F:\GIT foldery\UnrealExercise\Binaries\Win64\UE4Editor-ZadanieRekrutacyjne-71.dll".
+  Deleting old hot reload file: "F:\GIT foldery\UnrealExercise\Binaries\Win64\UE4Editor-ZadanieRekrutacyjne-71.pdb".
+  Deleting old hot reload file: "F:\GIT foldery\UnrealExercise\Binaries\Win64\UE4Editor-ZadanieRekrutacyjne-7229.dll".
+  Deleting old hot reload file: "F:\GIT foldery\UnrealExercise\Binaries\Win64\UE4Editor-ZadanieRekrutacyjne-7229.pdb".
+  Deleting old hot reload file: "F:\GIT foldery\UnrealExercise\Binaries\Win64\UE4Editor-ZadanieRekrutacyjne-7270.dll".
+  Deleting old hot reload file: "F:\GIT foldery\UnrealExercise\Binaries\Win64\UE4Editor-ZadanieRekrutacyjne-7270.pdb".
+  Deleting old hot reload file: "F:\GIT foldery\UnrealExercise\Binaries\Win64\UE4Editor-ZadanieRekrutacyjne-7558.dll".
+  Deleting old hot reload file: "F:\GIT foldery\UnrealExercise\Binaries\Win64\UE4Editor-ZadanieRekrutacyjne-7558.pdb".
+  Deleting old hot reload file: "F:\GIT foldery\UnrealExercise\Binaries\Win64\UE4Editor-ZadanieRekrutacyjne-7659.dll".
+  Deleting old hot reload file: "F:\GIT foldery\UnrealExercise\Binaries\Win64\UE4Editor-ZadanieRekrutacyjne-7659.pdb".
+  Deleting old hot reload file: "F:\GIT foldery\UnrealExercise\Binaries\Win64\UE4Editor-ZadanieRekrutacyjne-771.dll".
+  Deleting old hot reload file: "F:\GIT foldery\UnrealExercise\Binaries\Win64\UE4Editor-ZadanieRekrutacyjne-771.pdb".
+  Deleting old hot reload file: "F:\GIT foldery\UnrealExercise\Binaries\Win64\UE4Editor-ZadanieRekrutacyjne-7724.dll".
+  Deleting old hot reload file: "F:\GIT foldery\UnrealExercise\Binaries\Win64\UE4Editor-ZadanieRekrutacyjne-7724.pdb".
+  Deleting old hot reload file: "F:\GIT foldery\UnrealExercise\Binaries\Win64\UE4Editor-ZadanieRekrutacyjne-8031.dll".
+  Deleting old hot reload file: "F:\GIT foldery\UnrealExercise\Binaries\Win64\UE4Editor-ZadanieRekrutacyjne-8031.pdb".
+  Deleting old hot reload file: "F:\GIT foldery\UnrealExercise\Binaries\Win64\UE4Editor-ZadanieRekrutacyjne-8204.dll".
+  Deleting old hot reload file: "F:\GIT foldery\UnrealExercise\Binaries\Win64\UE4Editor-ZadanieRekrutacyjne-8247.dll".
+  Deleting old hot reload file: "F:\GIT foldery\UnrealExercise\Binaries\Win64\UE4Editor-ZadanieRekrutacyjne-8247.pdb".
+  Deleting old hot reload file: "F:\GIT foldery\UnrealExercise\Binaries\Win64\UE4Editor-ZadanieRekrutacyjne-8417.dll".
+  Deleting old hot reload file: "F:\GIT foldery\UnrealExercise\Binaries\Win64\UE4Editor-ZadanieRekrutacyjne-8417.pdb".
+  Deleting old hot reload file: "F:\GIT foldery\UnrealExercise\Binaries\Win64\UE4Editor-ZadanieRekrutacyjne-8833.dll".
+  Deleting old hot reload file: "F:\GIT foldery\UnrealExercise\Binaries\Win64\UE4Editor-ZadanieRekrutacyjne-8833.pdb".
+  Deleting old hot reload file: "F:\GIT foldery\UnrealExercise\Binaries\Win64\UE4Editor-ZadanieRekrutacyjne-8951.dll".
+  Deleting old hot reload file: "F:\GIT foldery\UnrealExercise\Binaries\Win64\UE4Editor-ZadanieRekrutacyjne-8951.pdb".
+  Deleting old hot reload file: "F:\GIT foldery\UnrealExercise\Binaries\Win64\UE4Editor-ZadanieRekrutacyjne-9506.dll".
+  Deleting old hot reload file: "F:\GIT foldery\UnrealExercise\Binaries\Win64\UE4Editor-ZadanieRekrutacyjne-9506.pdb".
+  Deleting old hot reload file: "F:\GIT foldery\UnrealExercise\Binaries\Win64\UE4Editor-ZadanieRekrutacyjne-9519.dll".
+  Deleting old hot reload file: "F:\GIT foldery\UnrealExercise\Binaries\Win64\UE4Editor-ZadanieRekrutacyjne-9519.pdb".
+  Deleting old hot reload file: "F:\GIT foldery\UnrealExercise\Binaries\Win64\UE4Editor-ZadanieRekrutacyjne-968.dll".
+  Deleting old hot reload file: "F:\GIT foldery\UnrealExercise\Binaries\Win64\UE4Editor-ZadanieRekrutacyjne-968.pdb".
+  Performing 4 actions (4 in parallel)
   LightBulb.cpp
-F:\TheFarm51\ZadanieRekrutacyjne\Source\ZadanieRekrutacyjne\LightBulb.cpp(21): warning C4996: 'USceneComponent::AttachTo': This function is deprecated, please use AttachToComponent instead. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+  ZadanieRekrutacyjne.generated.cpp
+F:\GIT foldery\UnrealExercise\Source\ZadanieRekrutacyjne\LightBulb.cpp(29): warning C4996: 'USceneComponent::AttachTo': This function is deprecated, please use AttachToComponent instead. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
   C:\Program Files\Epic Games\UE_4.15\Engine\Source\Runtime\Engine\Classes\Components/SceneComponent.h(614): note: see declaration of 'USceneComponent::AttachTo'
-  [2/3] Link UE4Editor-ZadanieRekrutacyjne-7229.dll
-  [3/3] Link UE4Editor-ZadanieRekrutacyjne-7229.lib
-     Creating library F:\TheFarm51\ZadanieRekrutacyjne\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-ZadanieRekrutacyjne-7229.lib and object F:\TheFarm51\ZadanieRekrutacyjne\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-ZadanieRekrutacyjne-7229.exp
-     Creating library F:\TheFarm51\ZadanieRekrutacyjne\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-ZadanieRekrutacyjne-7229.suppressed.lib and object F:\TheFarm51\ZadanieRekrutacyjne\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-ZadanieRekrutacyjne-7229.suppressed.exp
+  [3/4] Link UE4Editor-ZadanieRekrutacyjne.dll
+  [4/4] Link UE4Editor-ZadanieRekrutacyjne.lib
+     Creating library F:\GIT foldery\UnrealExercise\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-ZadanieRekrutacyjne.lib and object F:\GIT foldery\UnrealExercise\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-ZadanieRekrutacyjne.exp
+     Creating library F:\GIT foldery\UnrealExercise\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-ZadanieRekrutacyjne.suppressed.lib and object F:\GIT foldery\UnrealExercise\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-ZadanieRekrutacyjne.suppressed.exp
   Deploying ZadanieRekrutacyjneEditor Win64 Development...
-  Total build time: 8,07 seconds (Local executor: 2,45 seconds)
+  Total build time: 8,46 seconds (Local executor: 2,95 seconds)
