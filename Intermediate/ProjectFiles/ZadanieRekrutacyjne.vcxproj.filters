@@ -52,12 +52,6 @@
     <ClCompile Include="..\..\Source\ZadanieRekrutacyjne\LightBulb.cpp">
       <Filter>Source\ZadanieRekrutacyjne</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\ZadanieRekrutacyjne\MyDestructibleActor.cpp">
-      <Filter>Source\ZadanieRekrutacyjne</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\ZadanieRekrutacyjne\Spawner.cpp">
-      <Filter>Source\ZadanieRekrutacyjne</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\Source\ZadanieRekrutacyjne\Lamp.h">
@@ -67,12 +61,6 @@
       <Filter>Source\ZadanieRekrutacyjne</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\ZadanieRekrutacyjne\LightBulb.h">
-      <Filter>Source\ZadanieRekrutacyjne</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\ZadanieRekrutacyjne\MyDestructibleActor.h">
-      <Filter>Source\ZadanieRekrutacyjne</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\ZadanieRekrutacyjne\Spawner.h">
       <Filter>Source\ZadanieRekrutacyjne</Filter>
     </ClInclude>
   </ItemGroup>

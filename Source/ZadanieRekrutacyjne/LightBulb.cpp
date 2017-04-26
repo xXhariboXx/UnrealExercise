@@ -25,6 +25,8 @@ void ALightBulb::InitializeComponents()
 	LightBulbMeshComponent->SetSimulatePhysics(true);
 	LightBulbMeshComponent->SetEnableGravity(true);
 
+	LightSource->SetIntensity(fBaseIntensity);
+
 	RootComponent = LightBulbMeshComponent;
 	LightSource->AttachTo(RootComponent);
 }
@@ -83,11 +85,11 @@ void ALightBulb::LightPulsing(float fDeltaTime)
 
 void  ALightBulb::Pulsing(float fDeltaTime)
 {
-	if (LightSource->Intensity > fBaseIntensity)
+	if (LightSource->Intensity > fMaxIntensity)
 	{
 		bIsPoolsingUp = false;
 	}
-	else if (LightSource->Intensity < 100)
+	else if (LightSource->Intensity < fMinIntensity)
 	{
 		bIsPoolsingUp = true;
 	}
@@ -107,7 +109,8 @@ void ALightBulb::SetLightColourRed()
 	float red = 1;
 	float green = 0;
 	float blue = 0;
-	FLinearColor color = FLinearColor(red, green, blue, 1);
+	FLinearColor temp = LightSource->LightColor;
+	FLinearColor color = FLinearColor(temp.R + red, green, blue, 1);
 	LightSource->SetLightColor(color, true);
 }
 

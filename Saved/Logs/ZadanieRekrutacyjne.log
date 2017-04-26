@@ -196,3 +196,699 @@ LogInit: Object subsystem initialized
 [2017.04.26-10.11.01:134][  1]LogAssetRegistry: Asset discovery search completed in 10.4956 seconds
 [2017.04.26-10.11.01:134][  1]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000005 seconds (found 0 objects)
 [2017.04.26-10.11.01:134][  1]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000018 seconds (updated 0 objects)
+[2017.04.26-10.12.43:073][625]LogSlate: Took 0.000141 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.04.26-10.12.43:593][625]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0013 seconds. Added 112 classes and 0 folders.
+[2017.04.26-10.12.44:134][625]LogSlate: Took 0.000132 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2017.04.26-10.14.09:634][268]LogHotReload: New module detected: UE4Editor-ZadanieRekrutacyjne-9285.dll
+[2017.04.26-10.14.10:307][271]LogHotReload: Starting Hot-Reload from IDE
+[2017.04.26-10.14.10:393][271]LogClass: Could not find existing class LightBulb in package /Script/ZadanieRekrutacyjne for HotReload, assuming new class
+[2017.04.26-10.14.10:398][271]LogHotReload: Re-instancing LightBulb after hot-reload.
+[2017.04.26-10.14.10:701][271]LogContentBrowser: Native class hierarchy updated for 'ZadanieRekrutacyjne' in 0.0012 seconds. Added 3 classes and 2 folders.
+[2017.04.26-10.14.10:704][271]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2017.04.26-10.14.11:017][271]LogContentBrowser: Native class hierarchy populated in 0.0088 seconds. Added 2250 classes and 459 folders.
+[2017.04.26-10.14.11:027][271]Display: HotReload took  0.7s.
+[2017.04.26-10.14.14:716][604]BlueprintLog: New page: Compile MyLightBulb
+[2017.04.26-10.14.19:179][110]LogSlate: Took 0.000169 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.04.26-10.17.28:106][ 44]LogHotReload: New module detected: UE4Editor-ZadanieRekrutacyjne-2365.dll
+[2017.04.26-10.17.28:783][ 47]LogHotReload: Starting Hot-Reload from IDE
+[2017.04.26-10.17.28:886][ 47]LogClass: Could not find existing class LightBulb in package /Script/ZadanieRekrutacyjne for HotReload, assuming new class
+[2017.04.26-10.17.28:891][ 47]LogHotReload: Re-instancing LightBulb after hot-reload.
+[2017.04.26-10.17.29:251][ 47]LogContentBrowser: Native class hierarchy updated for 'ZadanieRekrutacyjne' in 0.0012 seconds. Added 3 classes and 2 folders.
+[2017.04.26-10.17.29:254][ 47]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2017.04.26-10.17.29:520][ 47]LogContentBrowser: Native class hierarchy populated in 0.0091 seconds. Added 2250 classes and 459 folders.
+[2017.04.26-10.17.29:529][ 47]Display: HotReload took  0.7s.
+[2017.04.26-10.18.21:838][527]LogHotReload: New module detected: UE4Editor-ZadanieRekrutacyjne-3751.dll
+[2017.04.26-10.18.22:515][530]LogHotReload: Starting Hot-Reload from IDE
+[2017.04.26-10.18.22:626][530]LogClass: Could not find existing class LightBulb in package /Script/ZadanieRekrutacyjne for HotReload, assuming new class
+[2017.04.26-10.18.22:632][530]LogHotReload: Re-instancing LightBulb after hot-reload.
+[2017.04.26-10.18.23:076][530]LogContentBrowser: Native class hierarchy updated for 'ZadanieRekrutacyjne' in 0.0011 seconds. Added 3 classes and 2 folders.
+[2017.04.26-10.18.23:078][530]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2017.04.26-10.18.23:340][530]LogContentBrowser: Native class hierarchy populated in 0.0091 seconds. Added 2250 classes and 459 folders.
+[2017.04.26-10.18.23:348][530]Display: HotReload took  0.8s.
+[2017.04.26-10.19.27:287][ 95]LogHotReload: New module detected: UE4Editor-ZadanieRekrutacyjne-8605.dll
+[2017.04.26-10.19.27:961][ 98]LogHotReload: Starting Hot-Reload from IDE
+[2017.04.26-10.19.28:069][ 98]LogClass: Could not find existing class LightBulb in package /Script/ZadanieRekrutacyjne for HotReload, assuming new class
+[2017.04.26-10.19.28:076][ 98]LogHotReload: Re-instancing LightBulb after hot-reload.
+[2017.04.26-10.19.28:574][ 98]LogContentBrowser: Native class hierarchy updated for 'ZadanieRekrutacyjne' in 0.0010 seconds. Added 3 classes and 2 folders.
+[2017.04.26-10.19.28:576][ 98]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2017.04.26-10.19.28:831][ 98]LogProperty:Warning: Serialized Class /Script/ZadanieRekrutacyjne.Lamp for a property of Class /Script/Engine.SceneComponent. Reference will be NULLed.
+    Property = ObjectProperty /Script/Engine.SceneComponent:AttachParent
+    Item = Lamp /Script/ZadanieRekrutacyjne.Default__Lamp
+[2017.04.26-10.19.28:831][ 98]LogProperty:Warning: Serialized Class /Script/ZadanieRekrutacyjne.Lamp for a property of Class /Script/Engine.PointLightComponent. Reference will be NULLed.
+    Property = ObjectProperty /Script/ZadanieRekrutacyjne.LightBulb:LightSource
+    Item = Lamp /Script/ZadanieRekrutacyjne.Default__Lamp
+[2017.04.26-10.19.28:831][ 98]LogContentBrowser: Native class hierarchy populated in 0.0093 seconds. Added 2250 classes and 459 folders.
+[2017.04.26-10.19.28:840][ 98]Display: HotReload took  0.9s.
+[2017.04.26-10.20.00:183][192]LogHotReload: New module detected: UE4Editor-ZadanieRekrutacyjne-2040.dll
+[2017.04.26-10.20.00:861][195]LogHotReload: Starting Hot-Reload from IDE
+[2017.04.26-10.20.01:034][195]LogContentBrowser: Native class hierarchy updated for 'ZadanieRekrutacyjne' in 0.0011 seconds. Added 3 classes and 2 folders.
+[2017.04.26-10.20.01:036][195]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2017.04.26-10.20.01:295][195]LogContentBrowser: Native class hierarchy populated in 0.0088 seconds. Added 2250 classes and 459 folders.
+[2017.04.26-10.20.01:305][195]Display: HotReload took  0.4s.
+[2017.04.26-10.21.08:465][134]LogHotReload: New module detected: UE4Editor-ZadanieRekrutacyjne-1944.dll
+[2017.04.26-10.21.09:138][137]LogHotReload: Starting Hot-Reload from IDE
+[2017.04.26-10.21.09:261][137]LogClass: Could not find existing class LightBulb in package /Script/ZadanieRekrutacyjne for HotReload, assuming new class
+[2017.04.26-10.21.09:266][137]LogHotReload: Re-instancing LightBulb after hot-reload.
+[2017.04.26-10.21.09:574][137]LogContentBrowser: Native class hierarchy updated for 'ZadanieRekrutacyjne' in 0.0012 seconds. Added 3 classes and 2 folders.
+[2017.04.26-10.21.09:576][137]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2017.04.26-10.21.09:829][137]LogContentBrowser: Native class hierarchy populated in 0.0092 seconds. Added 2250 classes and 459 folders.
+[2017.04.26-10.21.09:838][137]Display: HotReload took  0.7s.
+[2017.04.26-10.21.17:389][280]LogTemp: Repeting last play command: Selected Viewport
+[2017.04.26-10.21.17:423][280]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.26-10.21.17:423][280]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.04.26-10.21.17:425][280]PIE: New page: PIE session: Minimal_Default (Apr 26, 2017, 2:21:17 PM)
+[2017.04.26-10.21.17:425][280]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2017.04.26-10.21.17:432][280]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006807s)
+[2017.04.26-10.21.17:432][280]LogAIModule: Creating AISystem for world Minimal_Default
+[2017.04.26-10.21.17:432][280]LogPlayLevel: PIE: World Init took: (0.000775s)
+[2017.04.26-10.21.17:433][280]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Minimal_Default.Minimal_Default to /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.007929s)
+[2017.04.26-10.21.17:473][280]LogInit: XAudio2 using 'Głośniki (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.04.26-10.21.17:490][280]LogInit: FAudioDevice initialized.
+[2017.04.26-10.21.17:537][280]LogUObjectGlobals:Warning: Failed to find object 'Class /Script/ZadanieRekrutacyjne.ZadanieRekrutacyjneGameMode'
+[2017.04.26-10.21.17:537][280]LogLoad: Game class is 'GameModeBase'
+[2017.04.26-10.21.17:540][280]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 0) at 2017.04.26-12.21.17
+[2017.04.26-10.21.17:540][280]LogWorld: Bringing up level for play took: 0.001469
+[2017.04.26-10.21.17:583][280]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0010 seconds. Added 11 classes and 0 folders.
+[2017.04.26-10.21.17:584][280]PIE: Info Play in editor start time for /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default 0.162
+[2017.04.26-10.21.17:585][280]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.26-10.21.46:661][758]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.26-10.21.46:697][758]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.26-10.21.47:309][824]LogEditorViewport: Clicking on Actor (LMB): MyLightBulb_C (MyLightBulb)
+[2017.04.26-10.22.04:551][852]LogSlate: Took 0.005182 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2017.04.26-10.22.36:773][756]LogSavePackage: Save=95.06ms
+[2017.04.26-10.22.36:773][756]LogSavePackage: Moving 'F:/GIT foldery/UnrealExercise/Saved/Minimal_Default_Auto1DADB03204966DD296F04F9A7142704FC.tmp' to 'F:/GIT foldery/UnrealExercise/Saved/Autosaves/Game/StarterContent/Maps/Minimal_Default_Auto1.umap'
+[2017.04.26-10.22.36:774][756]LogSavePackage:Display: Finished SavePackage F:/GIT foldery/UnrealExercise/Saved/Autosaves/Game/StarterContent/Maps/Minimal_Default_Auto1.umap
+[2017.04.26-10.22.36:778][756]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/StarterContent/Maps/Minimal_Default' took 0.129
+[2017.04.26-10.22.36:778][756]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.129
+[2017.04.26-10.23.11:238][860]LogHotReload: New module detected: UE4Editor-ZadanieRekrutacyjne-4083.dll
+[2017.04.26-10.23.11:912][863]LogHotReload: Starting Hot-Reload from IDE
+[2017.04.26-10.23.12:010][863]LogContentBrowser: Native class hierarchy updated for 'ZadanieRekrutacyjne' in 0.0010 seconds. Added 3 classes and 2 folders.
+[2017.04.26-10.23.12:012][863]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2017.04.26-10.23.12:267][863]LogContentBrowser: Native class hierarchy populated in 0.0099 seconds. Added 2250 classes and 459 folders.
+[2017.04.26-10.23.12:275][863]Display: HotReload took  0.4s.
+[2017.04.26-10.23.22:154][827]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/StarterContent/Maps/Minimal_Default" FILE="F:/GIT foldery/UnrealExercise/Content/StarterContent/Maps/Minimal_Default.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2017.04.26-10.23.22:301][827]LogSavePackage: Save=102.84ms
+[2017.04.26-10.23.22:301][827]LogSavePackage: Moving 'F:/GIT foldery/UnrealExercise/Saved/Minimal_DefaultC86B2EB44A0A106A152D11B876287D62.tmp' to 'F:/GIT foldery/UnrealExercise/Content/StarterContent/Maps/Minimal_Default.umap'
+[2017.04.26-10.23.22:304][827]LogSavePackage:Display: Finished SavePackage F:/GIT foldery/UnrealExercise/Content/StarterContent/Maps/Minimal_Default.umap
+[2017.04.26-10.23.22:344][827]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/StarterContent/Maps/Minimal_Default_BuiltData" FILE="F:/GIT foldery/UnrealExercise/Content/StarterContent/Maps/Minimal_Default_BuiltData.uasset" SILENT=true
+[2017.04.26-10.23.22:446][827]LogSavePackage: Save=93.93ms
+[2017.04.26-10.23.22:446][827]LogSavePackage: Moving 'F:/GIT foldery/UnrealExercise/Saved/Minimal_Default_BuiltData808CC83244EBBDDAE31DFA9D4E068CD1.tmp' to 'F:/GIT foldery/UnrealExercise/Content/StarterContent/Maps/Minimal_Default_BuiltData.uasset'
+[2017.04.26-10.23.22:446][827]LogSavePackage:Display: Finished SavePackage F:/GIT foldery/UnrealExercise/Content/StarterContent/Maps/Minimal_Default_BuiltData.uasset
+[2017.04.26-10.23.24:986][ 82]BlueprintLog: New page: Compile MyLightBulb
+[2017.04.26-10.23.34:240][152]LogTemp: Repeting last play command: Selected Viewport
+[2017.04.26-10.23.34:260][152]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.26-10.23.34:260][152]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.04.26-10.23.34:260][152]PIE: New page: PIE session: Minimal_Default (Apr 26, 2017, 2:23:34 PM)
+[2017.04.26-10.23.34:260][152]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2017.04.26-10.23.34:267][152]LogPlayLevel: PIE: StaticDuplicateObject took: (0.007654s)
+[2017.04.26-10.23.34:268][152]LogAIModule: Creating AISystem for world Minimal_Default
+[2017.04.26-10.23.34:268][152]LogPlayLevel: PIE: World Init took: (0.000934s)
+[2017.04.26-10.23.34:269][152]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Minimal_Default.Minimal_Default to /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.008915s)
+[2017.04.26-10.23.34:286][152]LogInit: XAudio2 using 'Głośniki (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.04.26-10.23.34:297][152]LogInit: FAudioDevice initialized.
+[2017.04.26-10.23.34:327][152]LogLoad: Game class is 'GameModeBase'
+[2017.04.26-10.23.34:329][152]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 0) at 2017.04.26-12.23.34
+[2017.04.26-10.23.34:329][152]LogWorld: Bringing up level for play took: 0.001084
+[2017.04.26-10.23.34:330][152]PIE: Info Play in editor start time for /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default 0.907
+[2017.04.26-10.23.34:330][152]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.26-10.23.47:845][699]Cmd: SELECT NONE
+[2017.04.26-10.23.49:576][889]Cmd: SELECT NONE
+[2017.04.26-10.23.50:228][954]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.26-10.23.50:302][954]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.26-10.24.34:863][183]LogHotReload: New module detected: UE4Editor-ZadanieRekrutacyjne-4582.dll
+[2017.04.26-10.24.35:544][186]LogHotReload: Starting Hot-Reload from IDE
+[2017.04.26-10.24.35:636][186]LogContentBrowser: Native class hierarchy updated for 'ZadanieRekrutacyjne' in 0.0010 seconds. Added 3 classes and 2 folders.
+[2017.04.26-10.24.35:638][186]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2017.04.26-10.24.35:888][186]LogContentBrowser: Native class hierarchy populated in 0.0086 seconds. Added 2250 classes and 459 folders.
+[2017.04.26-10.24.35:897][186]Display: HotReload took  0.4s.
+[2017.04.26-10.24.38:454][360]LogTemp: Repeting last play command: Selected Viewport
+[2017.04.26-10.24.38:474][360]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.26-10.24.38:474][360]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.04.26-10.24.38:474][360]PIE: New page: PIE session: Minimal_Default (Apr 26, 2017, 2:24:38 PM)
+[2017.04.26-10.24.38:474][360]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2017.04.26-10.24.38:480][360]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006067s)
+[2017.04.26-10.24.38:481][360]LogAIModule: Creating AISystem for world Minimal_Default
+[2017.04.26-10.24.38:481][360]LogPlayLevel: PIE: World Init took: (0.001039s)
+[2017.04.26-10.24.38:481][360]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Minimal_Default.Minimal_Default to /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.007349s)
+[2017.04.26-10.24.38:523][360]LogInit: XAudio2 using 'Głośniki (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.04.26-10.24.38:534][360]LogInit: FAudioDevice initialized.
+[2017.04.26-10.24.38:568][360]LogLoad: Game class is 'GameModeBase'
+[2017.04.26-10.24.38:570][360]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 0) at 2017.04.26-12.24.38
+[2017.04.26-10.24.38:570][360]LogWorld: Bringing up level for play took: 0.001091
+[2017.04.26-10.24.38:571][360]PIE: Info Play in editor start time for /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default -0.852
+[2017.04.26-10.24.38:571][360]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.26-10.25.21:289][251]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.26-10.25.21:352][251]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.26-10.26.23:280][682]LogHotReload: New module detected: UE4Editor-ZadanieRekrutacyjne-5516.dll
+[2017.04.26-10.26.23:954][685]LogHotReload: Starting Hot-Reload from IDE
+[2017.04.26-10.26.24:052][685]LogContentBrowser: Native class hierarchy updated for 'ZadanieRekrutacyjne' in 0.0021 seconds. Added 3 classes and 2 folders.
+[2017.04.26-10.26.24:055][685]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2017.04.26-10.26.24:312][685]LogContentBrowser: Native class hierarchy populated in 0.0098 seconds. Added 2250 classes and 459 folders.
+[2017.04.26-10.26.24:321][685]Display: HotReload took  0.4s.
+[2017.04.26-10.26.51:349][766]LogHotReload: New module detected: UE4Editor-ZadanieRekrutacyjne-9328.dll
+[2017.04.26-10.26.52:023][769]LogHotReload: Starting Hot-Reload from IDE
+[2017.04.26-10.26.52:192][769]LogContentBrowser: Native class hierarchy updated for 'ZadanieRekrutacyjne' in 0.0011 seconds. Added 3 classes and 2 folders.
+[2017.04.26-10.26.52:195][769]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2017.04.26-10.26.52:469][769]LogContentBrowser: Native class hierarchy populated in 0.0092 seconds. Added 2250 classes and 459 folders.
+[2017.04.26-10.26.52:478][769]Display: HotReload took  0.5s.
+[2017.04.26-10.27.33:820][893]LogHotReload: New module detected: UE4Editor-ZadanieRekrutacyjne-2319.dll
+[2017.04.26-10.27.34:493][896]LogHotReload: Starting Hot-Reload from IDE
+[2017.04.26-10.27.34:634][896]LogContentBrowser: Native class hierarchy updated for 'ZadanieRekrutacyjne' in 0.0011 seconds. Added 3 classes and 2 folders.
+[2017.04.26-10.27.34:636][896]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2017.04.26-10.27.34:891][896]LogContentBrowser: Native class hierarchy populated in 0.0093 seconds. Added 2250 classes and 459 folders.
+[2017.04.26-10.27.34:899][896]Display: HotReload took  0.4s.
+[2017.04.26-10.29.26:261][230]LogHotReload: New module detected: UE4Editor-ZadanieRekrutacyjne-7619.dll
+[2017.04.26-10.29.26:934][233]LogHotReload: Starting Hot-Reload from IDE
+[2017.04.26-10.29.27:079][233]LogContentBrowser: Native class hierarchy updated for 'ZadanieRekrutacyjne' in 0.0011 seconds. Added 3 classes and 2 folders.
+[2017.04.26-10.29.27:082][233]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2017.04.26-10.29.27:345][233]LogContentBrowser: Native class hierarchy populated in 0.0096 seconds. Added 2250 classes and 459 folders.
+[2017.04.26-10.29.27:353][233]Display: HotReload took  0.4s.
+[2017.04.26-10.30.12:411][368]LogHotReload: New module detected: UE4Editor-ZadanieRekrutacyjne-4505.dll
+[2017.04.26-10.30.13:082][371]LogHotReload: Starting Hot-Reload from IDE
+[2017.04.26-10.30.13:283][371]LogContentBrowser: Native class hierarchy updated for 'ZadanieRekrutacyjne' in 0.0010 seconds. Added 3 classes and 2 folders.
+[2017.04.26-10.30.13:285][371]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2017.04.26-10.30.13:565][371]LogContentBrowser: Native class hierarchy populated in 0.0091 seconds. Added 2250 classes and 459 folders.
+[2017.04.26-10.30.13:573][371]Display: HotReload took  0.5s.
+[2017.04.26-10.30.57:590][503]LogHotReload: New module detected: UE4Editor-ZadanieRekrutacyjne-5714.dll
+[2017.04.26-10.30.58:271][506]LogHotReload: Starting Hot-Reload from IDE
+[2017.04.26-10.30.58:397][506]LogContentBrowser: Native class hierarchy updated for 'ZadanieRekrutacyjne' in 0.0012 seconds. Added 3 classes and 2 folders.
+[2017.04.26-10.30.58:400][506]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2017.04.26-10.30.58:646][506]LogContentBrowser: Native class hierarchy populated in 0.0092 seconds. Added 2250 classes and 459 folders.
+[2017.04.26-10.30.58:655][506]Display: HotReload took  0.4s.
+[2017.04.26-10.31.55:255][842]LogTemp: Repeting last play command: Selected Viewport
+[2017.04.26-10.31.55:274][842]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.26-10.31.55:274][842]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.04.26-10.31.55:275][842]PIE: New page: PIE session: Minimal_Default (Apr 26, 2017, 2:31:55 PM)
+[2017.04.26-10.31.55:275][842]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2017.04.26-10.31.55:281][842]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006012s)
+[2017.04.26-10.31.55:282][842]LogAIModule: Creating AISystem for world Minimal_Default
+[2017.04.26-10.31.55:282][842]LogPlayLevel: PIE: World Init took: (0.000987s)
+[2017.04.26-10.31.55:282][842]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Minimal_Default.Minimal_Default to /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.007219s)
+[2017.04.26-10.31.55:322][842]LogInit: XAudio2 using 'Głośniki (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.04.26-10.31.55:333][842]LogInit: FAudioDevice initialized.
+[2017.04.26-10.31.55:363][842]LogLoad: Game class is 'GameModeBase'
+[2017.04.26-10.31.55:364][842]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 0) at 2017.04.26-12.31.55
+[2017.04.26-10.31.55:364][842]LogWorld: Bringing up level for play took: 0.001060
+[2017.04.26-10.31.55:365][842]PIE: Info Play in editor start time for /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default -0.057
+[2017.04.26-10.31.55:366][842]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.26-10.31.59:839][368]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.26-10.31.59:903][368]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.26-10.34.20:083][955]LogHotReload: New module detected: UE4Editor-ZadanieRekrutacyjne-506.dll
+[2017.04.26-10.34.20:756][958]LogHotReload: Starting Hot-Reload from IDE
+[2017.04.26-10.34.20:854][958]LogContentBrowser: Native class hierarchy updated for 'ZadanieRekrutacyjne' in 0.0010 seconds. Added 3 classes and 2 folders.
+[2017.04.26-10.34.20:856][958]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2017.04.26-10.34.21:119][958]LogContentBrowser: Native class hierarchy populated in 0.0096 seconds. Added 2250 classes and 459 folders.
+[2017.04.26-10.34.21:129][958]Display: HotReload took  0.4s.
+[2017.04.26-10.34.24:093][ 61]LogTemp: Repeting last play command: Selected Viewport
+[2017.04.26-10.34.24:113][ 61]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.26-10.34.24:113][ 61]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.04.26-10.34.24:113][ 61]PIE: New page: PIE session: Minimal_Default (Apr 26, 2017, 2:34:24 PM)
+[2017.04.26-10.34.24:114][ 61]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2017.04.26-10.34.24:120][ 61]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006566s)
+[2017.04.26-10.34.24:121][ 61]LogAIModule: Creating AISystem for world Minimal_Default
+[2017.04.26-10.34.24:122][ 61]LogPlayLevel: PIE: World Init took: (0.001301s)
+[2017.04.26-10.34.24:122][ 61]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Minimal_Default.Minimal_Default to /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.008163s)
+[2017.04.26-10.34.24:163][ 61]LogInit: XAudio2 using 'Głośniki (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.04.26-10.34.24:173][ 61]LogInit: FAudioDevice initialized.
+[2017.04.26-10.34.24:202][ 61]LogLoad: Game class is 'GameModeBase'
+[2017.04.26-10.34.24:204][ 61]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 0) at 2017.04.26-12.34.24
+[2017.04.26-10.34.24:204][ 61]LogWorld: Bringing up level for play took: 0.001113
+[2017.04.26-10.34.24:205][ 61]PIE: Info Play in editor start time for /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default 0.783
+[2017.04.26-10.34.24:206][ 61]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.26-10.34.30:815][845]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.26-10.34.30:880][845]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.26-10.37.13:732][501]LogHotReload: New module detected: UE4Editor-ZadanieRekrutacyjne-1305.dll
+[2017.04.26-10.37.14:404][504]LogHotReload: Starting Hot-Reload from IDE
+[2017.04.26-10.37.14:492][504]LogContentBrowser: Native class hierarchy updated for 'ZadanieRekrutacyjne' in 0.0010 seconds. Added 3 classes and 2 folders.
+[2017.04.26-10.37.14:494][504]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2017.04.26-10.37.14:747][504]LogContentBrowser: Native class hierarchy populated in 0.0094 seconds. Added 2250 classes and 459 folders.
+[2017.04.26-10.37.14:757][504]Display: HotReload took  0.4s.
+[2017.04.26-10.37.17:752][646]LogTemp: Repeting last play command: Selected Viewport
+[2017.04.26-10.37.17:772][646]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.26-10.37.17:772][646]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.04.26-10.37.17:773][646]PIE: New page: PIE session: Minimal_Default (Apr 26, 2017, 2:37:17 PM)
+[2017.04.26-10.37.17:773][646]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2017.04.26-10.37.17:780][646]LogPlayLevel: PIE: StaticDuplicateObject took: (0.007304s)
+[2017.04.26-10.37.17:781][646]LogAIModule: Creating AISystem for world Minimal_Default
+[2017.04.26-10.37.17:781][646]LogPlayLevel: PIE: World Init took: (0.001064s)
+[2017.04.26-10.37.17:781][646]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Minimal_Default.Minimal_Default to /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.008699s)
+[2017.04.26-10.37.17:820][646]LogInit: XAudio2 using 'Głośniki (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.04.26-10.37.17:831][646]LogInit: FAudioDevice initialized.
+[2017.04.26-10.37.17:861][646]LogLoad: Game class is 'GameModeBase'
+[2017.04.26-10.37.17:863][646]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 0) at 2017.04.26-12.37.17
+[2017.04.26-10.37.17:863][646]LogWorld: Bringing up level for play took: 0.001193
+[2017.04.26-10.37.17:865][646]PIE: Info Play in editor start time for /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default 0.443
+[2017.04.26-10.37.17:865][646]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.26-10.37.22:781][227]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.26-10.37.22:842][227]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.26-10.38.06:982][522]LogHotReload: New module detected: UE4Editor-ZadanieRekrutacyjne-3403.dll
+[2017.04.26-10.38.07:655][525]LogHotReload: Starting Hot-Reload from IDE
+[2017.04.26-10.38.07:745][525]LogContentBrowser: Native class hierarchy updated for 'ZadanieRekrutacyjne' in 0.0010 seconds. Added 3 classes and 2 folders.
+[2017.04.26-10.38.07:747][525]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2017.04.26-10.38.08:000][525]LogContentBrowser: Native class hierarchy populated in 0.0097 seconds. Added 2250 classes and 459 folders.
+[2017.04.26-10.38.08:010][525]Display: HotReload took  0.4s.
+[2017.04.26-10.38.10:566][644]LogTemp: Repeting last play command: Selected Viewport
+[2017.04.26-10.38.10:586][644]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.26-10.38.10:586][644]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.04.26-10.38.10:586][644]PIE: New page: PIE session: Minimal_Default (Apr 26, 2017, 2:38:10 PM)
+[2017.04.26-10.38.10:586][644]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2017.04.26-10.38.10:593][644]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006428s)
+[2017.04.26-10.38.10:594][644]LogAIModule: Creating AISystem for world Minimal_Default
+[2017.04.26-10.38.10:594][644]LogPlayLevel: PIE: World Init took: (0.001084s)
+[2017.04.26-10.38.10:594][644]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Minimal_Default.Minimal_Default to /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.007757s)
+[2017.04.26-10.38.10:633][644]LogInit: XAudio2 using 'Głośniki (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.04.26-10.38.10:643][644]LogInit: FAudioDevice initialized.
+[2017.04.26-10.38.10:675][644]LogLoad: Game class is 'GameModeBase'
+[2017.04.26-10.38.10:677][644]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 0) at 2017.04.26-12.38.10
+[2017.04.26-10.38.10:677][644]LogWorld: Bringing up level for play took: 0.001096
+[2017.04.26-10.38.10:678][644]PIE: Info Play in editor start time for /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default -0.744
+[2017.04.26-10.38.10:678][644]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.26-10.38.48:682][194]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.26-10.38.48:745][194]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.26-10.39.04:258][639]LogHotReload: New module detected: UE4Editor-ZadanieRekrutacyjne-3378.dll
+[2017.04.26-10.39.04:932][642]LogHotReload: Starting Hot-Reload from IDE
+[2017.04.26-10.39.05:017][642]LogContentBrowser: Native class hierarchy updated for 'ZadanieRekrutacyjne' in 0.0012 seconds. Added 3 classes and 2 folders.
+[2017.04.26-10.39.05:020][642]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2017.04.26-10.39.05:267][642]LogContentBrowser: Native class hierarchy populated in 0.0094 seconds. Added 2250 classes and 459 folders.
+[2017.04.26-10.39.05:277][642]Display: HotReload took  0.3s.
+[2017.04.26-10.39.09:992][733]LogTemp: Repeting last play command: Selected Viewport
+[2017.04.26-10.39.10:014][733]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.26-10.39.10:014][733]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.04.26-10.39.10:015][733]PIE: New page: PIE session: Minimal_Default (Apr 26, 2017, 2:39:10 PM)
+[2017.04.26-10.39.10:015][733]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2017.04.26-10.39.10:020][733]LogPlayLevel: PIE: StaticDuplicateObject took: (0.005713s)
+[2017.04.26-10.39.10:021][733]LogAIModule: Creating AISystem for world Minimal_Default
+[2017.04.26-10.39.10:021][733]LogPlayLevel: PIE: World Init took: (0.001029s)
+[2017.04.26-10.39.10:022][733]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Minimal_Default.Minimal_Default to /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.006964s)
+[2017.04.26-10.39.10:063][733]LogInit: XAudio2 using 'Głośniki (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.04.26-10.39.10:073][733]LogInit: FAudioDevice initialized.
+[2017.04.26-10.39.10:100][733]LogLoad: Game class is 'GameModeBase'
+[2017.04.26-10.39.10:102][733]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 0) at 2017.04.26-12.39.10
+[2017.04.26-10.39.10:102][733]LogWorld: Bringing up level for play took: 0.001054
+[2017.04.26-10.39.10:103][733]PIE: Info Play in editor start time for /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default 0.681
+[2017.04.26-10.39.10:103][733]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.26-10.39.16:519][493]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.26-10.39.16:582][493]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.26-10.39.17:906][643]LogTemp: Repeting last play command: Selected Viewport
+[2017.04.26-10.39.17:926][643]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.26-10.39.17:926][643]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.04.26-10.39.17:926][643]PIE: New page: PIE session: Minimal_Default (Apr 26, 2017, 2:39:17 PM)
+[2017.04.26-10.39.17:926][643]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2017.04.26-10.39.17:931][643]LogPlayLevel: PIE: StaticDuplicateObject took: (0.005448s)
+[2017.04.26-10.39.17:932][643]LogAIModule: Creating AISystem for world Minimal_Default
+[2017.04.26-10.39.17:932][643]LogPlayLevel: PIE: World Init took: (0.000878s)
+[2017.04.26-10.39.17:932][643]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Minimal_Default.Minimal_Default to /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.006546s)
+[2017.04.26-10.39.17:950][643]LogInit: XAudio2 using 'Głośniki (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.04.26-10.39.17:959][643]LogInit: FAudioDevice initialized.
+[2017.04.26-10.39.17:990][643]LogLoad: Game class is 'GameModeBase'
+[2017.04.26-10.39.17:991][643]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 0) at 2017.04.26-12.39.17
+[2017.04.26-10.39.17:991][643]LogWorld: Bringing up level for play took: 0.000991
+[2017.04.26-10.39.17:992][643]PIE: Info Play in editor start time for /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default 0.57
+[2017.04.26-10.39.17:993][643]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.26-10.39.24:775][393]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2017.04.26-10.39.26:890][633]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.26-10.39.26:955][633]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.26-10.39.39:212][987]LogTemp: Repeting last play command: Selected Viewport
+[2017.04.26-10.39.39:231][987]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.26-10.39.39:231][987]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.04.26-10.39.39:231][987]PIE: New page: PIE session: Minimal_Default (Apr 26, 2017, 2:39:39 PM)
+[2017.04.26-10.39.39:231][987]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2017.04.26-10.39.39:236][987]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004789s)
+[2017.04.26-10.39.39:237][987]LogAIModule: Creating AISystem for world Minimal_Default
+[2017.04.26-10.39.39:237][987]LogPlayLevel: PIE: World Init took: (0.001199s)
+[2017.04.26-10.39.39:237][987]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Minimal_Default.Minimal_Default to /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.006219s)
+[2017.04.26-10.39.39:252][987]LogInit: XAudio2 using 'Głośniki (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.04.26-10.39.39:261][987]LogInit: FAudioDevice initialized.
+[2017.04.26-10.39.39:290][987]LogLoad: Game class is 'GameModeBase'
+[2017.04.26-10.39.39:292][987]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 0) at 2017.04.26-12.39.39
+[2017.04.26-10.39.39:292][987]LogWorld: Bringing up level for play took: 0.000973
+[2017.04.26-10.39.39:293][987]PIE: Info Play in editor start time for /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default -0.13
+[2017.04.26-10.39.39:293][987]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.26-10.39.41:525][252]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.26-10.39.41:587][252]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.26-10.39.43:122][429]LogTemp: Repeting last play command: Selected Viewport
+[2017.04.26-10.39.43:142][429]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.26-10.39.43:142][429]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.04.26-10.39.43:142][429]PIE: New page: PIE session: Minimal_Default (Apr 26, 2017, 2:39:43 PM)
+[2017.04.26-10.39.43:142][429]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2017.04.26-10.39.43:148][429]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006302s)
+[2017.04.26-10.39.43:149][429]LogAIModule: Creating AISystem for world Minimal_Default
+[2017.04.26-10.39.43:149][429]LogPlayLevel: PIE: World Init took: (0.000824s)
+[2017.04.26-10.39.43:149][429]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Minimal_Default.Minimal_Default to /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.007319s)
+[2017.04.26-10.39.43:167][429]LogInit: XAudio2 using 'Głośniki (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.04.26-10.39.43:176][429]LogInit: FAudioDevice initialized.
+[2017.04.26-10.39.43:205][429]LogLoad: Game class is 'GameModeBase'
+[2017.04.26-10.39.43:207][429]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 0) at 2017.04.26-12.39.43
+[2017.04.26-10.39.43:207][429]LogWorld: Bringing up level for play took: 0.001000
+[2017.04.26-10.39.43:208][429]PIE: Info Play in editor start time for /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default -0.214
+[2017.04.26-10.39.43:208][429]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.26-10.40.08:621][325]LogEditorViewport: Clicking on Actor (LMB): MyLightBulb_C (MyLightBulb)
+[2017.04.26-10.40.24:748][144]LogEditorViewport: Clicking on Actor (LMB): MyLightBulb_C (MyLightBulb)
+[2017.04.26-10.40.25:890][262]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.26-10.40.25:954][262]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.26-10.40.48:728][583]LogTemp: Repeting last play command: Selected Viewport
+[2017.04.26-10.40.48:749][583]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.26-10.40.48:749][583]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.04.26-10.40.48:749][583]PIE: New page: PIE session: Minimal_Default (Apr 26, 2017, 2:40:48 PM)
+[2017.04.26-10.40.48:749][583]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2017.04.26-10.40.48:754][583]LogPlayLevel: PIE: StaticDuplicateObject took: (0.005406s)
+[2017.04.26-10.40.48:755][583]LogAIModule: Creating AISystem for world Minimal_Default
+[2017.04.26-10.40.48:756][583]LogPlayLevel: PIE: World Init took: (0.001138s)
+[2017.04.26-10.40.48:756][583]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Minimal_Default.Minimal_Default to /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.006814s)
+[2017.04.26-10.40.48:772][583]LogInit: XAudio2 using 'Głośniki (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.04.26-10.40.48:782][583]LogInit: FAudioDevice initialized.
+[2017.04.26-10.40.48:810][583]LogLoad: Game class is 'GameModeBase'
+[2017.04.26-10.40.48:813][583]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 0) at 2017.04.26-12.40.48
+[2017.04.26-10.40.48:813][583]LogWorld: Bringing up level for play took: 0.001229
+[2017.04.26-10.40.48:814][583]PIE: Info Play in editor start time for /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default -0.608
+[2017.04.26-10.40.48:814][583]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.26-10.41.02:961][236]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall_Window_400x300)
+[2017.04.26-10.41.19:714][153]LogEditorViewport: Clicking on Actor (LMB): MyLightBulb_C (MyLightBulb)
+[2017.04.26-10.41.21:092][297]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.26-10.41.21:154][297]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.26-10.41.38:851][462]LogHotReload: New module detected: UE4Editor-ZadanieRekrutacyjne-2787.dll
+[2017.04.26-10.41.39:544][465]LogHotReload: Starting Hot-Reload from IDE
+[2017.04.26-10.41.39:650][465]LogContentBrowser: Native class hierarchy updated for 'ZadanieRekrutacyjne' in 0.0011 seconds. Added 3 classes and 2 folders.
+[2017.04.26-10.41.39:652][465]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2017.04.26-10.41.39:906][465]LogContentBrowser: Native class hierarchy populated in 0.0090 seconds. Added 2250 classes and 459 folders.
+[2017.04.26-10.41.39:916][465]Display: HotReload took  0.4s.
+[2017.04.26-10.41.43:151][551]LogTemp: Repeting last play command: Selected Viewport
+[2017.04.26-10.41.43:172][551]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.26-10.41.43:172][551]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.04.26-10.41.43:172][551]PIE: New page: PIE session: Minimal_Default (Apr 26, 2017, 2:41:43 PM)
+[2017.04.26-10.41.43:172][551]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2017.04.26-10.41.43:178][551]LogPlayLevel: PIE: StaticDuplicateObject took: (0.005643s)
+[2017.04.26-10.41.43:179][551]LogAIModule: Creating AISystem for world Minimal_Default
+[2017.04.26-10.41.43:179][551]LogPlayLevel: PIE: World Init took: (0.001121s)
+[2017.04.26-10.41.43:179][551]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Minimal_Default.Minimal_Default to /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.007033s)
+[2017.04.26-10.41.43:220][551]LogInit: XAudio2 using 'Głośniki (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.04.26-10.41.43:235][551]LogInit: FAudioDevice initialized.
+[2017.04.26-10.41.43:265][551]LogLoad: Game class is 'GameModeBase'
+[2017.04.26-10.41.43:267][551]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 0) at 2017.04.26-12.41.43
+[2017.04.26-10.41.43:267][551]LogWorld: Bringing up level for play took: 0.001250
+[2017.04.26-10.41.43:268][551]PIE: Info Play in editor start time for /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default -0.154
+[2017.04.26-10.41.43:268][551]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.26-10.41.52:400][608]LogEditorViewport: Clicking on Actor (LMB): MyLightBulb_C (MyLightBulb)
+[2017.04.26-10.41.52:824][640]LogEditorViewport: Clicking on Actor (LMB): MyLightBulb_C (MyLightBulb)
+[2017.04.26-10.42.02:817][787]LogEditorViewport: Clicking on Actor (LMB): MyLightBulb_C (MyLightBulb)
+[2017.04.26-10.42.11:669][761]LogEditorViewport: Clicking on Actor (LMB): MyLightBulb_C (MyLightBulb)
+[2017.04.26-10.42.12:656][851]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.26-10.42.12:718][851]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.26-10.42.39:570][250]LogHotReload: New module detected: UE4Editor-ZadanieRekrutacyjne-8989.dll
+[2017.04.26-10.42.40:245][253]LogHotReload: Starting Hot-Reload from IDE
+[2017.04.26-10.42.40:336][253]LogContentBrowser: Native class hierarchy updated for 'ZadanieRekrutacyjne' in 0.0010 seconds. Added 3 classes and 2 folders.
+[2017.04.26-10.42.40:339][253]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2017.04.26-10.42.40:610][253]LogContentBrowser: Native class hierarchy populated in 0.0107 seconds. Added 2250 classes and 459 folders.
+[2017.04.26-10.42.40:619][253]Display: HotReload took  0.4s.
+[2017.04.26-10.43.57:871][849]LogTemp: Repeting last play command: Selected Viewport
+[2017.04.26-10.43.57:891][849]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.26-10.43.57:891][849]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.04.26-10.43.57:892][849]PIE: New page: PIE session: Minimal_Default (Apr 26, 2017, 2:43:57 PM)
+[2017.04.26-10.43.57:892][849]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2017.04.26-10.43.57:898][849]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006204s)
+[2017.04.26-10.43.57:899][849]LogAIModule: Creating AISystem for world Minimal_Default
+[2017.04.26-10.43.57:899][849]LogPlayLevel: PIE: World Init took: (0.001149s)
+[2017.04.26-10.43.57:899][849]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Minimal_Default.Minimal_Default to /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.007572s)
+[2017.04.26-10.43.57:943][849]LogInit: XAudio2 using 'Głośniki (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.04.26-10.43.57:953][849]LogInit: FAudioDevice initialized.
+[2017.04.26-10.43.57:985][849]LogLoad: Game class is 'GameModeBase'
+[2017.04.26-10.43.57:987][849]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 0) at 2017.04.26-12.43.57
+[2017.04.26-10.43.57:987][849]LogWorld: Bringing up level for play took: 0.001093
+[2017.04.26-10.43.57:988][849]PIE: Info Play in editor start time for /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default 0.566
+[2017.04.26-10.43.57:988][849]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.26-10.44.14:502][825]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.26-10.44.14:566][825]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.26-10.45.00:202][556]Cmd: QUIT_EDITOR
+[2017.04.26-10.45.01:140][556]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.04.26-10.45.01:169][556]LogExit: Preparing to exit.
+[2017.04.26-10.45.02:607][556]LogExit: Editor shut down
+[2017.04.26-10.45.02:609][556]LogExit: Transaction tracking system shut down
+[2017.04.26-10.45.02:808][556]LogObj: Freed 0b from 0 cluster array pools.
+[2017.04.26-10.45.02:809][556]LogExit: Object subsystem successfully closed.
+[2017.04.26-10.45.02:844][556]LogD3D11RHI: Shutdown
+[2017.04.26-10.45.02:844][556]LogD3D11RHI: CleanupD3DDevice
+[2017.04.26-10.45.02:941][556]LogD3D11RHI: ~FD3D11DynamicRHI
+[2017.04.26-10.45.02:980][556]LogModuleManager: Shutting down and abandoning module ZadanieRekrutacyjne (526)
+[2017.04.26-10.45.02:980][556]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (512)
+[2017.04.26-10.45.02:980][556]LogModuleManager: Shutting down and abandoning module BlueprintGraph (504)
+[2017.04.26-10.45.02:980][556]LogModuleManager: Shutting down and abandoning module BlueprintProfiler (502)
+[2017.04.26-10.45.02:982][556]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (500)
+[2017.04.26-10.45.02:982][556]LogModuleManager: Shutting down and abandoning module CrashTracker (498)
+[2017.04.26-10.45.02:982][556]LogModuleManager: Shutting down and abandoning module SceneOutliner (496)
+[2017.04.26-10.45.02:982][556]LogModuleManager: Shutting down and abandoning module AddContentDialog (494)
+[2017.04.26-10.45.02:983][556]LogDirectoryWatcher: A directory notification for 'C:/Program Files/Epic Games/UE_4.15/FeaturePacks/' was aborted.
+[2017.04.26-10.45.02:990][556]LogModuleManager: Shutting down and abandoning module WidgetCarousel (493)
+[2017.04.26-10.45.02:990][556]LogModuleManager: Shutting down and abandoning module EditorWidgets (490)
+[2017.04.26-10.45.02:990][556]LogModuleManager: Shutting down and abandoning module CollectionManager (488)
+[2017.04.26-10.45.02:990][556]LogDirectoryWatcher: A directory notification for 'F:/GIT foldery/UnrealExercise/Content/Collections/' was aborted.
+[2017.04.26-10.45.02:991][556]LogDirectoryWatcher: A directory notification for 'F:/GIT foldery/UnrealExercise/Content/Developers/Dominik/Collections/' was aborted.
+[2017.04.26-10.45.02:991][556]LogDirectoryWatcher: A directory notification for 'F:/GIT foldery/UnrealExercise/Saved/Collections/' was aborted.
+[2017.04.26-10.45.02:991][556]LogModuleManager: Shutting down and abandoning module StatsViewer (486)
+[2017.04.26-10.45.02:991][556]LogModuleManager: Shutting down and abandoning module FoliageEdit (484)
+[2017.04.26-10.45.02:991][556]LogModuleManager: Shutting down and abandoning module LandscapeEditor (482)
+[2017.04.26-10.45.02:992][556]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (480)
+[2017.04.26-10.45.02:992][556]LogModuleManager: Shutting down and abandoning module ActorPickerMode (478)
+[2017.04.26-10.45.02:992][556]LogModuleManager: Shutting down and abandoning module GeometryMode (476)
+[2017.04.26-10.45.02:992][556]LogModuleManager: Shutting down and abandoning module TextureAlignMode (474)
+[2017.04.26-10.45.02:992][556]LogModuleManager: Shutting down and abandoning module BspMode (472)
+[2017.04.26-10.45.02:992][556]LogModuleManager: Shutting down and abandoning module HardwareSurvey (470)
+[2017.04.26-10.45.02:993][556]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (468)
+[2017.04.26-10.45.02:993][556]LogModuleManager: Shutting down and abandoning module AutomationWorker (466)
+[2017.04.26-10.45.02:993][556]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (464)
+[2017.04.26-10.45.02:994][556]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (462)
+[2017.04.26-10.45.02:996][556]LogModuleManager: Shutting down and abandoning module PlacementMode (461)
+[2017.04.26-10.45.02:996][556]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (458)
+[2017.04.26-10.45.02:996][556]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (456)
+[2017.04.26-10.45.02:996][556]LogModuleManager: Shutting down and abandoning module MfMediaFactory (454)
+[2017.04.26-10.45.02:996][556]LogModuleManager: Shutting down and abandoning module MfMediaEditor (452)
+[2017.04.26-10.45.02:996][556]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (450)
+[2017.04.26-10.45.02:997][556]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (448)
+[2017.04.26-10.45.02:997][556]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (446)
+[2017.04.26-10.45.02:997][556]LogModuleManager: Shutting down and abandoning module Media (445)
+[2017.04.26-10.45.02:997][556]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (442)
+[2017.04.26-10.45.02:997][556]LogModuleManager: Shutting down and abandoning module CharacterAI (440)
+[2017.04.26-10.45.02:997][556]LogModuleManager: Shutting down and abandoning module AudioCapture (438)
+[2017.04.26-10.45.02:997][556]LogModuleManager: Shutting down and abandoning module SequenceRecorder (437)
+[2017.04.26-10.45.02:998][556]LogModuleManager: Shutting down and abandoning module SmartSnapping (434)
+[2017.04.26-10.45.02:998][556]LogModuleManager: Shutting down and abandoning module SessionServices (432)
+[2017.04.26-10.45.02:998][556]LogModuleManager: Shutting down and abandoning module ViewportSnapping (430)
+[2017.04.26-10.45.02:998][556]LogModuleManager: Shutting down and abandoning module ViewportInteraction (428)
+[2017.04.26-10.45.02:998][556]LogModuleManager: Shutting down and abandoning module LogVisualizer (426)
+[2017.04.26-10.45.03:000][556]LogModuleManager: Shutting down and abandoning module IntroTutorials (424)
+[2017.04.26-10.45.03:000][556]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (423)
+[2017.04.26-10.45.03:001][556]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (420)
+[2017.04.26-10.45.03:001][556]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (418)
+[2017.04.26-10.45.03:001][556]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (416)
+[2017.04.26-10.45.03:001][556]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (414)
+[2017.04.26-10.45.03:002][556]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (413)
+[2017.04.26-10.45.03:529][556]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (410)
+[2017.04.26-10.45.03:529][556]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (408)
+[2017.04.26-10.45.03:529][556]LogModuleManager: Shutting down and abandoning module InputBindingEditor (406)
+[2017.04.26-10.45.03:530][556]LogModuleManager: Shutting down and abandoning module NiagaraEditor (404)
+[2017.04.26-10.45.03:531][556]LogModuleManager: Shutting down and abandoning module MergeActors (402)
+[2017.04.26-10.45.03:532][556]LogModuleManager: Shutting down and abandoning module SizeMap (400)
+[2017.04.26-10.45.03:533][556]LogModuleManager: Shutting down and abandoning module TreeMap (398)
+[2017.04.26-10.45.03:533][556]LogModuleManager: Shutting down and abandoning module ReferenceViewer (396)
+[2017.04.26-10.45.03:533][556]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (394)
+[2017.04.26-10.45.03:534][556]LogModuleManager: Shutting down and abandoning module LocalizationService (393)
+[2017.04.26-10.45.03:535][556]LogModuleManager: Shutting down and abandoning module HardwareTargeting (390)
+[2017.04.26-10.45.03:535][556]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (388)
+[2017.04.26-10.45.03:535][556]LogModuleManager: Shutting down and abandoning module UndoHistory (386)
+[2017.04.26-10.45.03:536][556]LogModuleManager: Shutting down and abandoning module UserFeedback (384)
+[2017.04.26-10.45.03:536][556]LogModuleManager: Shutting down and abandoning module XmlParser (382)
+[2017.04.26-10.45.03:536][556]LogModuleManager: Shutting down and abandoning module Blutility (380)
+[2017.04.26-10.45.03:536][556]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (378)
+[2017.04.26-10.45.03:536][556]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (377)
+[2017.04.26-10.45.03:536][556]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (374)
+[2017.04.26-10.45.03:536][556]LogModuleManager: Shutting down and abandoning module SettingsEditor (372)
+[2017.04.26-10.45.03:538][556]LogModuleManager: Shutting down and abandoning module ProjectLauncher (370)
+[2017.04.26-10.45.03:538][556]LogModuleManager: Shutting down and abandoning module SessionFrontend (368)
+[2017.04.26-10.45.03:539][556]LogModuleManager: Shutting down and abandoning module ProfilerClient (366)
+[2017.04.26-10.45.03:541][556]LogModuleManager: Shutting down and abandoning module DeviceManager (364)
+[2017.04.26-10.45.03:542][556]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (363)
+[2017.04.26-10.45.03:588][556]LogModuleManager: Shutting down and abandoning module AutomationController (360)
+[2017.04.26-10.45.03:589][556]LogModuleManager: Shutting down and abandoning module AutomationWindow (358)
+[2017.04.26-10.45.03:591][556]LogModuleManager: Shutting down and abandoning module Layers (356)
+[2017.04.26-10.45.03:594][556]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (354)
+[2017.04.26-10.45.03:594][556]LogModuleManager: Shutting down and abandoning module DetailCustomizations (352)
+[2017.04.26-10.45.03:596][556]LogModuleManager: Shutting down and abandoning module PackagesDialog (350)
+[2017.04.26-10.45.03:597][556]LogModuleManager: Shutting down and abandoning module Persona (348)
+[2017.04.26-10.45.03:598][556]LogModuleManager: Shutting down and abandoning module AnimGraph (347)
+[2017.04.26-10.45.03:598][556]LogModuleManager: Shutting down and abandoning module Kismet (344)
+[2017.04.26-10.45.03:605][556]LogModuleManager: Shutting down and abandoning module GraphEditor (342)
+[2017.04.26-10.45.03:606][556]LogModuleManager: Shutting down and abandoning module ClassViewer (340)
+[2017.04.26-10.45.03:606][556]LogModuleManager: Shutting down and abandoning module Toolbox (338)
+[2017.04.26-10.45.03:607][556]LogModuleManager: Shutting down and abandoning module ModuleUI (336)
+[2017.04.26-10.45.03:607][556]LogModuleManager: Shutting down and abandoning module MovieSceneTools (334)
+[2017.04.26-10.45.03:608][556]LogModuleManager: Shutting down and abandoning module OutputLog (332)
+[2017.04.26-10.45.03:608][556]LogModuleManager: Shutting down and abandoning module GammaUI (330)
+[2017.04.26-10.45.03:608][556]LogModuleManager: Shutting down and abandoning module Documentation (328)
+[2017.04.26-10.45.03:608][556]LogModuleManager: Shutting down and abandoning module Niagara (326)
+[2017.04.26-10.45.03:608][556]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (324)
+[2017.04.26-10.45.03:608][556]LogModuleManager: Shutting down and abandoning module AnalyticsET (322)
+[2017.04.26-10.45.03:608][556]LogModuleManager: Shutting down and abandoning module PortalServices (320)
+[2017.04.26-10.45.03:608][556]LogModuleManager: Shutting down and abandoning module PortalRpc (318)
+[2017.04.26-10.45.03:608][556]LogModuleManager: Shutting down and abandoning module MessagingRpc (316)
+[2017.04.26-10.45.03:608][556]LogModuleManager: Shutting down and abandoning module AIModule (314)
+[2017.04.26-10.45.03:608][556]LogModuleManager: Shutting down and abandoning module GameplayDebugger (313)
+[2017.04.26-10.45.03:609][556]LogModuleManager: Shutting down and abandoning module AITestSuite (311)
+[2017.04.26-10.45.03:609][556]LogModuleManager: Shutting down and abandoning module ProfilerService (308)
+[2017.04.26-10.45.03:803][556]LogModuleManager: Shutting down and abandoning module TaskGraph (306)
+[2017.04.26-10.45.03:805][556]LogModuleManager: Shutting down and abandoning module SteamVRController (304)
+[2017.04.26-10.45.03:805][556]LogModuleManager: Shutting down and abandoning module SteamVR (302)
+[2017.04.26-10.45.03:805][556]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponentEditor (300)
+[2017.04.26-10.45.03:805][556]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (298)
+[2017.04.26-10.45.03:805][556]LogModuleManager: Shutting down and abandoning module OculusLibrary (296)
+[2017.04.26-10.45.03:805][556]LogModuleManager: Shutting down and abandoning module OculusInput (294)
+[2017.04.26-10.45.03:805][556]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (292)
+[2017.04.26-10.45.03:805][556]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (290)
+[2017.04.26-10.45.03:805][556]LogModuleManager: Shutting down and abandoning module CableComponent (288)
+[2017.04.26-10.45.03:805][556]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (286)
+[2017.04.26-10.45.03:805][556]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (282)
+[2017.04.26-10.45.03:808][556]LogModuleManager: Shutting down and abandoning module HTML5Networking (280)
+[2017.04.26-10.45.03:808][556]LogModuleManager: Shutting down and abandoning module AlembicImporter (278)
+[2017.04.26-10.45.03:808][556]LogModuleManager: Shutting down and abandoning module AlembicLibrary (277)
+[2017.04.26-10.45.03:808][556]LogModuleManager: Shutting down and abandoning module GeometryCache (276)
+[2017.04.26-10.45.03:809][556]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (275)
+[2017.04.26-10.45.03:809][556]LogModuleManager: Shutting down and abandoning module SuperSearchEditor (270)
+[2017.04.26-10.45.03:809][556]LogModuleManager: Shutting down and abandoning module SuperSearch (269)
+[2017.04.26-10.45.03:809][556]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (266)
+[2017.04.26-10.45.03:809][556]LogModuleManager: Shutting down and abandoning module PluginBrowser (264)
+[2017.04.26-10.45.03:810][556]LogModuleManager: Shutting down and abandoning module MobileLauncherProfileWizard (262)
+[2017.04.26-10.45.03:811][556]LogModuleManager: Shutting down and abandoning module EpicSurvey (260)
+[2017.04.26-10.45.03:811][556]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (258)
+[2017.04.26-10.45.03:812][556]LogModuleManager: Shutting down and abandoning module DesktopPlatform (257)
+[2017.04.26-10.45.03:812][556]LogModuleManager: Shutting down and abandoning module UObjectPlugin (254)
+[2017.04.26-10.45.03:812][556]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (252)
+[2017.04.26-10.45.03:813][556]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (250)
+[2017.04.26-10.45.03:813][556]LogModuleManager: Shutting down and abandoning module GitSourceControl (248)
+[2017.04.26-10.45.03:814][556]LogModuleManager: Shutting down and abandoning module SourceControl (247)
+[2017.04.26-10.45.03:814][556]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (244)
+[2017.04.26-10.45.03:814][556]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (242)
+[2017.04.26-10.45.03:814][556]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (240)
+[2017.04.26-10.45.03:814][556]LogModuleManager: Shutting down and abandoning module Paper2DEditor (238)
+[2017.04.26-10.45.03:815][556]LogModuleManager: Shutting down and abandoning module MeshPaint (237)
+[2017.04.26-10.45.03:815][556]LogModuleManager: Shutting down and abandoning module LevelEditor (235)
+[2017.04.26-10.45.03:818][556]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (234)
+[2017.04.26-10.45.03:818][556]LogModuleManager: Shutting down and abandoning module MainFrame (232)
+[2017.04.26-10.45.03:819][556]LogModuleManager: Shutting down and abandoning module HotReload (231)
+[2017.04.26-10.45.03:819][556]LogDirectoryWatcher: A directory notification for 'F:/GIT foldery/UnrealExercise/Binaries/Win64' was aborted.
+[2017.04.26-10.45.03:819][556]LogModuleManager: Shutting down and abandoning module ContentBrowser (227)
+[2017.04.26-10.45.03:820][556]LogModuleManager: Shutting down and abandoning module PhysXVehiclesEditor (222)
+[2017.04.26-10.45.03:820][556]LogModuleManager: Shutting down and abandoning module PhysXVehicles (220)
+[2017.04.26-10.45.03:821][556]LogModuleManager: Shutting down and abandoning module LocationServicesBPLibrary (218)
+[2017.04.26-10.45.03:821][556]LogModuleManager: Shutting down and abandoning module UdpMessaging (216)
+[2017.04.26-10.45.03:921][556]LogModuleManager: Shutting down and abandoning module TcpMessaging (214)
+[2017.04.26-10.45.04:022][556]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (212)
+[2017.04.26-10.45.04:023][556]LogModuleManager: Shutting down and abandoning module FacialAnimationEditor (210)
+[2017.04.26-10.45.04:023][556]LogModuleManager: Shutting down and abandoning module FacialAnimation (208)
+[2017.04.26-10.45.04:023][556]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (206)
+[2017.04.26-10.45.04:023][556]LogModuleManager: Shutting down and abandoning module Paper2D (204)
+[2017.04.26-10.45.04:024][556]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (202)
+[2017.04.26-10.45.04:024][556]LogModuleManager: Shutting down and abandoning module WmfMedia (200)
+[2017.04.26-10.45.04:025][556]LogModuleManager: Shutting down and abandoning module MfMedia (198)
+[2017.04.26-10.45.04:025][556]LogModuleManager: Shutting down and abandoning module MediaAssets (196)
+[2017.04.26-10.45.04:025][556]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (194)
+[2017.04.26-10.45.04:025][556]LogModuleManager: Shutting down and abandoning module VREditor (192)
+[2017.04.26-10.45.04:025][556]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (190)
+[2017.04.26-10.45.04:025][556]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (188)
+[2017.04.26-10.45.04:027][556]LogModuleManager: Shutting down and abandoning module FunctionalTesting (186)
+[2017.04.26-10.45.04:027][556]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (184)
+[2017.04.26-10.45.04:028][556]LogModuleManager: Shutting down and abandoning module UMG (182)
+[2017.04.26-10.45.04:029][556]LogModuleManager: Shutting down and abandoning module UMGEditor (181)
+[2017.04.26-10.45.04:031][556]LogModuleManager: Shutting down and abandoning module Sequencer (180)
+[2017.04.26-10.45.04:032][556]LogModuleManager: Shutting down and abandoning module AssetTools (178)
+[2017.04.26-10.45.04:035][556]LogModuleManager: Shutting down and abandoning module MessageLog (177)
+[2017.04.26-10.45.04:035][556]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (176)
+[2017.04.26-10.45.04:035][556]LogModuleManager: Shutting down and abandoning module SlateReflector (170)
+[2017.04.26-10.45.04:039][556]LogModuleManager: Shutting down and abandoning module Slate (168)
+[2017.04.26-10.45.04:039][556]LogModuleManager: Shutting down and abandoning module EditorStyle (166)
+[2017.04.26-10.45.04:042][556]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (164)
+[2017.04.26-10.45.04:042][556]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (162)
+[2017.04.26-10.45.04:042][556]LogModuleManager: Shutting down and abandoning module XAudio2 (160)
+[2017.04.26-10.45.04:042][556]LogModuleManager: Shutting down and abandoning module Networking (158)
+[2017.04.26-10.45.04:042][556]LogModuleManager: Shutting down and abandoning module Core (154)
+[2017.04.26-10.45.04:042][556]LogModuleManager: Shutting down and abandoning module AssetRegistry (152)
+[2017.04.26-10.45.04:252][556]LogDirectoryWatcher: A directory notification for '../../../Engine/Content/' was aborted.
+[2017.04.26-10.45.04:252][556]LogDirectoryWatcher: A directory notification for 'F:/GIT foldery/UnrealExercise/Content/' was aborted.
+[2017.04.26-10.45.04:252][556]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/2D/Paper2D/Content/' was aborted.
+[2017.04.26-10.45.04:252][556]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (151)
+[2017.04.26-10.45.04:256][556]LogModuleManager: Shutting down and abandoning module KismetCompiler (148)
+[2017.04.26-10.45.04:256][556]LogModuleManager: Shutting down and abandoning module PhysXFormats (146)
+[2017.04.26-10.45.04:256][556]LogModuleManager: Shutting down and abandoning module MeshUtilities (144)
+[2017.04.26-10.45.04:259][556]LogModuleManager: Shutting down and abandoning module SimplygonSwarm (143)
+[2017.04.26-10.45.04:261][556]LogModuleManager: Shutting down and abandoning module SimplygonMeshReduction (141)
+[2017.04.26-10.45.04:261][556]LogModuleManager: Shutting down and abandoning module QuadricMeshReduction (139)
+[2017.04.26-10.45.04:261][556]LogModuleManager: Shutting down and abandoning module PropertyEditor (137)
+[2017.04.26-10.45.04:261][556]LogModuleManager: Shutting down and abandoning module DerivedDataCache (134)
+[2017.04.26-10.45.04:278][556]LogDerivedDataCache: Shutdown
+[2017.04.26-10.45.04:278][556]LogModuleManager: Shutting down and abandoning module TargetPlatform (132)
+[2017.04.26-10.45.04:278][556]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (131)
+[2017.04.26-10.45.04:279][556]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (129)
+[2017.04.26-10.45.04:280][556]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (127)
+[2017.04.26-10.45.04:280][556]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (125)
+[2017.04.26-10.45.04:281][556]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (123)
+[2017.04.26-10.45.04:281][556]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (121)
+[2017.04.26-10.45.04:281][556]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (119)
+[2017.04.26-10.45.04:282][556]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (117)
+[2017.04.26-10.45.04:283][556]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (115)
+[2017.04.26-10.45.04:283][556]LogModuleManager: Shutting down and abandoning module ImageWrapper (114)
+[2017.04.26-10.45.04:283][556]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (111)
+[2017.04.26-10.45.04:283][556]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (109)
+[2017.04.26-10.45.04:283][556]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (107)
+[2017.04.26-10.45.04:283][556]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (105)
+[2017.04.26-10.45.04:283][556]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (103)
+[2017.04.26-10.45.04:283][556]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (101)
+[2017.04.26-10.45.04:283][556]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (99)
+[2017.04.26-10.45.04:283][556]LogModuleManager: Shutting down and abandoning module LinuxClientTargetPlatform (97)
+[2017.04.26-10.45.04:283][556]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (95)
+[2017.04.26-10.45.04:283][556]LogModuleManager: Shutting down and abandoning module Messaging (93)
+[2017.04.26-10.45.04:283][556]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (91)
+[2017.04.26-10.45.04:283][556]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (89)
+[2017.04.26-10.45.04:283][556]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (87)
+[2017.04.26-10.45.04:283][556]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (85)
+[2017.04.26-10.45.04:283][556]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (83)
+[2017.04.26-10.45.04:283][556]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (81)
+[2017.04.26-10.45.04:283][556]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (79)
+[2017.04.26-10.45.04:283][556]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (77)
+[2017.04.26-10.45.04:283][556]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (75)
+[2017.04.26-10.45.04:284][556]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (73)
+[2017.04.26-10.45.04:284][556]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (71)
+[2017.04.26-10.45.04:284][556]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (69)
+[2017.04.26-10.45.04:284][556]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (67)
+[2017.04.26-10.45.04:284][556]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (65)
+[2017.04.26-10.45.04:284][556]LogModuleManager: Shutting down and abandoning module MacTargetPlatform (63)
+[2017.04.26-10.45.04:284][556]LogModuleManager: Shutting down and abandoning module MacServerTargetPlatform (61)
+[2017.04.26-10.45.04:284][556]LogModuleManager: Shutting down and abandoning module MacNoEditorTargetPlatform (59)
+[2017.04.26-10.45.04:284][556]LogModuleManager: Shutting down and abandoning module MacClientTargetPlatform (57)
+[2017.04.26-10.45.04:284][556]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (55)
+[2017.04.26-10.45.04:284][556]LogModuleManager: Shutting down and abandoning module InputCore (52)
+[2017.04.26-10.45.04:284][556]LogModuleManager: Shutting down and abandoning module Settings (50)
+[2017.04.26-10.45.04:284][556]LogModuleManager: Shutting down and abandoning module OculusRift (48)
+[2017.04.26-10.45.04:284][556]LogModuleManager: Shutting down and abandoning module GearVR (46)
+[2017.04.26-10.45.04:284][556]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (44)
+[2017.04.26-10.45.04:284][556]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (42)
+[2017.04.26-10.45.04:284][556]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (38)
+[2017.04.26-10.45.04:284][556]LogOnline:Display: Unloading online subsystem: NULL
+[2017.04.26-10.45.04:285][556]LogModuleManager: Shutting down and abandoning module XMPP (37)
+[2017.04.26-10.45.04:287][556]LogModuleManager: Shutting down and abandoning module HTTP (35)
+[2017.04.26-10.45.04:287][556]LogHttp:Display: Http module shutting down, but needs to wait on 1 outstanding Http requests:
+[2017.04.26-10.45.04:287][556]LogHttp:Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7BFAF2E583-4273-E26F-C83F-EEAD488D7524%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.15.1-3348071%2B%2B%2BUE4%2BRelease-4.15&UserID=88cf5ebc438552fd6bdcfcb334410219%7C11b38cc02fec44cca9e45dfbd313f00c%7Cffca9d06-1779-4303-9b82-e60315684eac&AppEnvironment=datacollector-binary&UploadType=eteventstream] status=Processing
+[2017.04.26-10.45.04:321][556]LogModuleManager: Shutting down and abandoning module SSL (34)
+[2017.04.26-10.45.04:323][556]LogModuleManager: Shutting down and abandoning module AudioEditor (30)
+[2017.04.26-10.45.04:324][556]LogModuleManager: Shutting down and abandoning module TextureCompressor (28)
+[2017.04.26-10.45.04:328][556]LogModuleManager: Shutting down and abandoning module ShaderCore (26)
+[2017.04.26-10.45.04:328][556]LogModuleManager: Shutting down and abandoning module Landscape (24)
+[2017.04.26-10.45.04:328][556]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (22)
+[2017.04.26-10.45.04:336][556]LogModuleManager: Shutting down and abandoning module OpenGLDrv (20)
+[2017.04.26-10.45.04:337][556]LogModuleManager: Shutting down and abandoning module D3D11RHI (18)
+[2017.04.26-10.45.04:337][556]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (16)
+[2017.04.26-10.45.04:337][556]LogModuleManager: Shutting down and abandoning module Renderer (14)
+[2017.04.26-10.45.04:337][556]LogModuleManager: Shutting down and abandoning module Engine (12)
+[2017.04.26-10.45.04:337][556]LogModuleManager: Shutting down and abandoning module CoreUObject (10)
+[2017.04.26-10.45.04:337][556]LogModuleManager: Shutting down and abandoning module NetworkFile (8)
+[2017.04.26-10.45.04:337][556]LogModuleManager: Shutting down and abandoning module StreamingFile (6)
+[2017.04.26-10.45.04:337][556]LogModuleManager: Shutting down and abandoning module SandboxFile (4)
+[2017.04.26-10.45.04:337][556]LogModuleManager: Shutting down and abandoning module PakFile (2)
+[2017.04.26-10.45.04:341][556]LogExit: Exiting.
+[2017.04.26-10.45.04:365][556]Log file closed, 04/26/17 12:45:04

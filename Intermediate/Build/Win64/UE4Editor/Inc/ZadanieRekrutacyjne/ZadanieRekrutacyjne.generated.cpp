@@ -18,7 +18,7 @@ void EmptyLinkFunctionForGeneratedCode1ZadanieRekrutacyjne() {}
 	void ALightBulb::StaticRegisterNativesALightBulb()
 	{
 	}
-	IMPLEMENT_CLASS(ALightBulb, 3707820489);
+	IMPLEMENT_CLASS(ALightBulb, 1332071818);
 	void AZadanieRekrutacyjneGameModeBase::StaticRegisterNativesAZadanieRekrutacyjneGameModeBase()
 	{
 	}
@@ -103,14 +103,6 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 				UProperty* NewProp_LightSource = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("LightSource"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(LightSource, ALightBulb), 0x00400000000a001d, Z_Construct_UClass_UPointLightComponent_NoRegister());
 				UProperty* NewProp_LightBulbMeshComponent = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("LightBulbMeshComponent"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(LightBulbMeshComponent, ALightBulb), 0x00400000000a001d, Z_Construct_UClass_UStaticMeshComponent_NoRegister());
-				CPP_BOOL_PROPERTY_BITMASK_STRUCT(bIsLightPulsingEnabled, ALightBulb, bool);
-				UProperty* NewProp_bIsLightPulsingEnabled = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("bIsLightPulsingEnabled"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bIsLightPulsingEnabled, ALightBulb), 0x0040000000020005, CPP_BOOL_PROPERTY_BITMASK(bIsLightPulsingEnabled, ALightBulb), sizeof(bool), true);
-				UProperty* NewProp_fPulsingSpeed = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("fPulsingSpeed"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(fPulsingSpeed, ALightBulb), 0x0040000000020005);
-				UProperty* NewProp_fMinIntensity = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("fMinIntensity"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(fMinIntensity, ALightBulb), 0x0040000000020005);
-				UProperty* NewProp_fMaxIntensity = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("fMaxIntensity"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(fMaxIntensity, ALightBulb), 0x0040000000020005);
-				CPP_BOOL_PROPERTY_BITMASK_STRUCT(bIsLightSourceSwitchedOn, ALightBulb, bool);
-				UProperty* NewProp_bIsLightSourceSwitchedOn = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("bIsLightSourceSwitchedOn"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bIsLightSourceSwitchedOn, ALightBulb), 0x0040000000020005, CPP_BOOL_PROPERTY_BITMASK(bIsLightSourceSwitchedOn, ALightBulb), sizeof(bool), true);
-				UProperty* NewProp_fBaseIntensity = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("fBaseIntensity"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(fBaseIntensity, ALightBulb), 0x0040000000020005);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				OuterClass->StaticLink();
 #if WITH_METADATA
@@ -127,30 +119,6 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				MetaData->SetValue(NewProp_LightBulbMeshComponent, TEXT("EditInline"), TEXT("true"));
 				MetaData->SetValue(NewProp_LightBulbMeshComponent, TEXT("ModuleRelativePath"), TEXT("LightBulb.h"));
 				MetaData->SetValue(NewProp_LightBulbMeshComponent, TEXT("ToolTip"), TEXT("Light Bulb mesh component"));
-				MetaData->SetValue(NewProp_bIsLightPulsingEnabled, TEXT("AllowPrivateAccess"), TEXT("true"));
-				MetaData->SetValue(NewProp_bIsLightPulsingEnabled, TEXT("Category"), TEXT("Pulsing values"));
-				MetaData->SetValue(NewProp_bIsLightPulsingEnabled, TEXT("ModuleRelativePath"), TEXT("LightBulb.h"));
-				MetaData->SetValue(NewProp_bIsLightPulsingEnabled, TEXT("ToolTip"), TEXT("True when light pulsing is enabled"));
-				MetaData->SetValue(NewProp_fPulsingSpeed, TEXT("AllowPrivateAccess"), TEXT("true"));
-				MetaData->SetValue(NewProp_fPulsingSpeed, TEXT("Category"), TEXT("Pulsing values"));
-				MetaData->SetValue(NewProp_fPulsingSpeed, TEXT("ModuleRelativePath"), TEXT("LightBulb.h"));
-				MetaData->SetValue(NewProp_fPulsingSpeed, TEXT("ToolTip"), TEXT("Pulsing speed. 5000 is very fast, 500 is very slow"));
-				MetaData->SetValue(NewProp_fMinIntensity, TEXT("AllowPrivateAccess"), TEXT("true"));
-				MetaData->SetValue(NewProp_fMinIntensity, TEXT("Category"), TEXT("Pulsing values"));
-				MetaData->SetValue(NewProp_fMinIntensity, TEXT("ModuleRelativePath"), TEXT("LightBulb.h"));
-				MetaData->SetValue(NewProp_fMinIntensity, TEXT("ToolTip"), TEXT("Minimum light intensity"));
-				MetaData->SetValue(NewProp_fMaxIntensity, TEXT("AllowPrivateAccess"), TEXT("true"));
-				MetaData->SetValue(NewProp_fMaxIntensity, TEXT("Category"), TEXT("Pulsing values"));
-				MetaData->SetValue(NewProp_fMaxIntensity, TEXT("ModuleRelativePath"), TEXT("LightBulb.h"));
-				MetaData->SetValue(NewProp_fMaxIntensity, TEXT("ToolTip"), TEXT("Maximim light intensity"));
-				MetaData->SetValue(NewProp_bIsLightSourceSwitchedOn, TEXT("AllowPrivateAccess"), TEXT("true"));
-				MetaData->SetValue(NewProp_bIsLightSourceSwitchedOn, TEXT("Category"), TEXT("Light values"));
-				MetaData->SetValue(NewProp_bIsLightSourceSwitchedOn, TEXT("ModuleRelativePath"), TEXT("LightBulb.h"));
-				MetaData->SetValue(NewProp_bIsLightSourceSwitchedOn, TEXT("ToolTip"), TEXT("True when light is switched on"));
-				MetaData->SetValue(NewProp_fBaseIntensity, TEXT("AllowPrivateAccess"), TEXT("true"));
-				MetaData->SetValue(NewProp_fBaseIntensity, TEXT("Category"), TEXT("Light values"));
-				MetaData->SetValue(NewProp_fBaseIntensity, TEXT("ModuleRelativePath"), TEXT("LightBulb.h"));
-				MetaData->SetValue(NewProp_fBaseIntensity, TEXT("ToolTip"), TEXT("Base light intensity value"));
 #endif
 			}
 		}
@@ -200,7 +168,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), NULL, FName(TEXT("/Script/ZadanieRekrutacyjne")), false, false));
 			ReturnPackage->SetPackageFlags(PKG_CompiledIn | 0x00000000);
 			FGuid Guid;
-			Guid.A = 0x5A584EB4;
+			Guid.A = 0x957159D6;
 			Guid.B = 0xC97D67BB;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;

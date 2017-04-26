@@ -60,12 +60,6 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ALightBulb); \
 
 
 #define UnrealExercise_Source_ZadanieRekrutacyjne_LightBulb_h_13_PRIVATE_PROPERTY_OFFSET \
-	FORCEINLINE static uint32 __PPO__fBaseIntensity() { return STRUCT_OFFSET(ALightBulb, fBaseIntensity); } \
-	FORCEINLINE static uint32 __PPO__bIsLightSourceSwitchedOn() { return STRUCT_OFFSET(ALightBulb, bIsLightSourceSwitchedOn); } \
-	FORCEINLINE static uint32 __PPO__fMaxIntensity() { return STRUCT_OFFSET(ALightBulb, fMaxIntensity); } \
-	FORCEINLINE static uint32 __PPO__fMinIntensity() { return STRUCT_OFFSET(ALightBulb, fMinIntensity); } \
-	FORCEINLINE static uint32 __PPO__fPulsingSpeed() { return STRUCT_OFFSET(ALightBulb, fPulsingSpeed); } \
-	FORCEINLINE static uint32 __PPO__bIsLightPulsingEnabled() { return STRUCT_OFFSET(ALightBulb, bIsLightPulsingEnabled); } \
 	FORCEINLINE static uint32 __PPO__LightBulbMeshComponent() { return STRUCT_OFFSET(ALightBulb, LightBulbMeshComponent); } \
 	FORCEINLINE static uint32 __PPO__LightSource() { return STRUCT_OFFSET(ALightBulb, LightSource); }
 

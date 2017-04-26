@@ -17,33 +17,27 @@ private:
 	/////////////////////////////////////////////////////
 	//Light values
 	/** Base light intensity value */
-	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Light values", meta = (AllowPrivateAccess = "true"))
-		float fBaseIntensity = 5000;
+	float fBaseIntensity = 5000;
 	/** True when light is switched on */
-	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Light values", meta = (AllowPrivateAccess = "true"))
-		bool bIsLightSourceSwitchedOn;
+	bool bIsLightSourceSwitchedOn;
 
 	/////////////////////////////////////////////////////
 	//Pulsing values
 	/** Maximim light intensity */
-	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Pulsing values", meta = (AllowPrivateAccess = "true"))
 	float fMaxIntensity;
 	/** Minimum light intensity */
-	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Pulsing values", meta = (AllowPrivateAccess = "true"))
 	float fMinIntensity;
 	/** Pulsing speed. 5000 is very fast, 500 is very slow */
-	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Pulsing values", meta = (AllowPrivateAccess = "true"))
-		float fPulsingSpeed;
+	float fPulsingSpeed;
 	/** True when light pulsing is enabled */
-	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Pulsing values", meta = (AllowPrivateAccess = "true"))
-		bool bIsLightPulsingEnabled;
+	bool bIsLightPulsingEnabled;
 	/** True when light is brightning up */
 	bool bIsPoolsingUp;
 
 	/////////////////////////////////////////////////////
 	//Light bulb components
 	/** Const with filepath to Light Bulb mesh */
-		const FString LightBulbMeshPath = FString(TEXT("/Game/Blueprints/Bulb"));
+	const FString LightBulbMeshPath = FString(TEXT("/Game/Blueprints/Bulb"));
 	/** Light Bulb mesh component */
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "LightBulbComponents", meta = (AllowPrivateAccess = "true"))
 		class UStaticMeshComponent *LightBulbMeshComponent;
@@ -94,8 +88,11 @@ private:
 	/** Initialize sterring input */
 	void SetupInput();
 
+	/** Method that decides if pulse light */
 	void LightPulsing(float fDeltaTime);
+	/** Method that makes light pulsing */
 	void Pulsing(float fDeltaTime);
+	/** Retrun wheter light can or can'y pulse */
 	bool CanPulse();
 	/** Sets the light colour to red */
 	void SetLightColourRed();
