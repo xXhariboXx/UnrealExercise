@@ -1,3 +1,0 @@
-F:\GIT foldery\UnrealExercise\Source\ZadanieRekrutacyjne\ZadanieRekrutacyjne.Build.cs
-F:\GIT foldery\UnrealExercise\Source\ZadanieRekrutacyjne.Target.cs
-F:\GIT foldery\UnrealExercise\Source\ZadanieRekrutacyjneEditor.Target.cs
