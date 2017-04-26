@@ -1,0 +1,639 @@
+﻿Log file open, 04/24/17 20:00:55
+LogInit:Display: Running engine for game: ZadanieRekrutacyjne
+LogPlatformFile: Not using cached read wrapper
+LogInit:Display: RandInit(1403201800) SRandInit(1403201800).
+LogTaskGraph: Started task graph with 5 named threads and 8 total threads with 1 sets of task threads.
+LogStats: Stats thread started at 0.073267
+LogInit: Using libcurl 7.47.1
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.0.2g
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = false  - Libcurl will NOT verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Build: ++UE4+Release-4.15-CL-3348071
+LogInit: Engine Version: 4.15.1-3348071+++UE4+Release-4.15
+LogInit: Compatible Engine Version: 4.15.0-3299760+++UE4+Release-4.15
+LogInit: Net CL: 3299760
+LogDevObjectVersion: Number of dev versions registered: 14
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 8
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 2
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 14
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 22
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 0
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 12
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 3
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 0
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogInit: Compiled (64-bit): Mar 15 2017 16:52:47
+LogInit: Compiled with Visual C++: 19.00.23026.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.15
+LogInit: Command line:  
+LogInit: Base directory: C:/Program Files/Epic Games/UE_4.15/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2017.04.24-18.00.56:325][  0]LogInit: Selected Device Profile: [Windows]
+[2017.04.24-18.00.56:325][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2017.04.24-18.00.56:345][  0]LogInit: Computer: DESKTOP-DOMINIK
+[2017.04.24-18.00.56:345][  0]LogInit: User: Dominik
+[2017.04.24-18.00.56:345][  0]LogInit: CPU Page size=65536, Cores=4
+[2017.04.24-18.00.56:345][  0]LogInit: High frequency timer resolution =3.117191 MHz
+[2017.04.24-18.00.56:345][  0]LogMemory: Memory total: Physical=8.0GB (8GB approx)
+[2017.04.24-18.00.56:345][  0]LogMemory: Platform Memory Stats for Windows
+[2017.04.24-18.00.56:345][  0]LogMemory: Process Physical Memory: 263.57 MB used, 263.57 MB peak
+[2017.04.24-18.00.56:345][  0]LogMemory: Process Virtual Memory: 262.47 MB used, 262.47 MB peak
+[2017.04.24-18.00.56:345][  0]LogMemory: Physical Memory: 6711.52 MB used,  1443.57 MB free, 8155.09 MB total
+[2017.04.24-18.00.56:345][  0]LogMemory: Virtual Memory: 644.39 MB used,  1443.57 MB free, 134217728.00 MB total
+[2017.04.24-18.00.56:505][  0]LogTextLocalizationManager: No translations for ('pl-PL') exist, falling back to 'en' for localization and internationalization data.
+[2017.04.24-18.00.59:163][  0]LogD3D11RHI: D3D11 adapters:
+[2017.04.24-18.00.59:211][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 1060 6GB' (Feature Level 11_0)
+[2017.04.24-18.00.59:211][  0]LogD3D11RHI:       6084/0/4077 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:2, VendorId:0x10de
+[2017.04.24-18.00.59:213][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2017.04.24-18.00.59:213][  0]LogD3D11RHI:       0/0/4077 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2017.04.24-18.00.59:213][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2017.04.24-18.00.59:218][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2017.04.24-18.00.59:218][  0]LogD3D11RHI:     GPU DeviceId: 0x1c03 (for the marketing name, search the web for "GPU Device Id")
+[2017.04.24-18.00.59:218][  0]LogWindows: EnumDisplayDevices:
+[2017.04.24-18.00.59:218][  0]LogWindows:    0. 'NVIDIA GeForce GTX 1060 6GB' (P:0 D:1)
+[2017.04.24-18.00.59:218][  0]LogWindows:    1. 'NVIDIA GeForce GTX 1060 6GB' (P:1 D:1)
+[2017.04.24-18.00.59:218][  0]LogWindows:    2. 'NVIDIA GeForce GTX 1060 6GB' (P:0 D:0)
+[2017.04.24-18.00.59:218][  0]LogWindows:    3. 'NVIDIA GeForce GTX 1060 6GB' (P:0 D:0)
+[2017.04.24-18.00.59:218][  0]LogWindows: DebugString: FoundDriverCount:4 
+[2017.04.24-18.00.59:218][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 1060 6GB
+[2017.04.24-18.00.59:218][  0]LogD3D11RHI:   Driver Version: 381.65 (internal:22.21.13.8165, unified:381.65)
+[2017.04.24-18.00.59:219][  0]LogD3D11RHI:      Driver Date: 3-31-2017
+[2017.04.24-18.00.59:219][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2017.04.24-18.00.59:241][  0]LogD3D11RHI: Async texture creation enabled
+[2017.04.24-18.00.59:257][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 2)
+[2017.04.24-18.00.59:351][  0]LogShaderCompilers: Guid format shader working directory is 16 characters bigger than the processId version (F:/TheFarm51/ZadanieRekrutacyjne/Intermediate/Shaders/WorkingDirectory/8060/).
+[2017.04.24-18.00.59:351][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Dominik/AppData/Local/Temp/UnrealShaderWorkingDir/18F4907445DFB7E21EA7A9A5A1BB1299/'.
+[2017.04.24-18.00.59:351][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2017.04.24-18.01.01:455][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2017.04.24-18.01.01:510][  0]LogTemp:Display: Loaded TP MacClientTargetPlatform
+[2017.04.24-18.01.01:562][  0]LogTemp:Display: Loaded TP MacNoEditorTargetPlatform
+[2017.04.24-18.01.01:615][  0]LogTemp:Display: Loaded TP MacServerTargetPlatform
+[2017.04.24-18.01.01:674][  0]LogTemp:Display: Loaded TP MacTargetPlatform
+[2017.04.24-18.01.01:726][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2017.04.24-18.01.01:780][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2017.04.24-18.01.01:834][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2017.04.24-18.01.01:886][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2017.04.24-18.01.01:948][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2017.04.24-18.01.02:001][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2017.04.24-18.01.02:055][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2017.04.24-18.01.02:109][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2017.04.24-18.01.02:161][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2017.04.24-18.01.02:213][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2017.04.24-18.01.02:317][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2017.04.24-18.01.02:317][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2017.04.24-18.01.02:356][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2017.04.24-18.01.02:456][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2017.04.24-18.01.02:491][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2017.04.24-18.01.02:543][  0]LogTemp:Display: Loaded TP LinuxClientTargetPlatform
+[2017.04.24-18.01.02:595][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2017.04.24-18.01.02:648][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2017.04.24-18.01.02:704][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2017.04.24-18.01.02:704][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2017.04.24-18.01.03:162][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2017.04.24-18.01.03:393][  0]LogDerivedDataCache: Loaded boot cache 0.23s 50MB C:/Users/Dominik/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc.
+[2017.04.24-18.01.03:393][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/Dominik/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc
+[2017.04.24-18.01.03:393][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file F:/TheFarm51/ZadanieRekrutacyjne/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2017.04.24-18.01.03:393][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2017.04.24-18.01.03:393][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file F:/TheFarm51/ZadanieRekrutacyjne/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2017.04.24-18.01.03:393][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2017.04.24-18.01.03:415][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2017.04.24-18.01.03:427][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Dominik/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2017.04.24-18.01.03:436][  0]LogSlate: Using Freetype 2.6.0
+[2017.04.24-18.01.03:451][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.04.24-18.01.03:451][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.04.24-18.01.05:049][  0]LogInit: Selected Device Profile: [Windows]
+[2017.04.24-18.01.05:051][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2017.04.24-18.01.05:246][  0]LogMeshUtilities: Using QuadricMeshReduction for automatic static mesh reduction
+[2017.04.24-18.01.05:285][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2017.04.24-18.01.05:326][  0]LogMeshUtilities: Using SimplygonSwarm for distributed automatic mesh merging
+[2017.04.24-18.01.05:326][  0]LogMeshUtilities: No automatic skeletal mesh reduction module available
+[2017.04.24-18.01.05:326][  0]LogMeshUtilities: No automatic mesh merging module available
+[2017.04.24-18.01.05:871][  0]LogNetVersion: GetLocalNetworkVersion: CL: 3299760, ProjectName: zadanierekrutacyjne, ProjectVersion: , EngineNetworkVersion: 2, GameNetworkVersion: 0, NetworkChecksum: 2856567825
+[2017.04.24-18.01.05:916][  0]LogAssetRegistry: FAssetRegistry took 0.0213 seconds to start up
+[2017.04.24-18.01.05:974][  0]LogPackageLocalizationCache: Processed 3 localized package path(s) for 1 prioritized culture(s) in 0.037667 seconds
+[2017.04.24-18.01.05:981][  0]LogUObjectArray: 32493 objects as part of root set at end of initial load.
+[2017.04.24-18.01.05:981][  0]LogUObjectAllocator: 7077024 out of 0 bytes used by permanent object pool.
+[2017.04.24-18.01.05:981][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2017.04.24-18.01.06:045][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2017.04.24-18.01.09:694][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2017.04.24-18.01.09:728][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2017.04.24-18.01.10:215][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2017.04.24-18.01.10:544][  0]SourceControl: Info Source control is disabled
+[2017.04.24-18.01.10:693][  0]SourceControl: Info Source control is disabled
+[2017.04.24-18.01.10:733][  0]SourceControl: Info Source control is disabled
+[2017.04.24-18.01.10:773][  0]SourceControl: Info Source control is disabled
+[2017.04.24-18.01.11:889][  0]LogEngine: Initializing Engine...
+[2017.04.24-18.01.11:889][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2017.04.24-18.01.12:096][  0]LogAIModule: Creating AISystem for world Untitled
+[2017.04.24-18.01.12:104][  0]LogInit: XAudio2 using 'Głośniki (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.04.24-18.01.12:126][  0]LogInit: FAudioDevice initialized.
+[2017.04.24-18.01.12:158][  0]LogDerivedDataCache: Saved boot cache 0.03s 50MB C:/Users/Dominik/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc.
+[2017.04.24-18.01.12:171][  0]LogInit: Texture streaming: Enabled
+[2017.04.24-18.01.12:257][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2017.04.24-18.01.12:338][  0]LogInit: Transaction tracking system initialized
+[2017.04.24-18.01.12:636][  0]BlueprintLog: New page: Editor Load
+[2017.04.24-18.01.13:426][  0]LocalizationService: Info Localization service is disabled
+[2017.04.24-18.01.14:023][  0]LogConsoleResponse:Display: 
+[2017.04.24-18.01.14:177][  0]LogCook:Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2017.04.24-18.01.14:177][  0]LogCook:Display: Mobile HDR setting 1
+[2017.04.24-18.01.14:367][  0]LogFileCache: Scanning file cache for directory 'F:/TheFarm51/ZadanieRekrutacyjne/Content/' took 0.01s
+[2017.04.24-18.01.15:121][  0]SourceControl: Info Source control is disabled
+[2017.04.24-18.01.15:122][  0]Cmd: MAP LOAD FILE="F:/TheFarm51/ZadanieRekrutacyjne/Content/StarterContent/Maps/Minimal_Default.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2017.04.24-18.01.15:183][  0]LightingResults: New page: Lighting Build
+[2017.04.24-18.01.15:220][  0]MapCheck: New page: Map Check
+[2017.04.24-18.01.15:220][  0]LightingResults: New page: Lighting Build
+[2017.04.24-18.01.15:339][  0]LogLinker:Warning: Can't find file '/Game/Blueprints/MyLamp'
+[2017.04.24-18.01.15:340][  0]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/MyLamp' while loading F:/TheFarm51/ZadanieRekrutacyjne/Content/StarterContent/Maps/Minimal_Default.umap.
+[2017.04.24-18.01.15:340][  0]LoadErrors:Error: Error /Game/StarterContent/Maps/Minimal_Default : Can't find file for asset. /Game/Blueprints/MyLamp
+[2017.04.24-18.01.15:340][  0]LogLinker:Warning: Can't find file '/Game/Blueprints/MyLightBulb'
+[2017.04.24-18.01.15:340][  0]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/MyLightBulb' while loading F:/TheFarm51/ZadanieRekrutacyjne/Content/StarterContent/Maps/Minimal_Default.umap.
+[2017.04.24-18.01.15:340][  0]LoadErrors:Error: Error /Game/StarterContent/Maps/Minimal_Default : Can't find file for asset. /Game/Blueprints/MyLightBulb
+[2017.04.24-18.01.15:341][  0]LogLinker:Warning: Can't find file '/Game/Blueprints/MyLamp'
+[2017.04.24-18.01.15:341][  0]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/MyLamp' while loading F:/TheFarm51/ZadanieRekrutacyjne/Content/StarterContent/Maps/Minimal_Default.umap.
+[2017.04.24-18.01.15:341][  0]LoadErrors:Error: Error /Game/StarterContent/Maps/Minimal_Default : Can't find file for asset. /Game/Blueprints/MyLamp
+[2017.04.24-18.01.15:341][  0]LogLinker:Warning: Can't find file '/Game/Blueprints/MyLightBulb'
+[2017.04.24-18.01.15:341][  0]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/MyLightBulb' while loading F:/TheFarm51/ZadanieRekrutacyjne/Content/StarterContent/Maps/Minimal_Default.umap.
+[2017.04.24-18.01.15:341][  0]LoadErrors:Error: Error /Game/StarterContent/Maps/Minimal_Default : Can't find file for asset. /Game/Blueprints/MyLightBulb
+[2017.04.24-18.01.15:632][  0]LogLinker:Warning: Can't find file '/Game/Blueprints/MyLamp'
+[2017.04.24-18.01.15:632][  0]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/MyLamp' while loading F:/TheFarm51/ZadanieRekrutacyjne/Content/StarterContent/Maps/Minimal_Default.umap.
+[2017.04.24-18.01.15:632][  0]LoadErrors:Error: Error /Game/StarterContent/Maps/Minimal_Default : Can't find file for asset. /Game/Blueprints/MyLamp
+[2017.04.24-18.01.15:632][  0]LogLinker:Warning: Can't find file '/Game/Blueprints/MyLightBulb'
+[2017.04.24-18.01.15:632][  0]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/MyLightBulb' while loading F:/TheFarm51/ZadanieRekrutacyjne/Content/StarterContent/Maps/Minimal_Default.umap.
+[2017.04.24-18.01.15:632][  0]LoadErrors:Error: Error /Game/StarterContent/Maps/Minimal_Default : Can't find file for asset. /Game/Blueprints/MyLightBulb
+[2017.04.24-18.01.15:632][  0]LogLinker:Warning: Can't find file '/Game/Blueprints/MyLamp'
+[2017.04.24-18.01.15:632][  0]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/MyLamp' while loading F:/TheFarm51/ZadanieRekrutacyjne/Content/StarterContent/Maps/Minimal_Default.umap.
+[2017.04.24-18.01.15:632][  0]LoadErrors:Error: Error /Game/StarterContent/Maps/Minimal_Default : Can't find file for asset. /Game/Blueprints/MyLamp
+[2017.04.24-18.01.15:632][  0]LogLinker:Warning: Can't find file '/Game/Blueprints/MyLightBulb'
+[2017.04.24-18.01.15:632][  0]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/MyLightBulb' while loading F:/TheFarm51/ZadanieRekrutacyjne/Content/StarterContent/Maps/Minimal_Default.umap.
+[2017.04.24-18.01.15:632][  0]LoadErrors:Error: Error /Game/StarterContent/Maps/Minimal_Default : Can't find file for asset. /Game/Blueprints/MyLightBulb
+[2017.04.24-18.01.15:793][  0]LogLinker:Warning: Can't find file '/Game/Blueprints/MyLamp'
+[2017.04.24-18.01.15:793][  0]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/MyLamp' while loading F:/TheFarm51/ZadanieRekrutacyjne/Content/StarterContent/Maps/Minimal_Default.umap.
+[2017.04.24-18.01.15:793][  0]LoadErrors:Error: Error /Game/StarterContent/Maps/Minimal_Default : Can't find file for asset. /Game/Blueprints/MyLamp
+[2017.04.24-18.01.15:794][  0]LogLinker:Warning: Can't find file '/Game/Blueprints/MyLamp'
+[2017.04.24-18.01.15:794][  0]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/MyLamp' while loading NULL.
+[2017.04.24-18.01.15:794][  0]LogLinker:Warning: Can't find file '/Game/Blueprints/MyLightBulb'
+[2017.04.24-18.01.15:794][  0]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/MyLightBulb' while loading NULL.
+[2017.04.24-18.01.15:794][  0]LogLinker:Warning: Can't find file '/Game/Blueprints/MyLamp'
+[2017.04.24-18.01.15:794][  0]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/MyLamp' while loading NULL.
+[2017.04.24-18.01.15:794][  0]LogLinker:Warning: Can't find file '/Game/Blueprints/MyLightBulb'
+[2017.04.24-18.01.15:794][  0]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/MyLightBulb' while loading NULL.
+[2017.04.24-18.01.15:794][  0]LogLinker:Warning: Can't find file '/Game/Blueprints/MyLamp'
+[2017.04.24-18.01.15:794][  0]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/MyLamp' while loading NULL.
+[2017.04.24-18.01.15:794][  0]LogLinker:Warning: Can't find file '/Game/Blueprints/MyLightBulb'
+[2017.04.24-18.01.15:794][  0]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/MyLightBulb' while loading NULL.
+[2017.04.24-18.01.15:795][  0]LogLinker:Warning: Can't find file '/Game/Blueprints/MyLamp'
+[2017.04.24-18.01.15:795][  0]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/MyLamp' while loading NULL.
+[2017.04.24-18.01.15:795][  0]LogLinker:Warning: Can't find file '/Game/Blueprints/MyLightBulb'
+[2017.04.24-18.01.15:795][  0]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/MyLightBulb' while loading NULL.
+[2017.04.24-18.01.15:795][  0]LogLinker:Warning: Can't find file '/Game/Blueprints/MyLamp'
+[2017.04.24-18.01.15:795][  0]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/MyLamp' while loading NULL.
+[2017.04.24-18.01.15:796][  0]LogLinker:Warning: Can't find file '/Game/Blueprints/MyLamp'
+[2017.04.24-18.01.15:797][  0]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/MyLamp' while loading NULL.
+[2017.04.24-18.01.15:797][  0]LogLinker:Warning: Can't find file '/Game/Blueprints/MyLamp'
+[2017.04.24-18.01.15:797][  0]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/MyLamp' while loading NULL.
+[2017.04.24-18.01.15:797][  0]LogLinker:Warning: Can't find file '/Game/Blueprints/MyLightBulb'
+[2017.04.24-18.01.15:797][  0]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/MyLightBulb' while loading NULL.
+[2017.04.24-18.01.15:797][  0]LogLinker:Warning: Can't find file '/Game/Blueprints/MyLightBulb'
+[2017.04.24-18.01.15:797][  0]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/MyLightBulb' while loading NULL.
+[2017.04.24-18.01.15:798][  0]LogLinker:Warning: Can't find file '/Game/Blueprints/MyLamp'
+[2017.04.24-18.01.15:798][  0]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/MyLamp' while loading NULL.
+[2017.04.24-18.01.15:798][  0]LogLinker:Warning: Can't find file '/Game/Blueprints/MyLamp'
+[2017.04.24-18.01.15:798][  0]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/MyLamp' while loading NULL.
+[2017.04.24-18.01.15:798][  0]LogLinker:Warning: Can't find file '/Game/Blueprints/MyLightBulb'
+[2017.04.24-18.01.15:798][  0]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/MyLightBulb' while loading NULL.
+[2017.04.24-18.01.15:798][  0]LogLinker:Warning: Can't find file '/Game/Blueprints/MyLightBulb'
+[2017.04.24-18.01.15:798][  0]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/MyLightBulb' while loading NULL.
+[2017.04.24-18.01.15:798][  0]LogLinker:Warning: Can't find file '/Game/Blueprints/MyLamp'
+[2017.04.24-18.01.15:798][  0]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/MyLamp' while loading NULL.
+[2017.04.24-18.01.15:798][  0]LogLinker:Warning: Can't find file '/Game/Blueprints/MyLamp'
+[2017.04.24-18.01.15:798][  0]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/MyLamp' while loading NULL.
+[2017.04.24-18.01.15:807][  0]LogLinker:Warning: Can't find file '/Game/Blueprints/MyLightBulb'
+[2017.04.24-18.01.15:807][  0]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/MyLightBulb' while loading NULL.
+[2017.04.24-18.01.15:807][  0]LogLinker:Warning: Can't find file '/Game/Blueprints/MyLightBulb'
+[2017.04.24-18.01.15:807][  0]LoadErrors: Info Failed to load /Game/Blueprints/MyLightBulb.MyLightBulb_C Referenced by PersistentLevel
+[2017.04.24-18.01.15:807][  0]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/MyLightBulb' while loading NULL.
+[2017.04.24-18.01.15:807][  0]LoadErrors: Info Failed to load /Game/Blueprints/MyLightBulb.MyLightBulb_C Referenced by PersistentLevel
+[2017.04.24-18.01.15:808][  0]LogLinker:Warning: Can't find file '/Game/Blueprints/MyLamp'
+[2017.04.24-18.01.15:808][  0]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/MyLamp' while loading NULL.
+[2017.04.24-18.01.15:808][  0]LogLinker:Warning: Can't find file '/Game/Blueprints/MyLamp'
+[2017.04.24-18.01.15:808][  0]LoadErrors: Info Failed to load /Game/Blueprints/MyLamp.MyLamp_C Referenced by PersistentLevel
+[2017.04.24-18.01.15:808][  0]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/MyLamp' while loading NULL.
+[2017.04.24-18.01.15:808][  0]LoadErrors: Info Failed to load /Game/Blueprints/MyLamp.MyLamp_C Referenced by PersistentLevel
+[2017.04.24-18.01.15:984][  0]LogAIModule: Creating AISystem for world Minimal_Default
+[2017.04.24-18.01.16:008][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2017.04.24-18.01.16:009][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2017.04.24-18.01.16:047][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 37.726ms to complete.
+[2017.04.24-18.01.16:047][  0]LogFileHelpers: Loading map 'Minimal_Default' took 0.925
+[2017.04.24-18.01.16:253][  0]LogCollectionManager: Loaded 0 collections in 0.001317 seconds
+[2017.04.24-18.01.16:329][  0]LogFileCache: Scanning file cache for directory 'F:/TheFarm51/ZadanieRekrutacyjne/Saved/Collections/' took 0.01s
+[2017.04.24-18.01.16:329][  0]LogFileCache: Scanning file cache for directory 'F:/TheFarm51/ZadanieRekrutacyjne/Content/Developers/Dominik/Collections/' took 0.01s
+[2017.04.24-18.01.16:329][  0]LogFileCache: Scanning file cache for directory 'F:/TheFarm51/ZadanieRekrutacyjne/Content/Collections/' took 0.01s
+[2017.04.24-18.01.16:329][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000001 seconds
+[2017.04.24-18.01.16:337][  0]LogContentBrowser: Native class hierarchy populated in 0.0085 seconds. Added 2249 classes and 455 folders.
+[2017.04.24-18.01.16:340][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2017.04.24-18.01.16:340][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2017.04.24-18.01.16:395][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0010 seconds. Added 0 classes and 0 folders.
+[2017.04.24-18.01.16:728][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0010 seconds. Added 0 classes and 0 folders.
+[2017.04.24-18.01.16:778][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0010 seconds. Added 1 classes and 2 folders.
+[2017.04.24-18.01.16:842][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2017.04.24-18.01.16:850][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2017.04.24-18.01.16:915][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0011 seconds. Added 1 classes and 2 folders.
+[2017.04.24-18.01.16:915][  0]LogLoad: (Engine Initialization) Total time: 22.86 seconds
+[2017.04.24-18.01.16:915][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.11 seconds
+[2017.04.24-18.01.16:915][  0]LogExternalProfiler: Found external profiler: VSPerf
+[2017.04.24-18.01.16:915][  0]LogExternalProfiler: Using external profiler: VSPerf
+[2017.04.24-18.01.17:256][  0]LogOcInput: OculusInput pre-init called
+[2017.04.24-18.01.17:258][  0]LoadErrors:Warning: Warning CreateExport: Failed to load Outer for resource 'BulbDestructibleComponent': MyLamp_C /Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.MyLamp_2
+[2017.04.24-18.01.17:259][  0]LoadErrors:Warning: Warning CreateExport: Failed to load Outer for resource 'BulbDestructibleComponent': MyLightBulb_C /Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.MyLightBulb_2
+[2017.04.24-18.01.17:259][  0]LoadErrors:Warning: Warning CreateExport: Failed to load Outer for resource 'LightSource': MyLamp_C /Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.MyLamp_2
+[2017.04.24-18.01.17:282][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2017.04.24-18.01.17:314][  0]LogSlate: Took 0.004942 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2017.04.24-18.01.17:324][  0]LogSlate: Took 0.006116 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2017.04.24-18.01.17:334][  0]LogSlate: Took 0.005613 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2017.04.24-18.01.17:515][  0]LogRenderer: Reallocating scene render targets to support 1208x600 NumSamples 1 (Frame:2).
+[2017.04.24-18.01.17:601][  1]LogAssetRegistry: Asset discovery search completed in 11.7073 seconds
+[2017.04.24-18.01.17:602][  1]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000006 seconds (found 0 objects)
+[2017.04.24-18.01.17:602][  1]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000019 seconds (updated 0 objects)
+[2017.04.24-18.01.21:605][ 13]LogSlate: Took 0.007694 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.04.24-18.03.56:030][747]LogHotReload: New module detected: UE4Editor-ZadanieRekrutacyjne-6058.dll
+[2017.04.24-18.03.57:035][751]LogHotReload: Starting Hot-Reload from IDE
+[2017.04.24-18.03.57:046][751]LogSlate: Took 0.000193 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.04.24-18.03.57:130][751]LogClass: Could not find existing class Lamp in package /Script/ZadanieRekrutacyjne for HotReload, assuming new class
+[2017.04.24-18.03.57:136][751]LogHotReload: Re-instancing Lamp after hot-reload.
+[2017.04.24-18.03.57:169][751]LogContentBrowser: Native class hierarchy updated for 'ZadanieRekrutacyjne' in 0.0011 seconds. Added 4 classes and 2 folders.
+[2017.04.24-18.03.57:171][751]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2017.04.24-18.03.57:229][751]LogContentBrowser: Native class hierarchy populated in 0.0085 seconds. Added 2251 classes and 459 folders.
+[2017.04.24-18.03.57:239][751]Display: HotReload took  0.2s.
+[2017.04.24-18.04.01:806][154]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (BP_Sky_Sphere)
+[2017.04.24-18.04.04:444][445]LogSlate: Took 0.004840 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2017.04.24-18.04.07:964][792]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0012 seconds. Added 112 classes and 0 folders.
+[2017.04.24-18.04.08:751][793]LogRenderer: Reallocating scene render targets to support 1208x940 NumSamples 1 (Frame:3057).
+[2017.04.24-18.04.11:502][108]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/MyLamp" FILE="F:/TheFarm51/ZadanieRekrutacyjne/Content/Blueprints/MyLamp.uasset" SILENT=true
+[2017.04.24-18.04.11:516][108]LogSavePackage: Save=11.68ms
+[2017.04.24-18.04.11:516][108]LogSavePackage: Moving 'F:/TheFarm51/ZadanieRekrutacyjne/Saved/MyLamp7ECD45224A952CD550DAF895D91E3694.tmp' to 'F:/TheFarm51/ZadanieRekrutacyjne/Content/Blueprints/MyLamp.uasset'
+[2017.04.24-18.04.11:519][108]LogSavePackage:Display: Finished SavePackage F:/TheFarm51/ZadanieRekrutacyjne/Content/Blueprints/MyLamp.uasset
+[2017.04.24-18.04.24:814][640]LogSlate: Took 0.000198 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.04.24-18.04.27:408][914]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/MyLamp" FILE="F:/TheFarm51/ZadanieRekrutacyjne/Content/Blueprints/MyLamp.uasset" SILENT=true
+[2017.04.24-18.04.27:505][914]LogSavePackage: Save=14.13ms
+[2017.04.24-18.04.27:505][914]LogSavePackage: Moving 'F:/TheFarm51/ZadanieRekrutacyjne/Saved/MyLampF8C1364041AAAAF41B159FBE476B4927.tmp' to 'F:/TheFarm51/ZadanieRekrutacyjne/Content/Blueprints/MyLamp.uasset'
+[2017.04.24-18.04.27:506][914]LogSavePackage:Display: Finished SavePackage F:/TheFarm51/ZadanieRekrutacyjne/Content/Blueprints/MyLamp.uasset
+[2017.04.24-18.04.28:007][974]BlueprintLog: New page: Compile MyLamp
+[2017.04.24-18.04.32:656][462]LogTemp: Repeting last play command: Selected Viewport
+[2017.04.24-18.04.32:682][462]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.24-18.04.32:683][462]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.04.24-18.04.32:687][462]PIE: New page: PIE session: Minimal_Default (Apr 24, 2017, 10:04:32 PM)
+[2017.04.24-18.04.32:687][462]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2017.04.24-18.04.32:695][462]LogPlayLevel: PIE: StaticDuplicateObject took: (0.007603s)
+[2017.04.24-18.04.32:696][462]LogAIModule: Creating AISystem for world Minimal_Default
+[2017.04.24-18.04.32:696][462]LogPlayLevel: PIE: World Init took: (0.000871s)
+[2017.04.24-18.04.32:696][462]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Minimal_Default.Minimal_Default to /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.009287s)
+[2017.04.24-18.04.32:713][462]LogInit: XAudio2 using 'Głośniki (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.04.24-18.04.32:727][462]LogInit: FAudioDevice initialized.
+[2017.04.24-18.04.32:782][462]LogUObjectGlobals:Warning: Failed to find object 'Class /Script/ZadanieRekrutacyjne.ZadanieRekrutacyjneGameMode'
+[2017.04.24-18.04.32:782][462]LogLoad: Game class is 'GameModeBase'
+[2017.04.24-18.04.32:801][462]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 0) at 2017.04.24-20.04.32
+[2017.04.24-18.04.32:802][462]LogWorld: Bringing up level for play took: 0.009851
+[2017.04.24-18.04.32:852][462]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0011 seconds. Added 11 classes and 0 folders.
+[2017.04.24-18.04.32:860][462]PIE: Info Play in editor start time for /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default 0.049
+[2017.04.24-18.04.32:861][462]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.24-18.04.33:976][591]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.24-18.04.34:050][591]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.24-18.10.30:311][374]LogTemp: Repeting last play command: Selected Viewport
+[2017.04.24-18.10.30:329][374]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.24-18.10.30:329][374]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.04.24-18.10.30:330][374]PIE: New page: PIE session: Minimal_Default (Apr 24, 2017, 10:10:30 PM)
+[2017.04.24-18.10.30:330][374]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2017.04.24-18.10.30:337][374]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006817s)
+[2017.04.24-18.10.30:337][374]LogAIModule: Creating AISystem for world Minimal_Default
+[2017.04.24-18.10.30:338][374]LogPlayLevel: PIE: World Init took: (0.001124s)
+[2017.04.24-18.10.30:338][374]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Minimal_Default.Minimal_Default to /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.008298s)
+[2017.04.24-18.10.30:356][374]LogInit: XAudio2 using 'Głośniki (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.04.24-18.10.30:367][374]LogInit: FAudioDevice initialized.
+[2017.04.24-18.10.30:402][374]LogLoad: Game class is 'GameModeBase'
+[2017.04.24-18.10.30:404][374]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 0) at 2017.04.24-20.10.30
+[2017.04.24-18.10.30:404][374]LogWorld: Bringing up level for play took: 0.001429
+[2017.04.24-18.10.30:405][374]PIE: Info Play in editor start time for /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default -0.406
+[2017.04.24-18.10.30:406][374]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.24-18.10.31:755][533]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.24-18.10.31:814][533]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.24-18.10.40:819][570]MapCheck: New page: Map Check
+[2017.04.24-18.10.40:848][570]LightingResults: New page: Lighting Build - Apr 24, 2017, 10:10:40 PM
+[2017.04.24-18.10.40:944][570]LogSwarmInterface: [OpenConnection] Registering TCP channel ...
+[2017.04.24-18.10.41:050][570]LogSwarmInterface: [OpenConnection] Connecting to agent ...
+[2017.04.24-18.10.41:097][570]LogSwarmInterface: [TryOpenConnection] Testing the Agent
+[2017.04.24-18.10.41:617][570]LogSwarmInterface: [TryOpenConnection] Opening Connection to Agent
+[2017.04.24-18.10.41:617][570]LogSwarmInterface: [TryOpenConnection] Local Process ID is 8060
+[2017.04.24-18.10.44:541][570]LogStaticLightingSystem:Warning: No importance volume found, so the scene bounding box was used.  You can optimize your scene's quality and lighting build times by adding importance volumes.
+[2017.04.24-18.10.44:542][570]LogStaticLightingSystem: Running Lightmass w/ ImmediateImport mode ENABLED
+[2017.04.24-18.10.44:542][570]LogStaticLightingSystem: Running Lightmass w/ ImmediateProcess mode ENABLED
+[2017.04.24-18.10.44:542][570]LogStaticLightingSystem: Running Lightmass w/ Sorting mode ENABLED
+[2017.04.24-18.10.44:542][570]LogStaticLightingSystem: Running Lightmass w/ Mapping paddings ENABLED
+[2017.04.24-18.10.44:542][570]LogStaticLightingSystem: Running Lightmass w/ Mapping debug paddings DISABLED
+[2017.04.24-18.10.44:828][570]LogEditorBuildUtils: Build time 0:03
+[2017.04.24-18.10.44:839][570]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer M_Brick_Clay_Old, compiling. 
+[2017.04.24-18.10.44:840][570]LogTemp:Display: Added material ShaderMap 0x000001A9D4EAEB00 with Material 0x000001A9E35D9C00 to ShaderMapsBeingCompiled
+[2017.04.24-18.10.44:844][570]LogTemp:Display: Kicking off shader compilation for FLightmassMaterialRenderer M_Brick_Clay_Old, GameThreadShaderMap 0x000001A9D4EAEB00
+[2017.04.24-18.10.44:847][570]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer M_Brick_Clay_Old, compiling. 
+[2017.04.24-18.10.44:847][570]LogTemp:Display: Added material ShaderMap 0x000001A9D4EACF00 with Material 0x000001A9E35D8D00 to ShaderMapsBeingCompiled
+[2017.04.24-18.10.44:849][570]LogTemp:Display: Kicking off shader compilation for FLightmassMaterialRenderer M_Brick_Clay_Old, GameThreadShaderMap 0x000001A9D4EACF00
+[2017.04.24-18.10.44:869][571]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer M_TableRound, compiling. 
+[2017.04.24-18.10.44:870][571]LogTemp:Display: Added material ShaderMap 0x000001A9BED30F00 with Material 0x000001A9DB728700 to ShaderMapsBeingCompiled
+[2017.04.24-18.10.44:872][571]LogTemp:Display: Kicking off shader compilation for FLightmassMaterialRenderer M_TableRound, GameThreadShaderMap 0x000001A9BED30F00
+[2017.04.24-18.10.44:875][571]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer M_TableRound, compiling. 
+[2017.04.24-18.10.44:876][571]LogTemp:Display: Added material ShaderMap 0x000001A9D9F7AE80 with Material 0x000001A9DB729000 to ShaderMapsBeingCompiled
+[2017.04.24-18.10.44:880][571]LogTemp:Display: Kicking off shader compilation for FLightmassMaterialRenderer M_TableRound, GameThreadShaderMap 0x000001A9D9F7AE80
+[2017.04.24-18.10.44:915][572]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer M_Chair, compiling. 
+[2017.04.24-18.10.44:915][572]LogTemp:Display: Added material ShaderMap 0x000001A9D9F79600 with Material 0x000001A99CFE6200 to ShaderMapsBeingCompiled
+[2017.04.24-18.10.44:917][572]LogTemp:Display: Kicking off shader compilation for FLightmassMaterialRenderer M_Chair, GameThreadShaderMap 0x000001A9D9F79600
+[2017.04.24-18.10.44:919][572]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer M_Chair, compiling. 
+[2017.04.24-18.10.44:920][572]LogTemp:Display: Added material ShaderMap 0x000001A9C185BC80 with Material 0x000001A99CFE5F00 to ShaderMapsBeingCompiled
+[2017.04.24-18.10.44:922][572]LogTemp:Display: Kicking off shader compilation for FLightmassMaterialRenderer M_Chair, GameThreadShaderMap 0x000001A9C185BC80
+[2017.04.24-18.10.44:942][573]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer M_StatueGlass, compiling. 
+[2017.04.24-18.10.44:943][573]LogTemp:Display: Added material ShaderMap 0x000001A9C185A780 with Material 0x000001A9C16E2800 to ShaderMapsBeingCompiled
+[2017.04.24-18.10.44:945][573]LogTemp:Display: Kicking off shader compilation for FLightmassMaterialRenderer M_StatueGlass, GameThreadShaderMap 0x000001A9C185A780
+[2017.04.24-18.10.44:947][573]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer M_StatueGlass, compiling. 
+[2017.04.24-18.10.44:950][573]LogTemp:Display: Added material ShaderMap 0x000001A9C1859280 with Material 0x000001A9C16E3100 to ShaderMapsBeingCompiled
+[2017.04.24-18.10.44:952][573]LogTemp:Display: Kicking off shader compilation for FLightmassMaterialRenderer M_StatueGlass, GameThreadShaderMap 0x000001A9C1859280
+[2017.04.24-18.10.44:970][574]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer M_Metal_Burnished_Steel, compiling. 
+[2017.04.24-18.10.44:971][574]LogTemp:Display: Added material ShaderMap 0x000001A9D529BC80 with Material 0x000001A992529600 to ShaderMapsBeingCompiled
+[2017.04.24-18.10.44:973][574]LogTemp:Display: Kicking off shader compilation for FLightmassMaterialRenderer M_Metal_Burnished_Steel, GameThreadShaderMap 0x000001A9D529BC80
+[2017.04.24-18.10.44:975][574]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer M_Metal_Burnished_Steel, compiling. 
+[2017.04.24-18.10.44:976][574]LogTemp:Display: Added material ShaderMap 0x000001A9D529A780 with Material 0x000001A9A89BC100 to ShaderMapsBeingCompiled
+[2017.04.24-18.10.44:978][574]LogTemp:Display: Kicking off shader compilation for FLightmassMaterialRenderer M_Metal_Burnished_Steel, GameThreadShaderMap 0x000001A9D529A780
+[2017.04.24-18.10.45:030][576]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer M_Basic_Floor, compiling. 
+[2017.04.24-18.10.45:031][576]LogTemp:Display: Added material ShaderMap 0x000001A996FB7C80 with Material 0x000001A9A7131600 to ShaderMapsBeingCompiled
+[2017.04.24-18.10.45:033][576]LogTemp:Display: Kicking off shader compilation for FLightmassMaterialRenderer M_Basic_Floor, GameThreadShaderMap 0x000001A996FB7C80
+[2017.04.24-18.10.45:035][576]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer M_Basic_Floor, compiling. 
+[2017.04.24-18.10.45:035][576]LogTemp:Display: Added material ShaderMap 0x000001A996FB6780 with Material 0x000001A9A7132200 to ShaderMapsBeingCompiled
+[2017.04.24-18.10.45:037][576]LogTemp:Display: Kicking off shader compilation for FLightmassMaterialRenderer M_Basic_Floor, GameThreadShaderMap 0x000001A996FB6780
+[2017.04.24-18.10.46:893][577]LogTemp:Display: Finished compile of shader map 0x000001A9BED30F00
+[2017.04.24-18.10.46:893][577]LogTemp:Display: Shader map FLightmassMaterialRenderer M_TableRound complete, GameThreadShaderMap 0x000001A9BED30F00, marking material FLightmassMaterialRenderer M_TableRound as finished
+[2017.04.24-18.10.46:893][577]LogTemp:Display: Marking material as finished 0x000001A9DB728700
+[2017.04.24-18.10.46:895][577]LogTemp:Display: Finished compile of shader map 0x000001A9D9F7AE80
+[2017.04.24-18.10.46:895][577]LogTemp:Display: Shader map FLightmassMaterialRenderer M_TableRound complete, GameThreadShaderMap 0x000001A9D9F7AE80, marking material FLightmassMaterialRenderer M_TableRound as finished
+[2017.04.24-18.10.46:895][577]LogTemp:Display: Marking material as finished 0x000001A9DB729000
+[2017.04.24-18.10.46:897][577]LogTemp:Display: Finished compile of shader map 0x000001A9D4EAEB00
+[2017.04.24-18.10.46:897][577]LogTemp:Display: Shader map FLightmassMaterialRenderer M_Brick_Clay_Old complete, GameThreadShaderMap 0x000001A9D4EAEB00, marking material FLightmassMaterialRenderer M_Brick_Clay_Old as finished
+[2017.04.24-18.10.46:897][577]LogTemp:Display: Marking material as finished 0x000001A9E35D9C00
+[2017.04.24-18.10.46:899][577]LogTemp:Display: Finished compile of shader map 0x000001A9D4EACF00
+[2017.04.24-18.10.46:899][577]LogTemp:Display: Shader map FLightmassMaterialRenderer M_Brick_Clay_Old complete, GameThreadShaderMap 0x000001A9D4EACF00, marking material FLightmassMaterialRenderer M_Brick_Clay_Old as finished
+[2017.04.24-18.10.46:899][577]LogTemp:Display: Marking material as finished 0x000001A9E35D8D00
+[2017.04.24-18.10.46:900][577]LogTemp:Display: Finished compile of shader map 0x000001A9D529A780
+[2017.04.24-18.10.46:900][577]LogTemp:Display: Shader map FLightmassMaterialRenderer M_Metal_Burnished_Steel complete, GameThreadShaderMap 0x000001A9D529A780, marking material FLightmassMaterialRenderer M_Metal_Burnished_Steel as finished
+[2017.04.24-18.10.46:900][577]LogTemp:Display: Marking material as finished 0x000001A9A89BC100
+[2017.04.24-18.10.46:903][577]LogTemp:Display: Finished compile of shader map 0x000001A996FB7C80
+[2017.04.24-18.10.46:903][577]LogTemp:Display: Shader map FLightmassMaterialRenderer M_Basic_Floor complete, GameThreadShaderMap 0x000001A996FB7C80, marking material FLightmassMaterialRenderer M_Basic_Floor as finished
+[2017.04.24-18.10.46:903][577]LogTemp:Display: Marking material as finished 0x000001A9A7131600
+[2017.04.24-18.10.46:905][577]LogTemp:Display: Finished compile of shader map 0x000001A996FB6780
+[2017.04.24-18.10.46:905][577]LogTemp:Display: Shader map FLightmassMaterialRenderer M_Basic_Floor complete, GameThreadShaderMap 0x000001A996FB6780, marking material FLightmassMaterialRenderer M_Basic_Floor as finished
+[2017.04.24-18.10.46:905][577]LogTemp:Display: Marking material as finished 0x000001A9A7132200
+[2017.04.24-18.10.46:907][577]LogTemp:Display: Finished compile of shader map 0x000001A9D9F79600
+[2017.04.24-18.10.46:907][577]LogTemp:Display: Shader map FLightmassMaterialRenderer M_Chair complete, GameThreadShaderMap 0x000001A9D9F79600, marking material FLightmassMaterialRenderer M_Chair as finished
+[2017.04.24-18.10.46:907][577]LogTemp:Display: Marking material as finished 0x000001A99CFE6200
+[2017.04.24-18.10.46:910][577]LogTemp:Display: Finished compile of shader map 0x000001A9C185BC80
+[2017.04.24-18.10.46:910][577]LogTemp:Display: Shader map FLightmassMaterialRenderer M_Chair complete, GameThreadShaderMap 0x000001A9C185BC80, marking material FLightmassMaterialRenderer M_Chair as finished
+[2017.04.24-18.10.46:910][577]LogTemp:Display: Marking material as finished 0x000001A99CFE5F00
+[2017.04.24-18.10.46:912][577]LogTemp:Display: Finished compile of shader map 0x000001A9C185A780
+[2017.04.24-18.10.46:912][577]LogTemp:Display: Shader map FLightmassMaterialRenderer M_StatueGlass complete, GameThreadShaderMap 0x000001A9C185A780, marking material FLightmassMaterialRenderer M_StatueGlass as finished
+[2017.04.24-18.10.46:912][577]LogTemp:Display: Marking material as finished 0x000001A9C16E2800
+[2017.04.24-18.10.46:914][577]LogTemp:Display: Finished compile of shader map 0x000001A9C1859280
+[2017.04.24-18.10.46:914][577]LogTemp:Display: Shader map FLightmassMaterialRenderer M_StatueGlass complete, GameThreadShaderMap 0x000001A9C1859280, marking material FLightmassMaterialRenderer M_StatueGlass as finished
+[2017.04.24-18.10.46:914][577]LogTemp:Display: Marking material as finished 0x000001A9C16E3100
+[2017.04.24-18.10.46:916][577]LogTemp:Display: Finished compile of shader map 0x000001A9D529BC80
+[2017.04.24-18.10.46:916][577]LogTemp:Display: Shader map FLightmassMaterialRenderer M_Metal_Burnished_Steel complete, GameThreadShaderMap 0x000001A9D529BC80, marking material FLightmassMaterialRenderer M_Metal_Burnished_Steel as finished
+[2017.04.24-18.10.46:916][577]LogTemp:Display: Marking material as finished 0x000001A992529600
+[2017.04.24-18.10.50:746][594]Job is a success!
+[2017.04.24-18.10.51:658][595]LogTexture:Display: Building textures: HQ_Lightmap0_1 (AutoDXT, 1024X1024) - 145 MB total VRAM
+[2017.04.24-18.10.51:658][595]LogTexture:Display: Building textures: LQ_Lightmap_0_1 (DXT1, 1024X1024) - 145 MB total VRAM
+[2017.04.24-18.10.51:658][595]LogTexture:Display: Building textures: HQ_Lightmap0_2 (AutoDXT, 64X64) - 145 MB total VRAM
+[2017.04.24-18.10.51:658][595]LogTexture:Display: Building textures: LQ_Lightmap_0_2 (DXT1, 64X64) - 145 MB total VRAM
+[2017.04.24-18.10.51:788][595]LogTexture:Display: Building textures: ShadowMapTexture2D_1 (G8, 32X32) - 145 MB total VRAM
+[2017.04.24-18.10.51:788][595]LogTexture:Display: Building textures: ShadowMapTexture2D_0 (G8, 1024X512) - 145 MB total VRAM
+[2017.04.24-18.10.51:815][595]Lightmass on DESKTOP-DOMINIK: 3.64 sec total, 130 ms importing, 23 ms setup, 287 ms photons, 3.16 sec processing, 0 ms extra exporting [14/14 mappings]. Threads: 12.6 sec total, 5.19 sec processing.
+[2017.04.24-18.10.51:837][595]LogStaticLightingSystem: Illumination: 10.6 sec (470 ms encoding lightmaps, 121 ms encoding shadowmaps)
+[2017.04.24-18.10.51:837][595]LogStaticLightingSystem: Lightmap texture memory:  2.0 MB (2.0 MB streaming, 0.0 MB non-streaming), 4 textures
+[2017.04.24-18.10.51:837][595]LogStaticLightingSystem: Shadowmap texture memory: 0.7 MB (0.7 MB streaming, 0.0 MB non-streaming), 2 textures
+[2017.04.24-18.10.52:545][595]DumpUnbuiltLightIteractions
+[2017.04.24-18.10.52:545][595]Lights with unbuilt interactions: 0
+[2017.04.24-18.10.52:545][595]
+[2017.04.24-18.10.52:545][595]Primitives with unbuilt interactions: 0
+[2017.04.24-18.10.52:564][596]Cmd: MAP CHECK NOTIFYRESULTS
+[2017.04.24-18.10.52:564][596]MapCheck: New page: Minimal_Default - Apr 24, 2017, 10:10:52 PM
+[2017.04.24-18.10.52:632][596]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 68.125ms to complete.
+[2017.04.24-18.11.22:339][684]LogSavePackage: Save=283.47ms
+[2017.04.24-18.11.22:339][684]LogSavePackage: Moving 'F:/TheFarm51/ZadanieRekrutacyjne/Saved/Minimal_Default_Auto1CC7338CC42CEFD96CB7ED4A6F9B6791D.tmp' to 'F:/TheFarm51/ZadanieRekrutacyjne/Saved/Autosaves/Game/StarterContent/Maps/Minimal_Default_Auto1.umap'
+[2017.04.24-18.11.22:340][684]LogSavePackage:Display: Finished SavePackage F:/TheFarm51/ZadanieRekrutacyjne/Saved/Autosaves/Game/StarterContent/Maps/Minimal_Default_Auto1.umap
+[2017.04.24-18.11.22:344][684]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/StarterContent/Maps/Minimal_Default' took 0.312
+[2017.04.24-18.11.22:344][684]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.312
+[2017.04.24-18.11.22:346][684]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/StarterContent/Maps/Minimal_Default_BuiltData] ([1] browsable assets)...
+[2017.04.24-18.11.22:346][684]OBJ SavePackage: Finished generating thumbnails for package [/Game/StarterContent/Maps/Minimal_Default_BuiltData]
+[2017.04.24-18.11.22:402][684]LogSavePackage: Save=9.99ms
+[2017.04.24-18.11.22:402][684]LogSavePackage: Moving 'F:/TheFarm51/ZadanieRekrutacyjne/Saved/Minimal_Default_BuiltData_Auto1877BCF254DBC76264F471C86B7D2402A.tmp' to 'F:/TheFarm51/ZadanieRekrutacyjne/Saved/Autosaves/Game/StarterContent/Maps/Minimal_Default_BuiltData_Auto1.uasset'
+[2017.04.24-18.11.22:403][684]LogSavePackage:Display: Finished SavePackage F:/TheFarm51/ZadanieRekrutacyjne/Saved/Autosaves/Game/StarterContent/Maps/Minimal_Default_BuiltData_Auto1.uasset
+[2017.04.24-18.11.22:403][684]LogFileHelpers: Auto-saving content packages took 0.058
+[2017.04.24-18.12.27:036][ 57]LogTemp: Repeting last play command: Selected Viewport
+[2017.04.24-18.12.27:052][ 57]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.24-18.12.27:052][ 57]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.04.24-18.12.27:052][ 57]PIE: New page: PIE session: Minimal_Default (Apr 24, 2017, 10:12:27 PM)
+[2017.04.24-18.12.27:052][ 57]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2017.04.24-18.12.27:087][ 57]LogPlayLevel: PIE: StaticDuplicateObject took: (0.034719s)
+[2017.04.24-18.12.27:088][ 57]LogAIModule: Creating AISystem for world Minimal_Default
+[2017.04.24-18.12.27:088][ 57]LogPlayLevel: PIE: World Init took: (0.001212s)
+[2017.04.24-18.12.27:088][ 57]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Minimal_Default.Minimal_Default to /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.036214s)
+[2017.04.24-18.12.27:107][ 57]LogInit: XAudio2 using 'Głośniki (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.04.24-18.12.27:118][ 57]LogInit: FAudioDevice initialized.
+[2017.04.24-18.12.27:149][ 57]LogLoad: Game class is 'GameModeBase'
+[2017.04.24-18.12.27:152][ 57]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 0) at 2017.04.24-20.12.27
+[2017.04.24-18.12.27:152][ 57]LogWorld: Bringing up level for play took: 0.001794
+[2017.04.24-18.12.27:154][ 57]PIE: Info Play in editor start time for /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default 0.342
+[2017.04.24-18.12.27:154][ 57]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.24-18.12.29:174][296]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.24-18.12.29:235][296]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.24-18.33.50:239][ 24]LogHotReload: New module detected: UE4Editor-ZadanieRekrutacyjne-7034.dll
+[2017.04.24-18.33.51:595][ 29]LogHotReload: Starting Hot-Reload from IDE
+[2017.04.24-18.33.51:753][ 29]LogClass: Could not find existing class LightBulb in package /Script/ZadanieRekrutacyjne for HotReload, assuming new class
+[2017.04.24-18.33.51:761][ 29]LogHotReload: Re-instancing LightBulb after hot-reload.
+[2017.04.24-18.33.51:854][ 29]LogContentBrowser: Native class hierarchy updated for 'ZadanieRekrutacyjne' in 0.0019 seconds. Added 4 classes and 2 folders.
+[2017.04.24-18.33.51:857][ 29]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2017.04.24-18.33.52:236][ 29]LogContentBrowser: Native class hierarchy populated in 0.0119 seconds. Added 2251 classes and 459 folders.
+[2017.04.24-18.33.52:246][ 29]Display: HotReload took  0.7s.
+[2017.04.24-18.34.21:581][415]LogActor:Warning: MyLightBulb_C /Engine/Transient.World_5:PersistentLevel.MyLightBulb_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2017.04.24-18.34.23:802][668]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/MyLightBulb" FILE="F:/TheFarm51/ZadanieRekrutacyjne/Content/Blueprints/MyLightBulb.uasset" SILENT=true
+[2017.04.24-18.34.23:816][668]LogSavePackage: Save=13.08ms
+[2017.04.24-18.34.23:816][668]LogSavePackage: Moving 'F:/TheFarm51/ZadanieRekrutacyjne/Saved/MyLightBulb75FCDBB94A3C1406CEFA3586A03420A4.tmp' to 'F:/TheFarm51/ZadanieRekrutacyjne/Content/Blueprints/MyLightBulb.uasset'
+[2017.04.24-18.34.23:822][668]LogSavePackage:Display: Finished SavePackage F:/TheFarm51/ZadanieRekrutacyjne/Content/Blueprints/MyLightBulb.uasset
+[2017.04.24-18.34.25:841][880]LogActor:Warning: MyLightBulb_C /Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.MyLightBulb_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2017.04.24-18.34.26:175][916]LogActor:Warning: MyLightBulb_C /Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.MyLightBulb_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2017.04.24-18.34.27:656][ 54]LogActor:Warning: MyLightBulb_C /Engine/Transient.World_6:PersistentLevel.MyLightBulb_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2017.04.24-18.34.46:399][232]LogActor:Warning: MyLightBulb_C /Engine/Transient.World_7:PersistentLevel.MyLightBulb_C_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2017.04.24-18.34.55:713][344]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/MyLightBulb" FILE="F:/TheFarm51/ZadanieRekrutacyjne/Content/Blueprints/MyLightBulb.uasset" SILENT=true
+[2017.04.24-18.34.55:761][344]LogSavePackage: Save=17.91ms
+[2017.04.24-18.34.55:762][344]LogSavePackage: Moving 'F:/TheFarm51/ZadanieRekrutacyjne/Saved/MyLightBulbBC427DA7439358B0C07820998DC098C2.tmp' to 'F:/TheFarm51/ZadanieRekrutacyjne/Content/Blueprints/MyLightBulb.uasset'
+[2017.04.24-18.34.55:763][344]LogSavePackage:Display: Finished SavePackage F:/TheFarm51/ZadanieRekrutacyjne/Content/Blueprints/MyLightBulb.uasset
+[2017.04.24-18.34.56:264][404]BlueprintLog: New page: Compile MyLightBulb
+[2017.04.24-18.34.56:297][404]LogActor:Warning: MyLightBulb_C /Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.MyLightBulb_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2017.04.24-18.34.56:299][404]LogUObjectGlobals:Warning: Guid referenced by PointLightComponent /Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.MyLightBulb_2.LightSource is already used by PointLightComponent /Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.REINST_MyLightBulb_C_0.LightSource, which should never happen in the editor but could happen at runtime with duplicate level loading or PIE
+[2017.04.24-18.34.56:299][404]LogUObjectGlobals:Warning: Guid referenced by StaticMeshComponent /Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.MyLightBulb_2.staticbulbmesh is already used by StaticMeshComponent /Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.REINST_MyLightBulb_C_0.staticbulbmesh, which should never happen in the editor but could happen at runtime with duplicate level loading or PIE
+[2017.04.24-18.34.56:332][404]LogActor:Warning: MyLightBulb_C /Engine/Transient.World_6:PersistentLevel.MyLightBulb_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2017.04.24-18.34.56:332][404]LogActor:Warning: MyLightBulb_C /Engine/Transient.World_7:PersistentLevel.MyLightBulb_C_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2017.04.24-18.34.56:739][404]LogActor:Warning: MyLightBulb_C /Engine/Transient.World_7:PersistentLevel.MyLightBulb_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2017.04.24-18.35.00:110][725]LogSavePackage: Save=300.75ms
+[2017.04.24-18.35.00:110][725]LogSavePackage: Moving 'F:/TheFarm51/ZadanieRekrutacyjne/Saved/Minimal_DefaultFC01BB50440988E2A6BF87BC895A894C.tmp' to 'F:/TheFarm51/ZadanieRekrutacyjne/Content/StarterContent/Maps/Minimal_Default.umap'
+[2017.04.24-18.35.00:114][725]LogSavePackage:Display: Finished SavePackage F:/TheFarm51/ZadanieRekrutacyjne/Content/StarterContent/Maps/Minimal_Default.umap
+[2017.04.24-18.35.00:164][725]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/StarterContent/Maps/Minimal_Default_BuiltData" FILE="F:/TheFarm51/ZadanieRekrutacyjne/Content/StarterContent/Maps/Minimal_Default_BuiltData.uasset" SILENT=true
+[2017.04.24-18.35.00:248][725]LogSavePackage: Save=75.10ms
+[2017.04.24-18.35.00:248][725]LogSavePackage: Moving 'F:/TheFarm51/ZadanieRekrutacyjne/Saved/Minimal_Default_BuiltData306CCFB1446FD12422414EBF9F8529C6.tmp' to 'F:/TheFarm51/ZadanieRekrutacyjne/Content/StarterContent/Maps/Minimal_Default_BuiltData.uasset'
+[2017.04.24-18.35.00:250][725]LogSavePackage:Display: Finished SavePackage F:/TheFarm51/ZadanieRekrutacyjne/Content/StarterContent/Maps/Minimal_Default_BuiltData.uasset
+[2017.04.24-18.35.01:383][854]LogTemp: Repeting last play command: Selected Viewport
+[2017.04.24-18.35.01:398][854]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.24-18.35.01:398][854]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.04.24-18.35.01:398][854]PIE: New page: PIE session: Minimal_Default (Apr 24, 2017, 10:35:01 PM)
+[2017.04.24-18.35.01:398][854]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2017.04.24-18.35.01:419][854]LogPlayLevel: PIE: StaticDuplicateObject took: (0.020043s)
+[2017.04.24-18.35.01:420][854]LogAIModule: Creating AISystem for world Minimal_Default
+[2017.04.24-18.35.01:420][854]LogPlayLevel: PIE: World Init took: (0.000865s)
+[2017.04.24-18.35.01:420][854]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Minimal_Default.Minimal_Default to /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.021224s)
+[2017.04.24-18.35.01:436][854]LogInit: XAudio2 using 'Głośniki (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.04.24-18.35.01:446][854]LogInit: FAudioDevice initialized.
+[2017.04.24-18.35.01:477][854]LogLoad: Game class is 'GameModeBase'
+[2017.04.24-18.35.01:479][854]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 0) at 2017.04.24-20.35.01
+[2017.04.24-18.35.01:479][854]LogWorld: Bringing up level for play took: 0.001626
+[2017.04.24-18.35.01:480][854]PIE: Info Play in editor start time for /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default 0.668
+[2017.04.24-18.35.01:480][854]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.24-18.35.07:594][581]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.24-18.35.07:657][581]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.24-18.36.15:011][405]LogHotReload: New module detected: UE4Editor-ZadanieRekrutacyjne-7536.dll
+[2017.04.24-18.36.16:023][409]LogHotReload: Starting Hot-Reload from IDE
+[2017.04.24-18.36.16:125][409]LogHotReload: Re-instancing LightBulb after hot-reload.
+[2017.04.24-18.36.16:257][409]LogUObjectGlobals:Warning: Guid referenced by PointLightComponent /Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.MyLightBulb_2.LightSource is already used by PointLightComponent /Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.REINST_MyLightBulb_C_0.LightSource, which should never happen in the editor but could happen at runtime with duplicate level loading or PIE
+[2017.04.24-18.36.16:257][409]LogUObjectGlobals:Warning: Guid referenced by StaticMeshComponent /Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.MyLightBulb_2.staticbulbmesh is already used by StaticMeshComponent /Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.REINST_MyLightBulb_C_0.staticbulbmesh, which should never happen in the editor but could happen at runtime with duplicate level loading or PIE
+[2017.04.24-18.36.16:493][409]LogContentBrowser: Native class hierarchy updated for 'ZadanieRekrutacyjne' in 0.0010 seconds. Added 4 classes and 2 folders.
+[2017.04.24-18.36.16:495][409]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2017.04.24-18.36.16:751][409]LogContentBrowser: Native class hierarchy populated in 0.0097 seconds. Added 2251 classes and 459 folders.
+[2017.04.24-18.36.16:762][409]Display: HotReload took  0.7s.
+[2017.04.24-18.36.24:160][431]LogStats: FPlatformStackWalk::StackWalkAndDump -  0.372 s
+[2017.04.24-18.36.24:160][431]LogOutputDevice:Error: === Handled ensure: ===
+[2017.04.24-18.36.24:160][431]LogOutputDevice:Error: 
+[2017.04.24-18.36.24:160][431]LogOutputDevice:Error: Ensure condition failed: ParentActor != ActorPtr [File:D:\Build\++UE4+Release-4.15+Compile\Sync\Engine\Source\Editor\SceneOutliner\Private\ActorTreeItem.cpp] [Line: 245]
+[2017.04.24-18.36.24:160][431]LogOutputDevice:Error: Encountered an Actor attached to itself (MyLightBulb_2)
+[2017.04.24-18.36.24:160][431]LogOutputDevice:Error: Stack: 
+[2017.04.24-18.36.24:160][431]LogOutputDevice:Error: UE4Editor-Core.dll!0x000000001F7695E6
+[2017.04.24-18.36.24:160][431]LogOutputDevice:Error: UE4Editor-Core.dll!0x000000001F519B82
+[2017.04.24-18.36.24:160][431]LogOutputDevice:Error: UE4Editor-Core.dll!0x000000001F52B666
+[2017.04.24-18.36.24:160][431]LogOutputDevice:Error: UE4Editor-SceneOutliner.dll!0x00000000F6044771
+[2017.04.24-18.36.24:160][431]LogOutputDevice:Error: UE4Editor-SceneOutliner.dll!0x00000000F6048A3E
+[2017.04.24-18.36.24:160][431]LogOutputDevice:Error: UE4Editor-SceneOutliner.dll!0x00000000F602C75C
+[2017.04.24-18.36.24:160][431]LogOutputDevice:Error: UE4Editor-SceneOutliner.dll!0x00000000F602BA41
+[2017.04.24-18.36.24:160][431]LogOutputDevice:Error: UE4Editor-SceneOutliner.dll!0x00000000F6085F5B
+[2017.04.24-18.36.24:160][431]LogOutputDevice:Error: UE4Editor-SceneOutliner.dll!0x00000000F60A3C73
+[2017.04.24-18.36.24:160][431]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x0000000028838C02
+[2017.04.24-18.36.24:160][431]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x000000002883778E
+[2017.04.24-18.36.24:160][431]LogOutputDevice:Error: UE4Editor-Slate.dll!0x000000003556CECC
+[2017.04.24-18.36.24:160][431]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x0000000028838C55
+[2017.04.24-18.36.24:160][431]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x000000002883778E
+[2017.04.24-18.36.24:160][431]LogOutputDevice:Error: UE4Editor-Slate.dll!0x000000003556CECC
+[2017.04.24-18.36.24:160][431]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x0000000028838C55
+[2017.04.24-18.36.24:160][431]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x0000000028837ABE
+[2017.04.24-18.36.24:160][431]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x0000000028838C55
+[2017.04.24-18.36.24:160][431]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x0000000028839060
+[2017.04.24-18.36.24:160][431]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x0000000028837C08
+[2017.04.24-18.36.24:160][431]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x0000000028838C55
+[2017.04.24-18.36.24:160][431]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x000000002883778E
+[2017.04.24-18.36.24:160][431]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x0000000028838C55
+[2017.04.24-18.36.24:160][431]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x0000000028839060
+[2017.04.24-18.36.24:160][431]LogOutputDevice:Error: UE4Editor-Slate.dll!0x00000000355E91BD
+[2017.04.24-18.36.24:160][431]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x0000000028838C55
+[2017.04.24-18.36.24:160][431]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x000000002883778E
+[2017.04.24-18.36.24:160][431]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x0000000028838C55
+[2017.04.24-18.36.24:160][431]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x0000000028839060
+[2017.04.24-18.36.24:160][431]LogOutputDevice:Error: UE4Editor-Slate.dll!0x00000000355E91BD
+[2017.04.24-18.36.24:160][431]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x0000000028838C55
+[2017.04.24-18.36.24:160][431]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x0000000028837ABE
+[2017.04.24-18.36.24:160][431]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x0000000028838C55
+[2017.04.24-18.36.24:160][431]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x000000002883778E
+[2017.04.24-18.36.24:160][431]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x0000000028838C55
+[2017.04.24-18.36.24:160][431]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x0000000028839060
+[2017.04.24-18.36.24:160][431]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x0000000028837C08
+[2017.04.24-18.36.24:160][431]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x0000000028838C55
+[2017.04.24-18.36.24:160][431]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x000000002883778E
+[2017.04.24-18.36.24:160][431]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x0000000028838C55
+[2017.04.24-18.36.24:160][431]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x000000002883778E
+[2017.04.24-18.36.24:160][431]LogOutputDevice:Error: UE4Editor-Slate.dll!0x000000003556CECC
+[2017.04.24-18.36.24:160][431]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x0000000028838C55
+[2017.04.24-18.36.24:160][431]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x0000000028837ABE
+[2017.04.24-18.36.24:160][431]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x0000000028838C55
+[2017.04.24-18.36.24:160][431]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x0000000028839060
+[2017.04.24-18.36.24:160][431]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x0000000028837C08
+[2017.04.24-18.36.24:160][431]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x0000000028838C55
+[2017.04.24-18.36.24:160][431]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x000000002883778E
+[2017.04.24-18.36.24:160][431]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x0000000028838C55
+[2017.04.24-18.36.24:161][431]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x0000000028839060
+[2017.04.24-18.36.24:161][431]LogOutputDevice:Error: UE4Editor-Slate.dll!0x00000000355E91BD
+[2017.04.24-18.36.24:161][431]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x0000000028838C55
+[2017.04.24-18.36.24:161][431]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x0000000028837ABE
+[2017.04.24-18.36.24:161][431]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x0000000028838C55
+[2017.04.24-18.36.24:161][431]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x000000002883778E
+[2017.04.24-18.36.24:161][431]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x0000000028838C55
+[2017.04.24-18.36.24:161][431]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x0000000028839060
+[2017.04.24-18.36.24:161][431]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x0000000028837C08
+[2017.04.24-18.36.24:161][431]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x0000000028838C55
+[2017.04.24-18.36.24:161][431]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x0000000028839060
+[2017.04.24-18.36.24:161][431]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x0000000028837C08
+[2017.04.24-18.36.24:161][431]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x0000000028838C55
+[2017.04.24-18.36.24:161][431]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x0000000028837ABE
+[2017.04.24-18.36.24:161][431]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x0000000028838C55
+[2017.04.24-18.36.24:161][431]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x000000002883778E
+[2017.04.24-18.36.24:161][431]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x0000000028837CAA
+[2017.04.24-18.36.24:161][431]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x0000000028838C55
+[2017.04.24-18.36.24:161][431]LogOutputDevice:Error: UE4Editor-Slate.dll!0x00000000353B30FD
+[2017.04.24-18.36.24:161][431]LogOutputDevice:Error: UE4Editor-Slate.dll!0x00000000353ECF0F
+[2017.04.24-18.36.24:161][431]LogOutputDevice:Error: UE4Editor-Slate.dll!0x00000000353E25CB
+[2017.04.24-18.36.24:161][431]LogOutputDevice:Error: UE4Editor-Core.dll!0x000000001F75C94E
+[2017.04.24-18.36.24:161][431]LogOutputDevice:Error: UE4Editor-Core.dll!0x000000001F7467C1
+[2017.04.24-18.36.24:161][431]LogOutputDevice:Error: UE4Editor-Core.dll!0x000000001F75DC95
+[2017.04.24-18.36.24:161][431]LogOutputDevice:Error: UE4Editor-Core.dll!0x000000001F7426E9
+[2017.04.24-18.36.24:161][431]LogOutputDevice:Error: USER32.dll!0x0000000055381C24
+[2017.04.24-18.36.24:161][431]LogOutputDevice:Error: USER32.dll!0x000000005538125E
+[2017.04.24-18.36.24:161][431]LogOutputDevice:Error: USER32.dll!0x000000005537EF6D
+[2017.04.24-18.36.24:161][431]LogOutputDevice:Error: USER32.dll!0x000000005537E982
+[2017.04.24-18.36.24:161][431]LogOutputDevice:Error: uxtheme.dll!0x0000000050CD183D
+[2017.04.24-18.36.24:161][431]LogOutputDevice:Error: uxtheme.dll!0x0000000050CD06D1
+[2017.04.24-18.36.24:161][431]LogOutputDevice:Error: USER32.dll!0x000000005537EB7D
+[2017.04.24-18.36.24:161][431]LogOutputDevice:Error: UE4Editor-Core.dll!0x000000001F75ECC5
+[2017.04.24-18.36.24:161][431]LogOutputDevice:Error: UE4Editor-Core.dll!0x000000001F7426E9
+[2017.04.24-18.36.24:161][431]LogOutputDevice:Error: USER32.dll!0x0000000055381C24
+[2017.04.24-18.36.24:161][431]LogOutputDevice:Error: USER32.dll!0x0000000055381917
+[2017.04.24-18.36.24:161][431]LogOutputDevice:Error: USER32.dll!0x0000000055395E80
+[2017.04.24-18.36.24:161][431]LogOutputDevice:Error: ntdll.dll!0x0000000056189C54
+[2017.04.24-18.36.24:161][431]LogOutputDevice:Error: win32u.dll!0x0000000053601B84
+[2017.04.24-18.36.24:161][431]LogOutputDevice:Error: UE4Editor-Core.dll!0x000000001F75E47B
+[2017.04.24-18.36.24:161][431]LogOutputDevice:Error: UE4Editor-Core.dll!0x000000001F7426E9
+[2017.04.24-18.36.24:161][431]LogOutputDevice:Error: USER32.dll!0x0000000055381C24
+[2017.04.24-18.36.24:161][431]LogOutputDevice:Error: USER32.dll!0x000000005538156C
+[2017.04.24-18.36.24:161][431]LogOutputDevice:Error: UE4Editor-Core.dll!0x000000001F75F326
+[2017.04.24-18.36.24:161][431]LogOutputDevice:Error: UE4Editor.exe!0x00000000FC5AD790
+[2017.04.24-18.36.24:161][431]LogOutputDevice:Error: UE4Editor.exe!0x00000000FC59EB40
+[2017.04.24-18.36.24:161][431]LogOutputDevice:Error: UE4Editor.exe!0x00000000FC59EBBA
+[2017.04.24-18.36.24:161][431]LogOutputDevice:Error: UE4Editor.exe!0x00000000FC5B0A29
+[2017.04.24-18.36.24:161][431]LogOutputDevice:Error: 
+[2017.04.24-18.36.24:168][431]LogStats:                SubmitErrorReport -  0.000 s

@@ -1,0 +1,3 @@
+F:\TheFarm51\ZadanieRekrutacyjne\Source\ZadanieRekrutacyjne\ZadanieRekrutacyjne.Build.cs
+F:\TheFarm51\ZadanieRekrutacyjne\Source\ZadanieRekrutacyjne.Target.cs
+F:\TheFarm51\ZadanieRekrutacyjne\Source\ZadanieRekrutacyjneEditor.Target.cs

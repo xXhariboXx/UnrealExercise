@@ -1,0 +1,897 @@
+﻿Log file open, 04/24/17 14:38:43
+LogInit:Display: Running engine for game: ZadanieRekrutacyjne
+LogPlatformFile: Not using cached read wrapper
+LogInit:Display: RandInit(1272291529) SRandInit(1272291529).
+LogTaskGraph: Started task graph with 5 named threads and 8 total threads with 1 sets of task threads.
+LogStats: Stats thread started at 0.075862
+LogInit: Using libcurl 7.47.1
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.0.2g
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = false  - Libcurl will NOT verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Build: ++UE4+Release-4.15-CL-3348071
+LogInit: Engine Version: 4.15.1-3348071+++UE4+Release-4.15
+LogInit: Compatible Engine Version: 4.15.0-3299760+++UE4+Release-4.15
+LogInit: Net CL: 3299760
+LogDevObjectVersion: Number of dev versions registered: 14
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 8
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 2
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 14
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 22
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 0
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 12
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 3
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 0
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogInit: Compiled (64-bit): Mar 15 2017 16:52:47
+LogInit: Compiled with Visual C++: 19.00.23026.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.15
+LogInit: Command line: -EpicPortal 
+LogInit: Base directory: C:/Program Files/Epic Games/UE_4.15/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2017.04.24-12.38.44:209][  0]LogInit: Selected Device Profile: [Windows]
+[2017.04.24-12.38.44:209][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2017.04.24-12.38.44:221][  0]LogInit: Computer: DESKTOP-DOMINIK
+[2017.04.24-12.38.44:221][  0]LogInit: User: Dominik
+[2017.04.24-12.38.44:221][  0]LogInit: CPU Page size=65536, Cores=4
+[2017.04.24-12.38.44:221][  0]LogInit: High frequency timer resolution =3.117191 MHz
+[2017.04.24-12.38.44:221][  0]LogMemory: Memory total: Physical=8.0GB (8GB approx)
+[2017.04.24-12.38.44:221][  0]LogMemory: Platform Memory Stats for Windows
+[2017.04.24-12.38.44:221][  0]LogMemory: Process Physical Memory: 262.71 MB used, 262.71 MB peak
+[2017.04.24-12.38.44:221][  0]LogMemory: Process Virtual Memory: 262.63 MB used, 262.63 MB peak
+[2017.04.24-12.38.44:221][  0]LogMemory: Physical Memory: 5001.14 MB used,  3153.95 MB free, 8155.09 MB total
+[2017.04.24-12.38.44:221][  0]LogMemory: Virtual Memory: 644.39 MB used,  3153.95 MB free, 134217728.00 MB total
+[2017.04.24-12.38.44:295][  0]LogTextLocalizationManager: No translations for ('pl-PL') exist, falling back to 'en' for localization and internationalization data.
+[2017.04.24-12.38.44:885][  0]LogD3D11RHI: D3D11 adapters:
+[2017.04.24-12.38.44:919][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 1060 6GB' (Feature Level 11_0)
+[2017.04.24-12.38.44:919][  0]LogD3D11RHI:       6084/0/4077 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:2, VendorId:0x10de
+[2017.04.24-12.38.44:920][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2017.04.24-12.38.44:920][  0]LogD3D11RHI:       0/0/4077 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2017.04.24-12.38.44:920][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2017.04.24-12.38.44:924][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2017.04.24-12.38.44:924][  0]LogD3D11RHI:     GPU DeviceId: 0x1c03 (for the marketing name, search the web for "GPU Device Id")
+[2017.04.24-12.38.44:924][  0]LogWindows: EnumDisplayDevices:
+[2017.04.24-12.38.44:924][  0]LogWindows:    0. 'NVIDIA GeForce GTX 1060 6GB' (P:0 D:1)
+[2017.04.24-12.38.44:925][  0]LogWindows:    1. 'NVIDIA GeForce GTX 1060 6GB' (P:1 D:1)
+[2017.04.24-12.38.44:925][  0]LogWindows:    2. 'NVIDIA GeForce GTX 1060 6GB' (P:0 D:0)
+[2017.04.24-12.38.44:925][  0]LogWindows:    3. 'NVIDIA GeForce GTX 1060 6GB' (P:0 D:0)
+[2017.04.24-12.38.44:925][  0]LogWindows: DebugString: FoundDriverCount:4 
+[2017.04.24-12.38.44:925][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 1060 6GB
+[2017.04.24-12.38.44:925][  0]LogD3D11RHI:   Driver Version: 381.65 (internal:22.21.13.8165, unified:381.65)
+[2017.04.24-12.38.44:925][  0]LogD3D11RHI:      Driver Date: 3-31-2017
+[2017.04.24-12.38.44:925][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2017.04.24-12.38.44:945][  0]LogD3D11RHI: Async texture creation enabled
+[2017.04.24-12.38.44:955][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2017.04.24-12.38.45:050][  0]LogShaderCompilers: Guid format shader working directory is 17 characters bigger than the processId version (F:/TheFarm51/ZadanieRekrutacyjne/Intermediate/Shaders/WorkingDirectory/444/).
+[2017.04.24-12.38.45:051][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Dominik/AppData/Local/Temp/UnrealShaderWorkingDir/32EE7D554CD3E9F5BF57978106186C85/'.
+[2017.04.24-12.38.45:051][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2017.04.24-12.38.46:051][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2017.04.24-12.38.46:102][  0]LogTemp:Display: Loaded TP MacClientTargetPlatform
+[2017.04.24-12.38.46:151][  0]LogTemp:Display: Loaded TP MacNoEditorTargetPlatform
+[2017.04.24-12.38.46:203][  0]LogTemp:Display: Loaded TP MacServerTargetPlatform
+[2017.04.24-12.38.46:264][  0]LogTemp:Display: Loaded TP MacTargetPlatform
+[2017.04.24-12.38.46:325][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2017.04.24-12.38.46:382][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2017.04.24-12.38.46:451][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2017.04.24-12.38.46:503][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2017.04.24-12.38.46:567][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2017.04.24-12.38.46:622][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2017.04.24-12.38.46:681][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2017.04.24-12.38.46:753][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2017.04.24-12.38.46:801][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2017.04.24-12.38.46:848][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2017.04.24-12.38.46:942][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2017.04.24-12.38.46:942][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2017.04.24-12.38.46:979][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2017.04.24-12.38.47:076][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2017.04.24-12.38.47:109][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2017.04.24-12.38.47:169][  0]LogTemp:Display: Loaded TP LinuxClientTargetPlatform
+[2017.04.24-12.38.47:224][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2017.04.24-12.38.47:278][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2017.04.24-12.38.47:333][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2017.04.24-12.38.47:333][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2017.04.24-12.38.47:719][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2017.04.24-12.38.47:783][  0]LogDerivedDataCache: Loaded boot cache 0.06s 50MB C:/Users/Dominik/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc.
+[2017.04.24-12.38.47:783][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/Dominik/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc
+[2017.04.24-12.38.47:783][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file F:/TheFarm51/ZadanieRekrutacyjne/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2017.04.24-12.38.47:783][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2017.04.24-12.38.47:783][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file F:/TheFarm51/ZadanieRekrutacyjne/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2017.04.24-12.38.47:784][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2017.04.24-12.38.47:803][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2017.04.24-12.38.47:815][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Dominik/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2017.04.24-12.38.47:824][  0]LogSlate: Using Freetype 2.6.0
+[2017.04.24-12.38.47:825][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.04.24-12.38.47:825][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.04.24-12.38.48:065][  0]LogInit: Selected Device Profile: [Windows]
+[2017.04.24-12.38.48:067][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2017.04.24-12.38.48:251][  0]LogMeshUtilities: Using QuadricMeshReduction for automatic static mesh reduction
+[2017.04.24-12.38.48:290][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2017.04.24-12.38.48:334][  0]LogMeshUtilities: Using SimplygonSwarm for distributed automatic mesh merging
+[2017.04.24-12.38.48:334][  0]LogMeshUtilities: No automatic skeletal mesh reduction module available
+[2017.04.24-12.38.48:334][  0]LogMeshUtilities: No automatic mesh merging module available
+[2017.04.24-12.38.48:862][  0]LogNetVersion: GetLocalNetworkVersion: CL: 3299760, ProjectName: zadanierekrutacyjne, ProjectVersion: , EngineNetworkVersion: 2, GameNetworkVersion: 0, NetworkChecksum: 2856567825
+[2017.04.24-12.38.48:906][  0]LogAssetRegistry: FAssetRegistry took 0.0213 seconds to start up
+[2017.04.24-12.38.48:941][  0]LogPackageLocalizationCache: Processed 3 localized package path(s) for 1 prioritized culture(s) in 0.011947 seconds
+[2017.04.24-12.38.48:949][  0]LogUObjectArray: 32493 objects as part of root set at end of initial load.
+[2017.04.24-12.38.48:950][  0]LogUObjectAllocator: 7077024 out of 0 bytes used by permanent object pool.
+[2017.04.24-12.38.48:950][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2017.04.24-12.38.49:004][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2017.04.24-12.38.50:435][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2017.04.24-12.38.50:470][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2017.04.24-12.38.50:905][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2017.04.24-12.38.51:221][  0]SourceControl: Info Source control is disabled
+[2017.04.24-12.38.51:256][  0]SourceControl: Info Source control is disabled
+[2017.04.24-12.38.51:294][  0]SourceControl: Info Source control is disabled
+[2017.04.24-12.38.51:332][  0]SourceControl: Info Source control is disabled
+[2017.04.24-12.38.52:376][  0]LogEngine: Initializing Engine...
+[2017.04.24-12.38.52:376][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2017.04.24-12.38.52:595][  0]LogAIModule: Creating AISystem for world Untitled
+[2017.04.24-12.38.52:603][  0]LogInit: XAudio2 using 'Głośniki (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.04.24-12.38.52:615][  0]LogInit: FAudioDevice initialized.
+[2017.04.24-12.38.52:643][  0]LogDerivedDataCache: Saved boot cache 0.03s 50MB C:/Users/Dominik/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc.
+[2017.04.24-12.38.52:653][  0]LogInit: Texture streaming: Enabled
+[2017.04.24-12.38.52:741][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2017.04.24-12.38.52:822][  0]LogInit: Transaction tracking system initialized
+[2017.04.24-12.38.53:126][  0]BlueprintLog: New page: Editor Load
+[2017.04.24-12.38.53:888][  0]LocalizationService: Info Localization service is disabled
+[2017.04.24-12.38.54:447][  0]LogConsoleResponse:Display: 
+[2017.04.24-12.38.54:559][  0]LogCook:Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2017.04.24-12.38.54:559][  0]LogCook:Display: Mobile HDR setting 1
+[2017.04.24-12.38.55:051][  0]LogFileCache: Scanning file cache for directory 'F:/TheFarm51/ZadanieRekrutacyjne/Content/' took 0.01s
+[2017.04.24-12.38.55:433][  0]SourceControl: Info Source control is disabled
+[2017.04.24-12.38.55:434][  0]Cmd: MAP LOAD FILE="F:/TheFarm51/ZadanieRekrutacyjne/Content/StarterContent/Maps/Minimal_Default.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2017.04.24-12.38.55:434][  0]LightingResults: New page: Lighting Build
+[2017.04.24-12.38.55:467][  0]MapCheck: New page: Map Check
+[2017.04.24-12.38.55:467][  0]LightingResults: New page: Lighting Build
+[2017.04.24-12.38.55:765][  0]LogAIModule: Creating AISystem for world Minimal_Default
+[2017.04.24-12.38.55:789][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2017.04.24-12.38.55:789][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2017.04.24-12.38.55:827][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 37.678ms to complete.
+[2017.04.24-12.38.55:827][  0]LogFileHelpers: Loading map 'Minimal_Default' took 0.393
+[2017.04.24-12.38.56:018][  0]LogCollectionManager: Loaded 0 collections in 0.001254 seconds
+[2017.04.24-12.38.56:095][  0]LogFileCache: Scanning file cache for directory 'F:/TheFarm51/ZadanieRekrutacyjne/Saved/Collections/' took 0.01s
+[2017.04.24-12.38.56:095][  0]LogFileCache: Scanning file cache for directory 'F:/TheFarm51/ZadanieRekrutacyjne/Content/Developers/Dominik/Collections/' took 0.01s
+[2017.04.24-12.38.56:095][  0]LogFileCache: Scanning file cache for directory 'F:/TheFarm51/ZadanieRekrutacyjne/Content/Collections/' took 0.01s
+[2017.04.24-12.38.56:095][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000001 seconds
+[2017.04.24-12.38.56:104][  0]LogContentBrowser: Native class hierarchy populated in 0.0081 seconds. Added 2247 classes and 455 folders.
+[2017.04.24-12.38.56:106][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2017.04.24-12.38.56:106][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2017.04.24-12.38.56:158][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0009 seconds. Added 0 classes and 0 folders.
+[2017.04.24-12.38.56:189][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0009 seconds. Added 0 classes and 0 folders.
+[2017.04.24-12.38.56:237][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0012 seconds. Added 1 classes and 2 folders.
+[2017.04.24-12.38.56:281][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2017.04.24-12.38.56:292][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2017.04.24-12.38.56:360][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0012 seconds. Added 1 classes and 2 folders.
+[2017.04.24-12.38.56:361][  0]LogLoad: (Engine Initialization) Total time: 13.96 seconds
+[2017.04.24-12.38.56:361][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.08 seconds
+[2017.04.24-12.38.56:361][  0]LogExternalProfiler: Found external profiler: VSPerf
+[2017.04.24-12.38.56:361][  0]LogExternalProfiler: Using external profiler: VSPerf
+[2017.04.24-12.38.56:701][  0]LogOcInput: OculusInput pre-init called
+[2017.04.24-12.38.56:723][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2017.04.24-12.38.56:724][  0]LogSlate: Took 0.000184 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2017.04.24-12.38.56:728][  0]LogSlate: Took 0.000178 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2017.04.24-12.38.56:733][  0]LogSlate: Took 0.000128 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2017.04.24-12.38.56:850][  0]LogSlate: Took 0.000151 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.04.24-12.38.56:891][  0]LogRenderer: Reallocating scene render targets to support 1208x600 NumSamples 1 (Frame:2).
+[2017.04.24-12.38.57:047][  1]LogAssetRegistry: Asset discovery search completed in 8.1628 seconds
+[2017.04.24-12.38.57:047][  1]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000006 seconds (found 0 objects)
+[2017.04.24-12.38.57:047][  1]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000030 seconds (updated 0 objects)
+[2017.04.24-12.39.54:503][880]LogSlate: Took 0.000137 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.04.24-12.40.02:837][725]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2017.04.24-12.40.02:846][726]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2017.04.24-12.40.02:855][727]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2017.04.24-12.40.02:864][728]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2017.04.24-12.40.02:872][729]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2017.04.24-12.40.02:881][730]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2017.04.24-12.40.02:888][731]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2017.04.24-12.40.02:897][732]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2017.04.24-12.40.02:905][733]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2017.04.24-12.40.02:913][734]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2017.04.24-12.40.08:853][735]LogVSAccessor:Warning: Couldn't goto line number '0' in 'F:/TheFarm51/ZadanieRekrutacyjne/Source/ZadanieRekrutacyjne/Lamp.h'
+[2017.04.24-12.40.08:868][735]LogVSAccessor:Warning: Couldn't goto line number '0' in 'F:/TheFarm51/ZadanieRekrutacyjne/Source/ZadanieRekrutacyjne/Lamp.cpp'
+[2017.04.24-12.41.45:110][305]LogSlate: Took 0.000506 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2017.04.24-12.41.47:736][567]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0021 seconds. Added 112 classes and 0 folders.
+[2017.04.24-12.41.48:341][567]LogActor:Warning: MyLamp_C /Engine/Transient.World_1:PersistentLevel.MyLamp_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2017.04.24-12.41.48:408][568]LogRenderer: Reallocating scene render targets to support 1208x940 NumSamples 1 (Frame:1918).
+[2017.04.24-12.41.51:763][964]LogSlate: Took 0.000162 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2017.04.24-12.43.55:835][736]LogHotReload: New module detected: UE4Editor-ZadanieRekrutacyjne-9076.dll
+[2017.04.24-12.43.56:513][739]LogHotReload: Starting Hot-Reload from IDE
+[2017.04.24-12.43.56:623][739]LogContentBrowser: Native class hierarchy updated for 'ZadanieRekrutacyjne' in 0.0009 seconds. Added 2 classes and 2 folders.
+[2017.04.24-12.43.56:625][739]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2017.04.24-12.43.56:911][739]LogContentBrowser: Native class hierarchy populated in 0.0098 seconds. Added 2249 classes and 459 folders.
+[2017.04.24-12.43.56:922][739]Display: HotReload took  0.4s.
+[2017.04.24-12.44.11:780][ 53]LogActor:Warning: MyLamp_C /Engine/Transient.World_2:PersistentLevel.MyLamp_C_4 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2017.04.24-12.44.31:714][255]LogActor:Warning: MyLamp_C /Engine/Transient.World_3:PersistentLevel.MyLamp_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2017.04.24-12.44.36:105][730]LogActor:Warning: MyLamp_C /Engine/Transient.World_4:PersistentLevel.MyLamp_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2017.04.24-12.44.37:612][902]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/MyLamp" FILE="F:/TheFarm51/ZadanieRekrutacyjne/Content/Blueprints/MyLamp.uasset" SILENT=true
+[2017.04.24-12.44.37:626][902]LogSavePackage: Save=12.05ms
+[2017.04.24-12.44.37:626][902]LogSavePackage: Moving 'F:/TheFarm51/ZadanieRekrutacyjne/Saved/MyLamp0FCF062C40E0FC3E517B59B1CCE10768.tmp' to 'F:/TheFarm51/ZadanieRekrutacyjne/Content/Blueprints/MyLamp.uasset'
+[2017.04.24-12.44.37:627][902]LogSavePackage:Display: Finished SavePackage F:/TheFarm51/ZadanieRekrutacyjne/Content/Blueprints/MyLamp.uasset
+[2017.04.24-12.44.56:251][ 99]LogActor:Warning: MyLamp_C /Engine/Transient.World_5:PersistentLevel.MyLamp_C_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2017.04.24-12.45.53:173][471]LogHotReload: New module detected: UE4Editor-ZadanieRekrutacyjne-3299.dll
+[2017.04.24-12.45.53:846][474]LogHotReload: Starting Hot-Reload from IDE
+[2017.04.24-12.45.53:977][474]LogContentBrowser: Native class hierarchy updated for 'ZadanieRekrutacyjne' in 0.0011 seconds. Added 2 classes and 2 folders.
+[2017.04.24-12.45.53:980][474]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2017.04.24-12.45.54:237][474]LogContentBrowser: Native class hierarchy populated in 0.0094 seconds. Added 2249 classes and 459 folders.
+[2017.04.24-12.45.54:246][474]Display: HotReload took  0.4s.
+[2017.04.24-12.46.30:587][583]LogHotReload: New module detected: UE4Editor-ZadanieRekrutacyjne-4386.dll
+[2017.04.24-12.46.31:260][586]LogHotReload: Starting Hot-Reload from IDE
+[2017.04.24-12.46.31:389][586]LogHotReload: Re-instancing Lamp after hot-reload.
+[2017.04.24-12.46.31:558][586]LogContentBrowser: Native class hierarchy updated for 'ZadanieRekrutacyjne' in 0.0012 seconds. Added 2 classes and 2 folders.
+[2017.04.24-12.46.31:560][586]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2017.04.24-12.46.31:807][586]LogContentBrowser: Native class hierarchy populated in 0.0103 seconds. Added 2249 classes and 459 folders.
+[2017.04.24-12.46.31:819][586]Display: HotReload took  0.6s.
+[2017.04.24-12.46.34:753][769]LogActor:Warning: MyLamp_C /Engine/Transient.World_6:PersistentLevel.MyLamp_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2017.04.24-12.46.44:821][881]LogActor:Warning: MyLamp_C /Engine/Transient.World_7:PersistentLevel.MyLamp_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2017.04.24-12.47.29:828][963]LogActor:Warning: MyLamp_C /Engine/Transient.World_8:PersistentLevel.MyLamp_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2017.04.24-12.47.35:506][627]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/MyLamp" FILE="F:/TheFarm51/ZadanieRekrutacyjne/Content/Blueprints/MyLamp.uasset" SILENT=true
+[2017.04.24-12.47.35:519][627]LogSavePackage: Save=12.30ms
+[2017.04.24-12.47.35:519][627]LogSavePackage: Moving 'F:/TheFarm51/ZadanieRekrutacyjne/Saved/MyLamp3EEE71C547551A7D78946AB105D0C919.tmp' to 'F:/TheFarm51/ZadanieRekrutacyjne/Content/Blueprints/MyLamp.uasset'
+[2017.04.24-12.47.35:521][627]LogSavePackage:Display: Finished SavePackage F:/TheFarm51/ZadanieRekrutacyjne/Content/Blueprints/MyLamp.uasset
+[2017.04.24-12.47.37:458][817]LogActor:Warning: MyLamp_C /Engine/Transient.World_9:PersistentLevel.MyLamp_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2017.04.24-12.48.04:465][ 46]LogSlate: Took 0.000150 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.04.24-12.48.11:007][814]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/MyLamp" FILE="F:/TheFarm51/ZadanieRekrutacyjne/Content/Blueprints/MyLamp.uasset" SILENT=true
+[2017.04.24-12.48.11:026][814]LogSavePackage: Save=12.64ms
+[2017.04.24-12.48.11:026][814]LogSavePackage: Moving 'F:/TheFarm51/ZadanieRekrutacyjne/Saved/MyLamp55A525CE4F567897F7ECFFA8026E8352.tmp' to 'F:/TheFarm51/ZadanieRekrutacyjne/Content/Blueprints/MyLamp.uasset'
+[2017.04.24-12.48.11:027][814]LogSavePackage:Display: Finished SavePackage F:/TheFarm51/ZadanieRekrutacyjne/Content/Blueprints/MyLamp.uasset
+[2017.04.24-12.48.11:619][885]BlueprintLog: New page: Compile MyLamp
+[2017.04.24-12.48.11:662][885]LogActor:Warning: MyLamp_C /Engine/Transient.World_9:PersistentLevel.MyLamp_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2017.04.24-12.48.13:702][ 99]LogActor:Warning: MyLamp_C /Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.MyLamp_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2017.04.24-12.48.14:186][155]LogActor:Warning: MyLamp_C /Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.MyLamp_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2017.04.24-12.48.15:527][307]Cmd: DELETE
+[2017.04.24-12.48.15:527][307]Cmd: ACTOR DELETE
+[2017.04.24-12.48.15:527][307]LogEditorActor: Deleted Actor: MyLamp_C
+[2017.04.24-12.48.15:541][307]LogEditorActor: Deleted 1 Actors (0.014 secs)
+[2017.04.24-12.48.25:821][516]LogActor:Warning: MyLamp_C /Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.MyLamp_C_3 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2017.04.24-12.48.26:360][579]LogActor:Warning: MyLamp_C /Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.MyLamp_C_4 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2017.04.24-12.48.45:038][758]LogSavePackage: Save=93.18ms
+[2017.04.24-12.48.45:038][758]LogSavePackage: Moving 'F:/TheFarm51/ZadanieRekrutacyjne/Saved/Minimal_Default13DF29F14AF1A6CD6B4964B69AEF3197.tmp' to 'F:/TheFarm51/ZadanieRekrutacyjne/Content/StarterContent/Maps/Minimal_Default.umap'
+[2017.04.24-12.48.45:039][758]LogSavePackage:Display: Finished SavePackage F:/TheFarm51/ZadanieRekrutacyjne/Content/StarterContent/Maps/Minimal_Default.umap
+[2017.04.24-12.48.45:076][758]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/StarterContent/Maps/Minimal_Default_BuiltData" FILE="F:/TheFarm51/ZadanieRekrutacyjne/Content/StarterContent/Maps/Minimal_Default_BuiltData.uasset" SILENT=true
+[2017.04.24-12.48.45:124][758]LogSavePackage: Save=42.94ms
+[2017.04.24-12.48.45:124][758]LogSavePackage: Moving 'F:/TheFarm51/ZadanieRekrutacyjne/Saved/Minimal_Default_BuiltData231A0FD34FE7EBDBBBAA9C9FBFD277D4.tmp' to 'F:/TheFarm51/ZadanieRekrutacyjne/Content/StarterContent/Maps/Minimal_Default_BuiltData.uasset'
+[2017.04.24-12.48.45:125][758]LogSavePackage:Display: Finished SavePackage F:/TheFarm51/ZadanieRekrutacyjne/Content/StarterContent/Maps/Minimal_Default_BuiltData.uasset
+[2017.04.24-12.48.46:811][953]LogEditorActor: Deleted Actor: MyLamp_C
+[2017.04.24-12.48.46:825][953]LogEditorActor: Deleted 1 Actors (0.014 secs)
+[2017.04.24-12.49.23:558][556]LogActor:Warning: MyLamp_C /Engine/Transient.World_12:PersistentLevel.MyLamp_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2017.04.24-12.53.58:088][198]LogHotReload: New module detected: UE4Editor-ZadanieRekrutacyjne-8043.dll
+[2017.04.24-12.53.58:809][282]LogHotReload: Starting Hot-Reload from IDE
+[2017.04.24-12.53.58:914][282]LogContentBrowser: Native class hierarchy updated for 'ZadanieRekrutacyjne' in 0.0011 seconds. Added 2 classes and 2 folders.
+[2017.04.24-12.53.58:916][282]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2017.04.24-12.53.59:161][282]LogContentBrowser: Native class hierarchy populated in 0.0091 seconds. Added 2249 classes and 459 folders.
+[2017.04.24-12.53.59:172][282]Display: HotReload took  0.4s.
+[2017.04.24-12.54.05:184][853]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/MyLamp" FILE="F:/TheFarm51/ZadanieRekrutacyjne/Content/Blueprints/MyLamp.uasset" SILENT=true
+[2017.04.24-12.54.05:202][853]LogSavePackage: Save=12.03ms
+[2017.04.24-12.54.05:202][853]LogSavePackage: Moving 'F:/TheFarm51/ZadanieRekrutacyjne/Saved/MyLamp82597EEE4A6EF73EBB769B8C7FCC94EB.tmp' to 'F:/TheFarm51/ZadanieRekrutacyjne/Content/Blueprints/MyLamp.uasset'
+[2017.04.24-12.54.05:203][853]LogSavePackage:Display: Finished SavePackage F:/TheFarm51/ZadanieRekrutacyjne/Content/Blueprints/MyLamp.uasset
+[2017.04.24-12.54.05:373][853]LogSavePackage: Save=92.80ms
+[2017.04.24-12.54.05:374][853]LogSavePackage: Moving 'F:/TheFarm51/ZadanieRekrutacyjne/Saved/Minimal_Default0DDF1D60427A04C8A49068BA5964A85E.tmp' to 'F:/TheFarm51/ZadanieRekrutacyjne/Content/StarterContent/Maps/Minimal_Default.umap'
+[2017.04.24-12.54.05:375][853]LogSavePackage:Display: Finished SavePackage F:/TheFarm51/ZadanieRekrutacyjne/Content/StarterContent/Maps/Minimal_Default.umap
+[2017.04.24-12.54.05:398][853]LogFileHelpers: Saving map 'Minimal_Default' took 0.191
+[2017.04.24-12.54.06:549][955]LogActor:Warning: MyLamp_C /Engine/Transient.World_13:PersistentLevel.MyLamp_C_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2017.04.24-12.54.10:391][372]LogActor:Warning: MyLamp_C /Engine/Transient.World_14:PersistentLevel.MyLamp_C_3 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2017.04.24-12.54.23:345][897]BlueprintLog: New page: Compile MyLamp
+[2017.04.24-12.54.23:376][897]LogActor:Warning: MyLamp_C /Engine/Transient.World_14:PersistentLevel.MyLamp_C_3 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2017.04.24-12.54.27:601][375]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/MyLamp" FILE="F:/TheFarm51/ZadanieRekrutacyjne/Content/Blueprints/MyLamp.uasset" SILENT=true
+[2017.04.24-12.54.27:615][375]LogSavePackage: Save=11.48ms
+[2017.04.24-12.54.27:615][375]LogSavePackage: Moving 'F:/TheFarm51/ZadanieRekrutacyjne/Saved/MyLamp940B209D4EEDA7C417161088F6486EB2.tmp' to 'F:/TheFarm51/ZadanieRekrutacyjne/Content/Blueprints/MyLamp.uasset'
+[2017.04.24-12.54.27:616][375]LogSavePackage:Display: Finished SavePackage F:/TheFarm51/ZadanieRekrutacyjne/Content/Blueprints/MyLamp.uasset
+[2017.04.24-12.54.30:395][699]LogActor:Warning: MyLamp_C /Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.MyLamp_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2017.04.24-12.54.31:282][804]LogActor:Warning: MyLamp_C /Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.MyLamp_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2017.04.24-12.54.32:745][970]Cmd: DELETE
+[2017.04.24-12.54.32:745][970]Cmd: ACTOR DELETE
+[2017.04.24-12.54.32:746][970]LogEditorActor: Deleted Actor: MyLamp_C
+[2017.04.24-12.54.32:760][970]LogEditorActor: Deleted 1 Actors (0.015 secs)
+[2017.04.24-12.54.43:803][251]LogActor:Warning: MyLamp_C /Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.MyLamp_C_3 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2017.04.24-12.54.44:472][330]LogActor:Warning: MyLamp_C /Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.MyLamp_C_4 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2017.04.24-12.54.45:843][481]LogTemp: Repeting last play command: Selected Viewport
+[2017.04.24-12.54.45:865][481]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.24-12.54.45:865][481]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.04.24-12.54.45:865][481]PIE: New page: PIE session: Minimal_Default (Apr 24, 2017, 4:54:45 PM)
+[2017.04.24-12.54.45:866][481]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2017.04.24-12.54.45:871][481]LogPlayLevel: PIE: StaticDuplicateObject took: (0.005901s)
+[2017.04.24-12.54.45:872][481]LogAIModule: Creating AISystem for world Minimal_Default
+[2017.04.24-12.54.45:872][481]LogPlayLevel: PIE: World Init took: (0.000865s)
+[2017.04.24-12.54.45:872][481]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Minimal_Default.Minimal_Default to /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.006960s)
+[2017.04.24-12.54.45:889][481]LogInit: XAudio2 using 'Głośniki (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.04.24-12.54.45:899][481]LogInit: FAudioDevice initialized.
+[2017.04.24-12.54.45:945][481]LogUObjectGlobals:Warning: Failed to find object 'Class /Script/ZadanieRekrutacyjne.ZadanieRekrutacyjneGameMode'
+[2017.04.24-12.54.45:945][481]LogLoad: Game class is 'GameModeBase'
+[2017.04.24-12.54.45:949][481]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 0) at 2017.04.24-14.54.45
+[2017.04.24-12.54.45:949][481]LogWorld: Bringing up level for play took: 0.002250
+[2017.04.24-12.54.45:992][481]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0009 seconds. Added 11 classes and 0 folders.
+[2017.04.24-12.54.45:993][481]PIE: Info Play in editor start time for /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default -0.819
+[2017.04.24-12.54.45:993][481]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.24-12.54.47:921][707]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.24-12.54.48:000][707]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.24-12.55.56:217][815]BlueprintLog: New page: Compile MyLamp
+[2017.04.24-12.55.56:248][815]LogActor:Warning: MyLamp_C /Engine/Transient.World_14:PersistentLevel.MyLamp_C_3 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2017.04.24-12.55.56:249][815]LogActor:Warning: MyLamp_C /Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.MyLamp_5 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2017.04.24-12.55.56:249][815]LogUObjectGlobals:Warning: Guid referenced by PointLightComponent /Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.MyLamp_5.LightSource is already used by PointLightComponent /Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.REINST_MyLamp_C_0.LightSource, which should never happen in the editor but could happen at runtime with duplicate level loading or PIE
+[2017.04.24-12.55.56:250][815]LogUObjectGlobals:Warning: Guid referenced by DestructibleComponent /Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.MyLamp_5.BulbDestructibleComponent is already used by DestructibleComponent /Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.REINST_MyLamp_C_0.BulbDestructibleComponent, which should never happen in the editor but could happen at runtime with duplicate level loading or PIE
+[2017.04.24-12.55.56:250][815]LogUObjectGlobals:Warning: Guid referenced by DestructibleComponent /Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.MyLamp_5.BodyDestructibleComponent is already used by DestructibleComponent /Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.REINST_MyLamp_C_0.BodyDestructibleComponent, which should never happen in the editor but could happen at runtime with duplicate level loading or PIE
+[2017.04.24-12.55.59:439][134]LogSavePackage: Save=96.80ms
+[2017.04.24-12.55.59:439][134]LogSavePackage: Moving 'F:/TheFarm51/ZadanieRekrutacyjne/Saved/Minimal_DefaultBAAFE74646BE5F95A082729746739920.tmp' to 'F:/TheFarm51/ZadanieRekrutacyjne/Content/StarterContent/Maps/Minimal_Default.umap'
+[2017.04.24-12.55.59:441][134]LogSavePackage:Display: Finished SavePackage F:/TheFarm51/ZadanieRekrutacyjne/Content/StarterContent/Maps/Minimal_Default.umap
+[2017.04.24-12.55.59:477][134]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/StarterContent/Maps/Minimal_Default_BuiltData" FILE="F:/TheFarm51/ZadanieRekrutacyjne/Content/StarterContent/Maps/Minimal_Default_BuiltData.uasset" SILENT=true
+[2017.04.24-12.55.59:514][134]LogSavePackage: Save=30.93ms
+[2017.04.24-12.55.59:514][134]LogSavePackage: Moving 'F:/TheFarm51/ZadanieRekrutacyjne/Saved/Minimal_Default_BuiltData273C7D884D798C76C913EFB686CE02F6.tmp' to 'F:/TheFarm51/ZadanieRekrutacyjne/Content/StarterContent/Maps/Minimal_Default_BuiltData.uasset'
+[2017.04.24-12.55.59:514][134]LogSavePackage:Display: Finished SavePackage F:/TheFarm51/ZadanieRekrutacyjne/Content/StarterContent/Maps/Minimal_Default_BuiltData.uasset
+[2017.04.24-12.56.03:180][562]LogTemp: Repeting last play command: Selected Viewport
+[2017.04.24-12.56.03:193][562]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.24-12.56.03:193][562]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.04.24-12.56.03:193][562]PIE: New page: PIE session: Minimal_Default (Apr 24, 2017, 4:56:03 PM)
+[2017.04.24-12.56.03:193][562]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2017.04.24-12.56.03:200][562]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006988s)
+[2017.04.24-12.56.03:201][562]LogAIModule: Creating AISystem for world Minimal_Default
+[2017.04.24-12.56.03:201][562]LogPlayLevel: PIE: World Init took: (0.000791s)
+[2017.04.24-12.56.03:201][562]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Minimal_Default.Minimal_Default to /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.008032s)
+[2017.04.24-12.56.03:218][562]LogInit: XAudio2 using 'Głośniki (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.04.24-12.56.03:226][562]LogInit: FAudioDevice initialized.
+[2017.04.24-12.56.03:257][562]LogLoad: Game class is 'GameModeBase'
+[2017.04.24-12.56.03:260][562]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 0) at 2017.04.24-14.56.03
+[2017.04.24-12.56.03:260][562]LogWorld: Bringing up level for play took: 0.001486
+[2017.04.24-12.56.03:261][562]PIE: Info Play in editor start time for /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default 0.449
+[2017.04.24-12.56.03:261][562]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.24-12.56.16:694][128]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/MyLamp" FILE="F:/TheFarm51/ZadanieRekrutacyjne/Content/Blueprints/MyLamp.uasset" SILENT=true
+[2017.04.24-12.56.16:708][128]LogSavePackage: Save=11.76ms
+[2017.04.24-12.56.16:708][128]LogSavePackage: Moving 'F:/TheFarm51/ZadanieRekrutacyjne/Saved/MyLamp108B0139449E12A55EDD45895C245788.tmp' to 'F:/TheFarm51/ZadanieRekrutacyjne/Content/Blueprints/MyLamp.uasset'
+[2017.04.24-12.56.16:709][128]LogSavePackage:Display: Finished SavePackage F:/TheFarm51/ZadanieRekrutacyjne/Content/Blueprints/MyLamp.uasset
+[2017.04.24-12.56.43:317][393]LogHotReload: New module detected: UE4Editor-ZadanieRekrutacyjne-809.dll
+[2017.04.24-12.56.43:992][396]LogHotReload: Starting Hot-Reload from IDE
+[2017.04.24-12.56.44:095][396]LogContentBrowser: Native class hierarchy updated for 'ZadanieRekrutacyjne' in 0.0011 seconds. Added 2 classes and 2 folders.
+[2017.04.24-12.56.44:098][396]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2017.04.24-12.56.44:360][396]LogContentBrowser: Native class hierarchy populated in 0.0103 seconds. Added 2249 classes and 459 folders.
+[2017.04.24-12.56.44:370][396]Display: HotReload took  0.4s.
+[2017.04.24-12.57.22:459][808]LogActor:Warning: MyLamp_C /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default:PersistentLevel.MyLamp_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2017.04.24-12.57.22:461][808]PIE:Warning: Warning Invalid Simulate Options: Body (MyLamp2.BulbDestructibleComponent Bulb_DM) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.24-12.57.26:097][222]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.24-12.57.26:170][222]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.24-12.57.51:022][774]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'UserConstructionScript' or package '/Engine/Transient'.
+[2017.04.24-12.57.51:022][774]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'REINST_SKEL_MyLamp_C_61' or package '/Engine/Transient'.
+[2017.04.24-12.57.51:022][774]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'DEADCLASS_MyLamp_C_1' or package '/Engine/Transient'.
+[2017.04.24-12.57.51:022][774]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'DefaultSceneRoot_GEN_VARIABLE' or package '/Engine/Transient'.
+[2017.04.24-12.57.51:022][774]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'SimpleConstructionScript_0' or package '/Engine/Transient'.
+[2017.04.24-12.57.51:022][774]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'DEADCLASS_MyLamp_C_0' or package '/Engine/Transient'.
+[2017.04.24-12.57.51:023][774]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'REINST_MyLamp_C_60' or package '/Engine/Transient'.
+[2017.04.24-12.57.59:891][757]LogActor:Warning: MyLamp_C /Engine/Transient.World_15:PersistentLevel.MyLamp_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2017.04.24-12.58.04:766][277]LogActor:Warning: MyLamp_C /Engine/Transient.World_16:PersistentLevel.MyLamp_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2017.04.24-12.58.05:803][390]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/MyLamp" FILE="F:/TheFarm51/ZadanieRekrutacyjne/Content/Blueprints/MyLamp.uasset" SILENT=true
+[2017.04.24-12.58.05:817][390]LogSavePackage: Save=13.17ms
+[2017.04.24-12.58.05:817][390]LogSavePackage: Moving 'F:/TheFarm51/ZadanieRekrutacyjne/Saved/MyLampE99A3FF74D8921B2C11915A862BF0599.tmp' to 'F:/TheFarm51/ZadanieRekrutacyjne/Content/Blueprints/MyLamp.uasset'
+[2017.04.24-12.58.05:818][390]LogSavePackage:Display: Finished SavePackage F:/TheFarm51/ZadanieRekrutacyjne/Content/Blueprints/MyLamp.uasset
+[2017.04.24-12.58.21:486][258]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/MyLamp" FILE="F:/TheFarm51/ZadanieRekrutacyjne/Content/Blueprints/MyLamp.uasset" SILENT=true
+[2017.04.24-12.58.21:500][258]LogSavePackage: Save=11.58ms
+[2017.04.24-12.58.21:500][258]LogSavePackage: Moving 'F:/TheFarm51/ZadanieRekrutacyjne/Saved/MyLamp253F74844506D3517752C6AE3C581FA7.tmp' to 'F:/TheFarm51/ZadanieRekrutacyjne/Content/Blueprints/MyLamp.uasset'
+[2017.04.24-12.58.21:501][258]LogSavePackage:Display: Finished SavePackage F:/TheFarm51/ZadanieRekrutacyjne/Content/Blueprints/MyLamp.uasset
+[2017.04.24-12.58.22:252][348]BlueprintLog: New page: Compile MyLamp
+[2017.04.24-12.58.22:296][348]LogActor:Warning: MyLamp_C /Engine/Transient.World_16:PersistentLevel.MyLamp_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2017.04.24-12.58.24:806][598]LogSavePackage: Save=93.78ms
+[2017.04.24-12.58.24:806][598]LogSavePackage: Moving 'F:/TheFarm51/ZadanieRekrutacyjne/Saved/Minimal_Default8F896BF744CF67F902C051BFB6E608CD.tmp' to 'F:/TheFarm51/ZadanieRekrutacyjne/Content/StarterContent/Maps/Minimal_Default.umap'
+[2017.04.24-12.58.24:807][598]LogSavePackage:Display: Finished SavePackage F:/TheFarm51/ZadanieRekrutacyjne/Content/StarterContent/Maps/Minimal_Default.umap
+[2017.04.24-12.58.24:844][598]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/StarterContent/Maps/Minimal_Default_BuiltData" FILE="F:/TheFarm51/ZadanieRekrutacyjne/Content/StarterContent/Maps/Minimal_Default_BuiltData.uasset" SILENT=true
+[2017.04.24-12.58.24:876][598]LogSavePackage: Save=30.22ms
+[2017.04.24-12.58.24:876][598]LogSavePackage: Moving 'F:/TheFarm51/ZadanieRekrutacyjne/Saved/Minimal_Default_BuiltData85D5DEA5454367A75576D19D7B1DEDD6.tmp' to 'F:/TheFarm51/ZadanieRekrutacyjne/Content/StarterContent/Maps/Minimal_Default_BuiltData.uasset'
+[2017.04.24-12.58.24:877][598]LogSavePackage:Display: Finished SavePackage F:/TheFarm51/ZadanieRekrutacyjne/Content/StarterContent/Maps/Minimal_Default_BuiltData.uasset
+[2017.04.24-12.58.26:069][738]LogActor:Warning: MyLamp_C /Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.MyLamp_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2017.04.24-12.58.27:315][885]LogActor:Warning: MyLamp_C /Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.MyLamp_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2017.04.24-12.58.40:411][409]LogSavePackage: Save=95.14ms
+[2017.04.24-12.58.40:411][409]LogSavePackage: Moving 'F:/TheFarm51/ZadanieRekrutacyjne/Saved/Minimal_DefaultCE07151E43073BB5AF72E6B490A45F2D.tmp' to 'F:/TheFarm51/ZadanieRekrutacyjne/Content/StarterContent/Maps/Minimal_Default.umap'
+[2017.04.24-12.58.40:413][409]LogSavePackage:Display: Finished SavePackage F:/TheFarm51/ZadanieRekrutacyjne/Content/StarterContent/Maps/Minimal_Default.umap
+[2017.04.24-12.58.40:438][409]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/StarterContent/Maps/Minimal_Default_BuiltData" FILE="F:/TheFarm51/ZadanieRekrutacyjne/Content/StarterContent/Maps/Minimal_Default_BuiltData.uasset" SILENT=true
+[2017.04.24-12.58.40:471][409]LogSavePackage: Save=30.52ms
+[2017.04.24-12.58.40:471][409]LogSavePackage: Moving 'F:/TheFarm51/ZadanieRekrutacyjne/Saved/Minimal_Default_BuiltData29D1CB4E438752B504E90CA1A4E12357.tmp' to 'F:/TheFarm51/ZadanieRekrutacyjne/Content/StarterContent/Maps/Minimal_Default_BuiltData.uasset'
+[2017.04.24-12.58.40:472][409]LogSavePackage:Display: Finished SavePackage F:/TheFarm51/ZadanieRekrutacyjne/Content/StarterContent/Maps/Minimal_Default_BuiltData.uasset
+[2017.04.24-12.58.55:748][232]LogTemp: Repeting last play command: Selected Viewport
+[2017.04.24-12.58.55:762][232]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.24-12.58.55:762][232]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.04.24-12.58.55:762][232]PIE: New page: PIE session: Minimal_Default (Apr 24, 2017, 4:58:55 PM)
+[2017.04.24-12.58.55:762][232]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2017.04.24-12.58.55:768][232]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006586s)
+[2017.04.24-12.58.55:769][232]LogAIModule: Creating AISystem for world Minimal_Default
+[2017.04.24-12.58.55:769][232]LogPlayLevel: PIE: World Init took: (0.000909s)
+[2017.04.24-12.58.55:770][232]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Minimal_Default.Minimal_Default to /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.007789s)
+[2017.04.24-12.58.55:785][232]LogInit: XAudio2 using 'Głośniki (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.04.24-12.58.55:794][232]LogInit: FAudioDevice initialized.
+[2017.04.24-12.58.55:826][232]LogLoad: Game class is 'GameModeBase'
+[2017.04.24-12.58.55:828][232]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 0) at 2017.04.24-14.58.55
+[2017.04.24-12.58.55:829][232]LogWorld: Bringing up level for play took: 0.001401
+[2017.04.24-12.58.55:830][232]PIE: Info Play in editor start time for /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default 1.018
+[2017.04.24-12.58.55:830][232]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.24-12.58.57:555][436]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.24-12.58.57:627][436]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.24-13.07.03:492][889]LogHotReload: New module detected: UE4Editor-ZadanieRekrutacyjne-4818.dll
+[2017.04.24-13.07.04:169][892]LogHotReload: Starting Hot-Reload from IDE
+[2017.04.24-13.07.04:286][892]LogHotReload: Re-instancing Lamp after hot-reload.
+[2017.04.24-13.07.04:480][892]LogActor:Warning: MyLamp_C /Engine/Transient.World_16:PersistentLevel.MyLamp_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2017.04.24-13.07.04:481][892]LogActor:Warning: MyLamp_C /Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.MyLamp_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2017.04.24-13.07.04:481][892]LogUObjectGlobals:Warning: Guid referenced by PointLightComponent /Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.MyLamp_2.LightSource is already used by PointLightComponent /Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.REINST_MyLamp_C_0.LightSource, which should never happen in the editor but could happen at runtime with duplicate level loading or PIE
+[2017.04.24-13.07.04:481][892]LogUObjectGlobals:Warning: Guid referenced by DestructibleComponent /Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.MyLamp_2.BulbDestructibleComponent is already used by DestructibleComponent /Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.REINST_MyLamp_C_0.BulbDestructibleComponent, which should never happen in the editor but could happen at runtime with duplicate level loading or PIE
+[2017.04.24-13.07.04:481][892]LogUObjectGlobals:Warning: Guid referenced by DestructibleComponent /Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.MyLamp_2.BodyDestructibleComponent is already used by DestructibleComponent /Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.REINST_MyLamp_C_0.BodyDestructibleComponent, which should never happen in the editor but could happen at runtime with duplicate level loading or PIE
+[2017.04.24-13.07.04:742][892]LogContentBrowser: Native class hierarchy updated for 'ZadanieRekrutacyjne' in 0.0012 seconds. Added 2 classes and 2 folders.
+[2017.04.24-13.07.04:744][892]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2017.04.24-13.07.05:003][892]LogContentBrowser: Native class hierarchy populated in 0.0090 seconds. Added 2249 classes and 459 folders.
+[2017.04.24-13.07.05:015][892]Display: HotReload took  0.8s.
+[2017.04.24-13.07.34:253][575]LogTemp: Repeting last play command: Selected Viewport
+[2017.04.24-13.07.34:266][575]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.24-13.07.34:266][575]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.04.24-13.07.34:266][575]PIE: New page: PIE session: Minimal_Default (Apr 24, 2017, 5:07:34 PM)
+[2017.04.24-13.07.34:266][575]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2017.04.24-13.07.34:272][575]LogPlayLevel: PIE: StaticDuplicateObject took: (0.005801s)
+[2017.04.24-13.07.34:273][575]LogAIModule: Creating AISystem for world Minimal_Default
+[2017.04.24-13.07.34:273][575]LogPlayLevel: PIE: World Init took: (0.000735s)
+[2017.04.24-13.07.34:273][575]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Minimal_Default.Minimal_Default to /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.006882s)
+[2017.04.24-13.07.34:316][575]LogInit: XAudio2 using 'Głośniki (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.04.24-13.07.34:325][575]LogInit: FAudioDevice initialized.
+[2017.04.24-13.07.34:354][575]LogLoad: Game class is 'GameModeBase'
+[2017.04.24-13.07.34:356][575]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 0) at 2017.04.24-15.07.34
+[2017.04.24-13.07.34:356][575]LogWorld: Bringing up level for play took: 0.001489
+[2017.04.24-13.07.34:358][575]PIE: Info Play in editor start time for /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default -0.454
+[2017.04.24-13.07.34:358][575]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.24-13.07.36:432][821]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.24-13.07.36:502][821]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.24-13.08.02:517][158]LogHotReload: New module detected: UE4Editor-ZadanieRekrutacyjne-9990.dll
+[2017.04.24-13.08.03:189][161]LogHotReload: Starting Hot-Reload from IDE
+[2017.04.24-13.08.03:272][161]LogHotReload: Re-instancing Lamp after hot-reload.
+[2017.04.24-13.08.03:402][161]LogActor:Warning: MyLamp_C /Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.MyLamp_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2017.04.24-13.08.03:598][161]LogContentBrowser: Native class hierarchy updated for 'ZadanieRekrutacyjne' in 0.0010 seconds. Added 2 classes and 2 folders.
+[2017.04.24-13.08.03:600][161]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2017.04.24-13.08.03:840][161]LogContentBrowser: Native class hierarchy populated in 0.0090 seconds. Added 2249 classes and 459 folders.
+[2017.04.24-13.08.03:850][161]Display: HotReload took  0.7s.
+[2017.04.24-13.08.26:597][437]LogActor:Warning: MyLamp_C /Engine/Transient.World_17:PersistentLevel.MyLamp_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2017.04.24-13.08.30:049][807]LogActor:Warning: MyLamp_C /Engine/Transient.World_18:PersistentLevel.MyLamp_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2017.04.24-13.08.40:411][784]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'DEADCLASS_MyLamp_C_3' or package '/Engine/Transient'.
+[2017.04.24-13.08.40:411][784]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'DefaultSceneRoot_GEN_VARIABLE' or package '/Engine/Transient'.
+[2017.04.24-13.08.40:411][784]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'SimpleConstructionScript_0' or package '/Engine/Transient'.
+[2017.04.24-13.08.40:411][784]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'DEADCLASS_MyLamp_C_2' or package '/Engine/Transient'.
+[2017.04.24-13.08.40:411][784]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'UserConstructionScript' or package '/Engine/Transient'.
+[2017.04.24-13.08.40:411][784]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'REINST_SKEL_MyLamp_C_85' or package '/Engine/Transient'.
+[2017.04.24-13.08.40:411][784]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'REINST_MyLamp_C_84' or package '/Engine/Transient'.
+[2017.04.24-13.08.49:043][751]LogActor:Warning: MyLamp_C /Engine/Transient.World_19:PersistentLevel.MyLamp_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2017.04.24-13.08.51:583][ 41]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/MyLamp" FILE="F:/TheFarm51/ZadanieRekrutacyjne/Content/Blueprints/MyLamp.uasset" SILENT=true
+[2017.04.24-13.08.51:595][ 41]LogSavePackage: Save=11.86ms
+[2017.04.24-13.08.51:596][ 41]LogSavePackage: Moving 'F:/TheFarm51/ZadanieRekrutacyjne/Saved/MyLamp8598F61D469BC5EE1E08EA9E61FEBD75.tmp' to 'F:/TheFarm51/ZadanieRekrutacyjne/Content/Blueprints/MyLamp.uasset'
+[2017.04.24-13.08.51:597][ 41]LogSavePackage:Display: Finished SavePackage F:/TheFarm51/ZadanieRekrutacyjne/Content/Blueprints/MyLamp.uasset
+[2017.04.24-13.08.56:223][546]LogActor:Warning: MyLamp_C /Engine/Transient.World_20:PersistentLevel.MyLamp_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2017.04.24-13.09.17:633][ 95]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/MyLamp" FILE="F:/TheFarm51/ZadanieRekrutacyjne/Content/Blueprints/MyLamp.uasset" SILENT=true
+[2017.04.24-13.09.17:652][ 95]LogSavePackage: Save=12.24ms
+[2017.04.24-13.09.17:652][ 95]LogSavePackage: Moving 'F:/TheFarm51/ZadanieRekrutacyjne/Saved/MyLampB1421E004F0ED44E97DF8E8BE1C08305.tmp' to 'F:/TheFarm51/ZadanieRekrutacyjne/Content/Blueprints/MyLamp.uasset'
+[2017.04.24-13.09.17:653][ 95]LogSavePackage:Display: Finished SavePackage F:/TheFarm51/ZadanieRekrutacyjne/Content/Blueprints/MyLamp.uasset
+[2017.04.24-13.09.18:029][140]BlueprintLog: New page: Compile MyLamp
+[2017.04.24-13.09.18:071][140]LogActor:Warning: MyLamp_C /Engine/Transient.World_20:PersistentLevel.MyLamp_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2017.04.24-13.09.19:880][314]LogSavePackage: Save=91.71ms
+[2017.04.24-13.09.19:880][314]LogSavePackage: Moving 'F:/TheFarm51/ZadanieRekrutacyjne/Saved/Minimal_DefaultBFC24FC1450DD0C89443D3AB85DADDED.tmp' to 'F:/TheFarm51/ZadanieRekrutacyjne/Content/StarterContent/Maps/Minimal_Default.umap'
+[2017.04.24-13.09.19:881][314]LogSavePackage:Display: Finished SavePackage F:/TheFarm51/ZadanieRekrutacyjne/Content/StarterContent/Maps/Minimal_Default.umap
+[2017.04.24-13.09.19:908][314]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/StarterContent/Maps/Minimal_Default_BuiltData" FILE="F:/TheFarm51/ZadanieRekrutacyjne/Content/StarterContent/Maps/Minimal_Default_BuiltData.uasset" SILENT=true
+[2017.04.24-13.09.19:944][314]LogSavePackage: Save=30.33ms
+[2017.04.24-13.09.19:944][314]LogSavePackage: Moving 'F:/TheFarm51/ZadanieRekrutacyjne/Saved/Minimal_Default_BuiltData87D07C8C4933E3A22100C3AEA8E963B4.tmp' to 'F:/TheFarm51/ZadanieRekrutacyjne/Content/StarterContent/Maps/Minimal_Default_BuiltData.uasset'
+[2017.04.24-13.09.19:945][314]LogSavePackage:Display: Finished SavePackage F:/TheFarm51/ZadanieRekrutacyjne/Content/StarterContent/Maps/Minimal_Default_BuiltData.uasset
+[2017.04.24-13.09.23:519][734]LogActor:Warning: MyLamp_C /Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.MyLamp_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2017.04.24-13.09.24:188][813]LogActor:Warning: MyLamp_C /Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.MyLamp_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2017.04.24-13.09.30:202][502]LogEditorActor: Deleted Actor: MyLamp_C
+[2017.04.24-13.09.30:215][502]LogEditorActor: Deleted 1 Actors (0.014 secs)
+[2017.04.24-13.09.34:103][959]LogActor:Warning: MyLamp_C /Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.MyLamp_C_3 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2017.04.24-13.09.37:876][409]LogActor:Warning: MyLamp_C /Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.MyLamp_C_4 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2017.04.24-13.09.41:196][775]LogSavePackage: Save=97.68ms
+[2017.04.24-13.09.41:196][775]LogSavePackage: Moving 'F:/TheFarm51/ZadanieRekrutacyjne/Saved/Minimal_Default9BC8AEBA4ABCFBDA0FD443815B5579FC.tmp' to 'F:/TheFarm51/ZadanieRekrutacyjne/Content/StarterContent/Maps/Minimal_Default.umap'
+[2017.04.24-13.09.41:198][775]LogSavePackage:Display: Finished SavePackage F:/TheFarm51/ZadanieRekrutacyjne/Content/StarterContent/Maps/Minimal_Default.umap
+[2017.04.24-13.09.41:225][775]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/StarterContent/Maps/Minimal_Default_BuiltData" FILE="F:/TheFarm51/ZadanieRekrutacyjne/Content/StarterContent/Maps/Minimal_Default_BuiltData.uasset" SILENT=true
+[2017.04.24-13.09.41:256][775]LogSavePackage: Save=29.53ms
+[2017.04.24-13.09.41:256][775]LogSavePackage: Moving 'F:/TheFarm51/ZadanieRekrutacyjne/Saved/Minimal_Default_BuiltData72462B3E49917D7F2376E39DE5070B4B.tmp' to 'F:/TheFarm51/ZadanieRekrutacyjne/Content/StarterContent/Maps/Minimal_Default_BuiltData.uasset'
+[2017.04.24-13.09.41:257][775]LogSavePackage:Display: Finished SavePackage F:/TheFarm51/ZadanieRekrutacyjne/Content/StarterContent/Maps/Minimal_Default_BuiltData.uasset
+[2017.04.24-13.09.46:333][366]LogTemp: Repeting last play command: Selected Viewport
+[2017.04.24-13.09.46:352][366]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.24-13.09.46:352][366]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.04.24-13.09.46:352][366]PIE: New page: PIE session: Minimal_Default (Apr 24, 2017, 5:09:46 PM)
+[2017.04.24-13.09.46:352][366]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2017.04.24-13.09.46:358][366]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006100s)
+[2017.04.24-13.09.46:359][366]LogAIModule: Creating AISystem for world Minimal_Default
+[2017.04.24-13.09.46:359][366]LogPlayLevel: PIE: World Init took: (0.000688s)
+[2017.04.24-13.09.46:359][366]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Minimal_Default.Minimal_Default to /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.007002s)
+[2017.04.24-13.09.46:377][366]LogInit: XAudio2 using 'Głośniki (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.04.24-13.09.46:386][366]LogInit: FAudioDevice initialized.
+[2017.04.24-13.09.46:414][366]LogLoad: Game class is 'GameModeBase'
+[2017.04.24-13.09.46:417][366]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 0) at 2017.04.24-15.09.46
+[2017.04.24-13.09.46:417][366]LogWorld: Bringing up level for play took: 0.001480
+[2017.04.24-13.09.46:418][366]PIE: Info Play in editor start time for /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default -0.394
+[2017.04.24-13.09.46:418][366]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.24-13.09.51:767][  5]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.24-13.09.51:839][  5]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.24-13.10.50:808][841]LogHotReload: New module detected: UE4Editor-ZadanieRekrutacyjne-259.dll
+[2017.04.24-13.10.51:482][844]LogHotReload: Starting Hot-Reload from IDE
+[2017.04.24-13.10.51:591][844]LogClass: Could not find existing class Lamp in package /Script/ZadanieRekrutacyjne for HotReload, assuming new class
+[2017.04.24-13.10.51:597][844]LogHotReload: Re-instancing Lamp after hot-reload.
+[2017.04.24-13.10.51:788][844]LogActor:Warning: MyLamp_C /Engine/Transient.World_20:PersistentLevel.MyLamp_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2017.04.24-13.10.51:789][844]LogActor:Warning: MyLamp_C /Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.MyLamp_5 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2017.04.24-13.10.51:789][844]LogUObjectGlobals:Warning: Guid referenced by PointLightComponent /Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.MyLamp_5.LightSource is already used by PointLightComponent /Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.REINST_MyLamp_C_0.LightSource, which should never happen in the editor but could happen at runtime with duplicate level loading or PIE
+[2017.04.24-13.10.51:789][844]LogUObjectGlobals:Warning: Guid referenced by DestructibleComponent /Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.MyLamp_5.BulbDestructibleComponent is already used by DestructibleComponent /Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.REINST_MyLamp_C_0.BulbDestructibleComponent, which should never happen in the editor but could happen at runtime with duplicate level loading or PIE
+[2017.04.24-13.10.51:789][844]LogUObjectGlobals:Warning: Guid referenced by DestructibleComponent /Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.MyLamp_5.BodyDestructibleComponent is already used by DestructibleComponent /Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.REINST_MyLamp_C_0.BodyDestructibleComponent, which should never happen in the editor but could happen at runtime with duplicate level loading or PIE
+[2017.04.24-13.10.52:059][844]LogContentBrowser: Native class hierarchy updated for 'ZadanieRekrutacyjne' in 0.0011 seconds. Added 2 classes and 2 folders.
+[2017.04.24-13.10.52:062][844]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2017.04.24-13.10.52:318][844]LogContentBrowser: Native class hierarchy populated in 0.0092 seconds. Added 2249 classes and 459 folders.
+[2017.04.24-13.10.52:328][844]Display: HotReload took  0.8s.
+[2017.04.24-13.13.03:297][783]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'UserConstructionScript' or package '/Engine/Transient'.
+[2017.04.24-13.13.03:298][783]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'DEADCLASS_MyLamp_C_5' or package '/Engine/Transient'.
+[2017.04.24-13.13.03:298][783]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'REINST_SKEL_MyLamp_C_105' or package '/Engine/Transient'.
+[2017.04.24-13.13.03:298][783]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'REINST_MyLamp_C_104' or package '/Engine/Transient'.
+[2017.04.24-13.13.03:298][783]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'DefaultSceneRoot_GEN_VARIABLE' or package '/Engine/Transient'.
+[2017.04.24-13.13.03:298][783]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'SimpleConstructionScript_0' or package '/Engine/Transient'.
+[2017.04.24-13.13.03:298][783]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'DEADCLASS_MyLamp_C_4' or package '/Engine/Transient'.
+[2017.04.24-13.13.12:482][804]LogActor:Warning: MyLamp_C /Engine/Transient.World_21:PersistentLevel.MyLamp_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2017.04.24-13.13.20:418][734]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/MyLamp" FILE="F:/TheFarm51/ZadanieRekrutacyjne/Content/Blueprints/MyLamp.uasset" SILENT=true
+[2017.04.24-13.13.20:431][734]LogSavePackage: Save=11.89ms
+[2017.04.24-13.13.20:431][734]LogSavePackage: Moving 'F:/TheFarm51/ZadanieRekrutacyjne/Saved/MyLamp016D45AA427AE6134B10BFB50BD0C067.tmp' to 'F:/TheFarm51/ZadanieRekrutacyjne/Content/Blueprints/MyLamp.uasset'
+[2017.04.24-13.13.20:433][734]LogSavePackage:Display: Finished SavePackage F:/TheFarm51/ZadanieRekrutacyjne/Content/Blueprints/MyLamp.uasset
+[2017.04.24-13.13.22:631][955]LogActor:Warning: MyLamp_C /Engine/Transient.World_22:PersistentLevel.MyLamp_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2017.04.24-13.13.30:941][913]LogSavePackage: Save=89.69ms
+[2017.04.24-13.13.30:941][913]LogSavePackage: Moving 'F:/TheFarm51/ZadanieRekrutacyjne/Saved/Minimal_DefaultDBF762EC4A6ABCBC62417086FECB0A2A.tmp' to 'F:/TheFarm51/ZadanieRekrutacyjne/Content/StarterContent/Maps/Minimal_Default.umap'
+[2017.04.24-13.13.30:942][913]LogSavePackage:Display: Finished SavePackage F:/TheFarm51/ZadanieRekrutacyjne/Content/StarterContent/Maps/Minimal_Default.umap
+[2017.04.24-13.13.30:969][913]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/StarterContent/Maps/Minimal_Default_BuiltData" FILE="F:/TheFarm51/ZadanieRekrutacyjne/Content/StarterContent/Maps/Minimal_Default_BuiltData.uasset" SILENT=true
+[2017.04.24-13.13.31:002][913]LogSavePackage: Save=30.71ms
+[2017.04.24-13.13.31:002][913]LogSavePackage: Moving 'F:/TheFarm51/ZadanieRekrutacyjne/Saved/Minimal_Default_BuiltDataCEF8F07848A94BB7CB557497F3F50EA4.tmp' to 'F:/TheFarm51/ZadanieRekrutacyjne/Content/StarterContent/Maps/Minimal_Default_BuiltData.uasset'
+[2017.04.24-13.13.31:002][913]LogSavePackage:Display: Finished SavePackage F:/TheFarm51/ZadanieRekrutacyjne/Content/StarterContent/Maps/Minimal_Default_BuiltData.uasset
+[2017.04.24-13.14.34:710][341]LogHotReload: New module detected: UE4Editor-ZadanieRekrutacyjne-8736.dll
+[2017.04.24-13.14.35:383][344]LogHotReload: Starting Hot-Reload from IDE
+[2017.04.24-13.14.35:468][344]LogHotReload: Re-instancing Lamp after hot-reload.
+[2017.04.24-13.14.35:659][344]LogContentBrowser: Native class hierarchy updated for 'ZadanieRekrutacyjne' in 0.0014 seconds. Added 2 classes and 2 folders.
+[2017.04.24-13.14.35:662][344]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2017.04.24-13.14.35:913][344]LogContentBrowser: Native class hierarchy populated in 0.0095 seconds. Added 2249 classes and 459 folders.
+[2017.04.24-13.14.35:923][344]Display: HotReload took  0.5s.
+[2017.04.24-13.15.04:832][295]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/MyLamp" FILE="F:/TheFarm51/ZadanieRekrutacyjne/Content/Blueprints/MyLamp.uasset" SILENT=true
+[2017.04.24-13.15.04:846][295]LogSavePackage: Save=12.15ms
+[2017.04.24-13.15.04:847][295]LogSavePackage: Moving 'F:/TheFarm51/ZadanieRekrutacyjne/Saved/MyLampEB52D64946CB4BD0B369769808794B1D.tmp' to 'F:/TheFarm51/ZadanieRekrutacyjne/Content/Blueprints/MyLamp.uasset'
+[2017.04.24-13.15.04:847][295]LogSavePackage:Display: Finished SavePackage F:/TheFarm51/ZadanieRekrutacyjne/Content/Blueprints/MyLamp.uasset
+[2017.04.24-13.15.42:693][652]LogHotReload: New module detected: UE4Editor-ZadanieRekrutacyjne-8750.dll
+[2017.04.24-13.15.43:365][655]LogHotReload: Starting Hot-Reload from IDE
+[2017.04.24-13.15.43:451][655]LogContentBrowser: Native class hierarchy updated for 'ZadanieRekrutacyjne' in 0.0012 seconds. Added 2 classes and 2 folders.
+[2017.04.24-13.15.43:454][655]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2017.04.24-13.15.43:699][655]LogContentBrowser: Native class hierarchy populated in 0.0088 seconds. Added 2249 classes and 459 folders.
+[2017.04.24-13.15.43:713][655]Display: HotReload took  0.3s.
+[2017.04.24-13.16.14:321][696]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/MyLamp" FILE="F:/TheFarm51/ZadanieRekrutacyjne/Content/Blueprints/MyLamp.uasset" SILENT=true
+[2017.04.24-13.16.14:341][696]LogSavePackage: Save=11.82ms
+[2017.04.24-13.16.14:341][696]LogSavePackage: Moving 'F:/TheFarm51/ZadanieRekrutacyjne/Saved/MyLampC329E6374CD35E122080FB8B8C39623F.tmp' to 'F:/TheFarm51/ZadanieRekrutacyjne/Content/Blueprints/MyLamp.uasset'
+[2017.04.24-13.16.14:342][696]LogSavePackage:Display: Finished SavePackage F:/TheFarm51/ZadanieRekrutacyjne/Content/Blueprints/MyLamp.uasset
+[2017.04.24-13.16.14:675][734]BlueprintLog: New page: Compile MyLamp
+[2017.04.24-13.16.21:247][483]BlueprintLog: New page: Compile MyLamp
+[2017.04.24-13.16.46:173][383]BlueprintLog: New page: Compile MyLamp
+[2017.04.24-13.16.47:334][500]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/MyLamp" FILE="F:/TheFarm51/ZadanieRekrutacyjne/Content/Blueprints/MyLamp.uasset" SILENT=true
+[2017.04.24-13.16.47:348][500]LogSavePackage: Save=12.12ms
+[2017.04.24-13.16.47:348][500]LogSavePackage: Moving 'F:/TheFarm51/ZadanieRekrutacyjne/Saved/MyLamp177CF2584C5FB6222C6572A6C4EE210C.tmp' to 'F:/TheFarm51/ZadanieRekrutacyjne/Content/Blueprints/MyLamp.uasset'
+[2017.04.24-13.16.47:349][500]LogSavePackage:Display: Finished SavePackage F:/TheFarm51/ZadanieRekrutacyjne/Content/Blueprints/MyLamp.uasset
+[2017.04.24-13.16.49:159][710]PIE:Warning: Warning Invalid Simulate Options: Body (MyLamp.BulbDestructibleComponent Bulb_DM) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.24-13.16.49:159][710]PIE:Warning: Warning Invalid Simulate Options: Body (MyLamp.BodyDestructibleComponent LampBody_DM) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.24-13.17.33:448][963]LogHotReload: New module detected: UE4Editor-ZadanieRekrutacyjne-8416.dll
+[2017.04.24-13.17.34:131][966]LogHotReload: Starting Hot-Reload from IDE
+[2017.04.24-13.17.34:230][966]LogHotReload: Re-instancing Lamp after hot-reload.
+[2017.04.24-13.17.34:365][966]LogActor:Warning: MyLamp_C /Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.MyLamp_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2017.04.24-13.17.34:365][966]LogUObjectGlobals:Warning: Guid referenced by DestructibleComponent /Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.MyLamp_2.BulbDestructibleComponent is already used by DestructibleComponent /Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.REINST_MyLamp_C_0.BulbDestructibleComponent, which should never happen in the editor but could happen at runtime with duplicate level loading or PIE
+[2017.04.24-13.17.34:366][966]LogUObjectGlobals:Warning: Guid referenced by DestructibleComponent /Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.MyLamp_2.BodyDestructibleComponent is already used by DestructibleComponent /Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.REINST_MyLamp_C_0.BodyDestructibleComponent, which should never happen in the editor but could happen at runtime with duplicate level loading or PIE
+[2017.04.24-13.17.34:366][966]LogUObjectGlobals:Warning: Guid referenced by PointLightComponent /Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.MyLamp_2.LightSource is already used by PointLightComponent /Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.REINST_MyLamp_C_0.LightSource, which should never happen in the editor but could happen at runtime with duplicate level loading or PIE
+[2017.04.24-13.17.34:559][966]LogContentBrowser: Native class hierarchy updated for 'ZadanieRekrutacyjne' in 0.0010 seconds. Added 2 classes and 2 folders.
+[2017.04.24-13.17.34:562][966]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2017.04.24-13.17.34:813][966]LogContentBrowser: Native class hierarchy populated in 0.0093 seconds. Added 2249 classes and 459 folders.
+[2017.04.24-13.17.34:825][966]Display: HotReload took  0.7s.
+[2017.04.24-13.17.39:382][322]LogEditorActor: Deleted Actor: MyLamp_C
+[2017.04.24-13.17.39:420][322]LogEditorActor: Deleted 1 Actors (0.039 secs)
+[2017.04.24-13.17.41:573][567]LogActor:Warning: MyLamp_C /Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.MyLamp_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2017.04.24-13.17.41:574][567]PIE:Warning: Warning Invalid Simulate Options: Body (MyLamp.BulbDestructibleComponent Bulb_DM) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.24-13.17.41:574][567]PIE:Warning: Warning Invalid Simulate Options: Body (MyLamp.BodyDestructibleComponent LampBody_DM) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.24-13.17.42:912][726]LogActor:Warning: MyLamp_C /Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.MyLamp_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2017.04.24-13.17.47:865][309]Cmd: DELETE
+[2017.04.24-13.17.47:865][309]Cmd: ACTOR DELETE
+[2017.04.24-13.17.47:865][309]LogEditorActor: Deleted Actor: MyLamp_C
+[2017.04.24-13.17.47:892][309]LogEditorActor: Deleted 1 Actors (0.027 secs)
+[2017.04.24-13.18.00:369][757]LogActor:Warning: MyLamp_C /Engine/Transient.World_27:PersistentLevel.MyLamp_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2017.04.24-13.18.42:430][716]Running C:/Program Files/Epic Games/UE_4.15/Engine/Binaries/DotNET/UnrealBuildTool.exe ZadanieRekrutacyjne Win64 Development -editorrecompile "F:/TheFarm51/ZadanieRekrutacyjne/ZadanieRekrutacyjne.uproject" -invalidatemakefilesonly
+[2017.04.24-13.18.42:732][716]Invalidating makefiles only in this run.
+[2017.04.24-13.18.43:035][716]Recompiling ZadanieRekrutacyjne...
+[2017.04.24-13.18.43:035][716]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.15/Engine/Binaries/DotNET/UnrealBuildTool.exe ZadanieRekrutacyjne -ModuleWithSuffix ZadanieRekrutacyjne 8863 Win64 Development -editorrecompile -canskiplink "F:/TheFarm51/ZadanieRekrutacyjne/ZadanieRekrutacyjne.uproject" ]
+[2017.04.24-13.18.43:856][716]LogSlate: Took 0.000133 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2017.04.24-13.18.51:763][716]CompilerResultsLog: New page: Compilation - Apr 24, 2017, 5:18:51 PM
+[2017.04.24-13.18.51:763][716]CompilerResultsLog: Info Compiling game modules for hot reload
+[2017.04.24-13.18.51:763][716]CompilerResultsLog: Info Parsing headers for ZadanieRekrutacyjneEditor
+[2017.04.24-13.18.51:763][716]CompilerResultsLog: Info   Running UnrealHeaderTool "F:\TheFarm51\ZadanieRekrutacyjne\ZadanieRekrutacyjne.uproject" "F:\TheFarm51\ZadanieRekrutacyjne\Intermediate\Build\Win64\ZadanieRekrutacyjneEditor\Development\ZadanieRekrutacyjneEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+[2017.04.24-13.18.51:763][716]CompilerResultsLog: Info Reflection code generated for ZadanieRekrutacyjneEditor in 2,9097963 seconds
+[2017.04.24-13.18.51:763][716]CompilerResultsLog: Info Performing 4 actions (4 in parallel)
+[2017.04.24-13.18.51:763][716]CompilerResultsLog: Info ZadanieRekrutacyjne.generated.cpp
+[2017.04.24-13.18.51:763][716]CompilerResultsLog: Info LampBody.cpp
+[2017.04.24-13.18.51:763][716]CompilerResultsLog: Info [3/4] Link UE4Editor-ZadanieRekrutacyjne-8863.dll
+[2017.04.24-13.18.51:763][716]CompilerResultsLog: Info [4/4] Link UE4Editor-ZadanieRekrutacyjne-8863.lib
+[2017.04.24-13.18.51:763][716]CompilerResultsLog: Info    Creating library F:\TheFarm51\ZadanieRekrutacyjne\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-ZadanieRekrutacyjne-8863.lib and object F:\TheFarm51\ZadanieRekrutacyjne\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-ZadanieRekrutacyjne-8863.exp
+[2017.04.24-13.18.51:763][716]CompilerResultsLog: Info    Creating library F:\TheFarm51\ZadanieRekrutacyjne\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-ZadanieRekrutacyjne-8863.suppressed.lib and object F:\TheFarm51\ZadanieRekrutacyjne\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-ZadanieRekrutacyjne-8863.suppressed.exp
+[2017.04.24-13.18.51:763][716]CompilerResultsLog: Info Total build time: 8,48 seconds (Local executor: 3,46 seconds)
+[2017.04.24-13.18.51:763][716]LogMainFrame: MainFrame: Module compiling took 8.740 seconds
+[2017.04.24-13.18.51:828][716]LogClass: Could not find existing class LampBody in package /Script/ZadanieRekrutacyjne for HotReload, assuming new class
+[2017.04.24-13.18.51:832][716]LogContentBrowser: Native class hierarchy updated for 'ZadanieRekrutacyjne' in 0.0011 seconds. Added 3 classes and 2 folders.
+[2017.04.24-13.18.51:835][716]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2017.04.24-13.18.52:078][716]LogContentBrowser: Native class hierarchy populated in 0.0092 seconds. Added 2250 classes and 459 folders.
+[2017.04.24-13.18.52:078][716]Display: HotReload took  9.2s.
+[2017.04.24-13.18.52:079][716]Warning: HotReload operation took  9.2s.
+[2017.04.24-13.18.52:179][716]LogVSAccessor:Warning: Couldn't goto line number '0' in 'F:/TheFarm51/ZadanieRekrutacyjne/Source/ZadanieRekrutacyjne/LampBody.h'
+[2017.04.24-13.18.52:260][716]LogVSAccessor:Warning: Couldn't goto line number '0' in 'F:/TheFarm51/ZadanieRekrutacyjne/Source/ZadanieRekrutacyjne/LampBody.cpp'
+[2017.04.24-13.18.52:274][716]LogHotReload: New module detected: UE4Editor-ZadanieRekrutacyjne-8863.dll
+[2017.04.24-13.18.52:298][717]LogHotReload: Starting Hot-Reload from IDE
+[2017.04.24-13.18.52:432][717]LogContentBrowser: Native class hierarchy updated for 'ZadanieRekrutacyjne' in 0.0010 seconds. Added 3 classes and 2 folders.
+[2017.04.24-13.18.52:435][717]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2017.04.24-13.18.52:657][717]LogContentBrowser: Native class hierarchy populated in 0.0087 seconds. Added 2250 classes and 459 folders.
+[2017.04.24-13.18.52:667][717]Display: HotReload took  0.4s.
+[2017.04.24-13.19.03:341][939]Running C:/Program Files/Epic Games/UE_4.15/Engine/Binaries/DotNET/UnrealBuildTool.exe ZadanieRekrutacyjne Win64 Development -editorrecompile "F:/TheFarm51/ZadanieRekrutacyjne/ZadanieRekrutacyjne.uproject" -invalidatemakefilesonly
+[2017.04.24-13.19.03:643][939]Invalidating makefiles only in this run.
+[2017.04.24-13.19.03:966][939]Recompiling ZadanieRekrutacyjne...
+[2017.04.24-13.19.03:966][939]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.15/Engine/Binaries/DotNET/UnrealBuildTool.exe ZadanieRekrutacyjne -ModuleWithSuffix ZadanieRekrutacyjne 3850 Win64 Development -editorrecompile -canskiplink "F:/TheFarm51/ZadanieRekrutacyjne/ZadanieRekrutacyjne.uproject" ]
+[2017.04.24-13.19.12:571][939]CompilerResultsLog: New page: Compilation - Apr 24, 2017, 5:19:12 PM
+[2017.04.24-13.19.12:571][939]CompilerResultsLog: Info Compiling game modules for hot reload
+[2017.04.24-13.19.12:571][939]CompilerResultsLog: Info Parsing headers for ZadanieRekrutacyjneEditor
+[2017.04.24-13.19.12:571][939]CompilerResultsLog: Info   Running UnrealHeaderTool "F:\TheFarm51\ZadanieRekrutacyjne\ZadanieRekrutacyjne.uproject" "F:\TheFarm51\ZadanieRekrutacyjne\Intermediate\Build\Win64\ZadanieRekrutacyjneEditor\Development\ZadanieRekrutacyjneEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+[2017.04.24-13.19.12:571][939]CompilerResultsLog: Info Reflection code generated for ZadanieRekrutacyjneEditor in 3,0333059 seconds
+[2017.04.24-13.19.12:571][939]CompilerResultsLog: Info Performing 4 actions (4 in parallel)
+[2017.04.24-13.19.12:571][939]CompilerResultsLog: Info LightBulb.cpp
+[2017.04.24-13.19.12:571][939]CompilerResultsLog: Info ZadanieRekrutacyjne.generated.cpp
+[2017.04.24-13.19.12:571][939]CompilerResultsLog: Info [3/4] Link UE4Editor-ZadanieRekrutacyjne-3850.dll
+[2017.04.24-13.19.12:571][939]CompilerResultsLog: Info [4/4] Link UE4Editor-ZadanieRekrutacyjne-3850.lib
+[2017.04.24-13.19.12:571][939]CompilerResultsLog: Info    Creating library F:\TheFarm51\ZadanieRekrutacyjne\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-ZadanieRekrutacyjne-3850.lib and object F:\TheFarm51\ZadanieRekrutacyjne\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-ZadanieRekrutacyjne-3850.exp
+[2017.04.24-13.19.12:571][939]CompilerResultsLog: Info    Creating library F:\TheFarm51\ZadanieRekrutacyjne\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-ZadanieRekrutacyjne-3850.suppressed.lib and object F:\TheFarm51\ZadanieRekrutacyjne\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-ZadanieRekrutacyjne-3850.suppressed.exp
+[2017.04.24-13.19.12:571][939]CompilerResultsLog: Info Total build time: 8,37 seconds (Local executor: 3,16 seconds)
+[2017.04.24-13.19.12:571][939]LogMainFrame: MainFrame: Module compiling took 8.616 seconds
+[2017.04.24-13.19.12:680][939]LogClass: Could not find existing class LightBulb in package /Script/ZadanieRekrutacyjne for HotReload, assuming new class
+[2017.04.24-13.19.12:684][939]LogContentBrowser: Native class hierarchy updated for 'ZadanieRekrutacyjne' in 0.0011 seconds. Added 4 classes and 2 folders.
+[2017.04.24-13.19.12:687][939]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2017.04.24-13.19.12:941][939]LogContentBrowser: Native class hierarchy populated in 0.0093 seconds. Added 2251 classes and 459 folders.
+[2017.04.24-13.19.12:941][939]Display: HotReload took  9.2s.
+[2017.04.24-13.19.12:942][939]Warning: HotReload operation took  9.2s.
+[2017.04.24-13.19.13:581][939]LogVSAccessor:Warning: Couldn't goto line number '0' in 'F:/TheFarm51/ZadanieRekrutacyjne/Source/ZadanieRekrutacyjne/LightBulb.h'
+[2017.04.24-13.19.13:650][939]LogVSAccessor:Warning: Couldn't goto line number '0' in 'F:/TheFarm51/ZadanieRekrutacyjne/Source/ZadanieRekrutacyjne/LightBulb.cpp'
+[2017.04.24-13.19.13:692][940]LogHotReload: New module detected: UE4Editor-ZadanieRekrutacyjne-3850.dll
+[2017.04.24-13.19.13:705][941]LogHotReload: Starting Hot-Reload from IDE
+[2017.04.24-13.19.13:805][941]LogContentBrowser: Native class hierarchy updated for 'ZadanieRekrutacyjne' in 0.0010 seconds. Added 4 classes and 2 folders.
+[2017.04.24-13.19.13:808][941]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2017.04.24-13.19.14:029][941]LogContentBrowser: Native class hierarchy populated in 0.0091 seconds. Added 2251 classes and 459 folders.
+[2017.04.24-13.19.14:038][941]Display: HotReload took  0.3s.
+[2017.04.24-13.19.15:124][ 37]LogSavePackage: Save=83.39ms
+[2017.04.24-13.19.15:124][ 37]LogSavePackage: Moving 'F:/TheFarm51/ZadanieRekrutacyjne/Saved/Minimal_Default3B3088D34FE99BFED6CE3294AA3C4322.tmp' to 'F:/TheFarm51/ZadanieRekrutacyjne/Content/StarterContent/Maps/Minimal_Default.umap'
+[2017.04.24-13.19.15:126][ 37]LogSavePackage:Display: Finished SavePackage F:/TheFarm51/ZadanieRekrutacyjne/Content/StarterContent/Maps/Minimal_Default.umap
+[2017.04.24-13.19.15:153][ 37]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/StarterContent/Maps/Minimal_Default_BuiltData" FILE="F:/TheFarm51/ZadanieRekrutacyjne/Content/StarterContent/Maps/Minimal_Default_BuiltData.uasset" SILENT=true
+[2017.04.24-13.19.15:192][ 37]LogSavePackage: Save=32.44ms
+[2017.04.24-13.19.15:192][ 37]LogSavePackage: Moving 'F:/TheFarm51/ZadanieRekrutacyjne/Saved/Minimal_Default_BuiltData9AEE9C1746920621C92AADBFFAAAF8CB.tmp' to 'F:/TheFarm51/ZadanieRekrutacyjne/Content/StarterContent/Maps/Minimal_Default_BuiltData.uasset'
+[2017.04.24-13.19.15:193][ 37]LogSavePackage:Display: Finished SavePackage F:/TheFarm51/ZadanieRekrutacyjne/Content/StarterContent/Maps/Minimal_Default_BuiltData.uasset
+[2017.04.24-13.19.17:847][344]LogActor:Warning: MyLamp_C /Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.MyLamp_C_4 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2017.04.24-13.19.17:848][344]PIE:Warning: Warning Invalid Simulate Options: Body (MyLamp.BulbDestructibleComponent Bulb_DM) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.24-13.19.17:848][344]PIE:Warning: Warning Invalid Simulate Options: Body (MyLamp.BodyDestructibleComponent LampBody_DM) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.24-13.19.18:515][414]LogActor:Warning: MyLamp_C /Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.MyLamp_C_5 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2017.04.24-13.19.26:500][302]LogEditorActor: Deleted Actor: MyLamp_C
+[2017.04.24-13.19.26:513][302]LogEditorActor: Deleted 1 Actors (0.013 secs)
+[2017.04.24-13.22.23:371][965]LogHotReload: New module detected: UE4Editor-ZadanieRekrutacyjne-4339.dll
+[2017.04.24-13.22.24:047][968]LogHotReload: Starting Hot-Reload from IDE
+[2017.04.24-13.22.24:154][968]LogHotReload: Re-instancing Lamp after hot-reload.
+[2017.04.24-13.22.24:344][968]LogContentBrowser: Native class hierarchy updated for 'ZadanieRekrutacyjne' in 0.0011 seconds. Added 4 classes and 2 folders.
+[2017.04.24-13.22.24:346][968]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2017.04.24-13.22.24:597][968]LogContentBrowser: Native class hierarchy populated in 0.0095 seconds. Added 2251 classes and 459 folders.
+[2017.04.24-13.22.24:608][968]Display: HotReload took  0.6s.
+[2017.04.24-13.22.28:144][142]PIE:Warning: Warning Invalid Simulate Options: Body (MyLamp.BulbDestructibleComponent Bulb_DM) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.24-13.22.28:144][142]PIE:Warning: Warning Invalid Simulate Options: Body (MyLamp.BodyDestructibleComponent LampBody_DM) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.24-13.22.34:606][711]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'DEADCLASS_MyLamp_C_7' or package '/Engine/Transient'.
+[2017.04.24-13.22.34:606][711]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'UserConstructionScript' or package '/Engine/Transient'.
+[2017.04.24-13.22.34:606][711]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'DefaultSceneRoot_GEN_VARIABLE' or package '/Engine/Transient'.
+[2017.04.24-13.22.34:606][711]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'SimpleConstructionScript_0' or package '/Engine/Transient'.
+[2017.04.24-13.22.34:606][711]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'DEADCLASS_MyLamp_C_6' or package '/Engine/Transient'.
+[2017.04.24-13.22.34:606][711]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'REINST_SKEL_MyLamp_C_143' or package '/Engine/Transient'.
+[2017.04.24-13.22.34:606][711]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'REINST_MyLamp_C_138' or package '/Engine/Transient'.
+[2017.04.24-13.22.34:606][711]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'REINST_MyLamp_C_142' or package '/Engine/Transient'.
+[2017.04.24-13.22.54:694][986]BlueprintLog: New page: Compile MyLamp
+[2017.04.24-13.23.07:950][496]BlueprintLog: New page: Compile MyLamp
+[2017.04.24-13.23.08:842][580]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/MyLamp" FILE="F:/TheFarm51/ZadanieRekrutacyjne/Content/Blueprints/MyLamp.uasset" SILENT=true
+[2017.04.24-13.23.08:855][580]LogSavePackage: Save=11.44ms
+[2017.04.24-13.23.08:855][580]LogSavePackage: Moving 'F:/TheFarm51/ZadanieRekrutacyjne/Saved/MyLamp75FDABCA46EAF2DCDDF802844A7948B4.tmp' to 'F:/TheFarm51/ZadanieRekrutacyjne/Content/Blueprints/MyLamp.uasset'
+[2017.04.24-13.23.08:856][580]LogSavePackage:Display: Finished SavePackage F:/TheFarm51/ZadanieRekrutacyjne/Content/Blueprints/MyLamp.uasset
+[2017.04.24-13.23.10:877][796]LogSavePackage: Save=91.07ms
+[2017.04.24-13.23.10:877][796]LogSavePackage: Moving 'F:/TheFarm51/ZadanieRekrutacyjne/Saved/Minimal_Default9D5BEC944C4AED43F776FBA09CFE9278.tmp' to 'F:/TheFarm51/ZadanieRekrutacyjne/Content/StarterContent/Maps/Minimal_Default.umap'
+[2017.04.24-13.23.10:878][796]LogSavePackage:Display: Finished SavePackage F:/TheFarm51/ZadanieRekrutacyjne/Content/StarterContent/Maps/Minimal_Default.umap
+[2017.04.24-13.23.10:906][796]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/StarterContent/Maps/Minimal_Default_BuiltData" FILE="F:/TheFarm51/ZadanieRekrutacyjne/Content/StarterContent/Maps/Minimal_Default_BuiltData.uasset" SILENT=true
+[2017.04.24-13.23.10:939][796]LogSavePackage: Save=30.35ms
+[2017.04.24-13.23.10:939][796]LogSavePackage: Moving 'F:/TheFarm51/ZadanieRekrutacyjne/Saved/Minimal_Default_BuiltDataBE9D51514F050F367D540891A54D8628.tmp' to 'F:/TheFarm51/ZadanieRekrutacyjne/Content/StarterContent/Maps/Minimal_Default_BuiltData.uasset'
+[2017.04.24-13.23.10:939][796]LogSavePackage:Display: Finished SavePackage F:/TheFarm51/ZadanieRekrutacyjne/Content/StarterContent/Maps/Minimal_Default_BuiltData.uasset
+[2017.04.24-13.23.13:529][ 93]Cmd: DELETE
+[2017.04.24-13.23.13:529][ 93]Cmd: ACTOR DELETE
+[2017.04.24-13.23.13:529][ 93]LogEditorActor: Deleted Actor: MyLamp_C
+[2017.04.24-13.23.13:543][ 93]LogEditorActor: Deleted 1 Actors (0.014 secs)
+[2017.04.24-13.23.28:694][701]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/MyLamp" FILE="F:/TheFarm51/ZadanieRekrutacyjne/Content/Blueprints/MyLamp.uasset" SILENT=true
+[2017.04.24-13.23.28:707][701]LogSavePackage: Save=12.00ms
+[2017.04.24-13.23.28:707][701]LogSavePackage: Moving 'F:/TheFarm51/ZadanieRekrutacyjne/Saved/MyLampBD94D1C64F5C4CB5582ECEB335B5964B.tmp' to 'F:/TheFarm51/ZadanieRekrutacyjne/Content/Blueprints/MyLamp.uasset'
+[2017.04.24-13.23.28:708][701]LogSavePackage:Display: Finished SavePackage F:/TheFarm51/ZadanieRekrutacyjne/Content/Blueprints/MyLamp.uasset
+[2017.04.24-13.24.01:396][558]BlueprintLog: New page: Compile MyLamp
+[2017.04.24-13.24.27:740][679]BlueprintLog: New page: Compile MyLamp
+[2017.04.24-13.24.30:485][955]LogSavePackage: Save=91.28ms
+[2017.04.24-13.24.30:485][955]LogSavePackage: Moving 'F:/TheFarm51/ZadanieRekrutacyjne/Saved/Minimal_Default1251545D4F7EF83E7B6599B3BCFC7A21.tmp' to 'F:/TheFarm51/ZadanieRekrutacyjne/Content/StarterContent/Maps/Minimal_Default.umap'
+[2017.04.24-13.24.30:486][955]LogSavePackage:Display: Finished SavePackage F:/TheFarm51/ZadanieRekrutacyjne/Content/StarterContent/Maps/Minimal_Default.umap
+[2017.04.24-13.24.30:520][955]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/StarterContent/Maps/Minimal_Default_BuiltData" FILE="F:/TheFarm51/ZadanieRekrutacyjne/Content/StarterContent/Maps/Minimal_Default_BuiltData.uasset" SILENT=true
+[2017.04.24-13.24.30:557][955]LogSavePackage: Save=31.43ms
+[2017.04.24-13.24.30:557][955]LogSavePackage: Moving 'F:/TheFarm51/ZadanieRekrutacyjne/Saved/Minimal_Default_BuiltDataF7C574DA4C576CBEB025AA894036841A.tmp' to 'F:/TheFarm51/ZadanieRekrutacyjne/Content/StarterContent/Maps/Minimal_Default_BuiltData.uasset'
+[2017.04.24-13.24.30:558][955]LogSavePackage:Display: Finished SavePackage F:/TheFarm51/ZadanieRekrutacyjne/Content/StarterContent/Maps/Minimal_Default_BuiltData.uasset
+[2017.04.24-13.24.33:708][300]LogSavePackage: Save=95.57ms
+[2017.04.24-13.24.33:708][300]LogSavePackage: Moving 'F:/TheFarm51/ZadanieRekrutacyjne/Saved/Minimal_Default21269B4043907CC0E57DD39FCEA751DE.tmp' to 'F:/TheFarm51/ZadanieRekrutacyjne/Content/StarterContent/Maps/Minimal_Default.umap'
+[2017.04.24-13.24.33:709][300]LogSavePackage:Display: Finished SavePackage F:/TheFarm51/ZadanieRekrutacyjne/Content/StarterContent/Maps/Minimal_Default.umap
+[2017.04.24-13.24.33:737][300]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/StarterContent/Maps/Minimal_Default_BuiltData" FILE="F:/TheFarm51/ZadanieRekrutacyjne/Content/StarterContent/Maps/Minimal_Default_BuiltData.uasset" SILENT=true
+[2017.04.24-13.24.33:769][300]LogSavePackage: Save=30.46ms
+[2017.04.24-13.24.33:769][300]LogSavePackage: Moving 'F:/TheFarm51/ZadanieRekrutacyjne/Saved/Minimal_Default_BuiltDataDCFD4FE84B6C410A197D73B6A6753F14.tmp' to 'F:/TheFarm51/ZadanieRekrutacyjne/Content/StarterContent/Maps/Minimal_Default_BuiltData.uasset'
+[2017.04.24-13.24.33:770][300]LogSavePackage:Display: Finished SavePackage F:/TheFarm51/ZadanieRekrutacyjne/Content/StarterContent/Maps/Minimal_Default_BuiltData.uasset
+[2017.04.24-13.24.44:560][586]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/MyLamp" FILE="F:/TheFarm51/ZadanieRekrutacyjne/Content/Blueprints/MyLamp.uasset" SILENT=true
+[2017.04.24-13.24.44:578][586]LogSavePackage: Save=11.91ms
+[2017.04.24-13.24.44:578][586]LogSavePackage: Moving 'F:/TheFarm51/ZadanieRekrutacyjne/Saved/MyLampAF35884B483799A85A336F891D4F7E33.tmp' to 'F:/TheFarm51/ZadanieRekrutacyjne/Content/Blueprints/MyLamp.uasset'
+[2017.04.24-13.24.44:579][586]LogSavePackage:Display: Finished SavePackage F:/TheFarm51/ZadanieRekrutacyjne/Content/Blueprints/MyLamp.uasset
+[2017.04.24-13.24.45:096][648]BlueprintLog: New page: Compile MyLamp
+[2017.04.24-13.24.45:149][648]LogUObjectGlobals:Warning: Guid referenced by DestructibleComponent /Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.MyLamp_2.BulbDestructibleComponent is already used by DestructibleComponent /Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.REINST_MyLamp_C_0.BulbDestructibleComponent, which should never happen in the editor but could happen at runtime with duplicate level loading or PIE
+[2017.04.24-13.24.45:149][648]LogUObjectGlobals:Warning: Guid referenced by DestructibleComponent /Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.MyLamp_2.BodyDestructibleComponent is already used by DestructibleComponent /Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.REINST_MyLamp_C_0.BodyDestructibleComponent, which should never happen in the editor but could happen at runtime with duplicate level loading or PIE
+[2017.04.24-13.24.45:149][648]LogUObjectGlobals:Warning: Guid referenced by PointLightComponent /Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.MyLamp_2.LightSource is already used by PointLightComponent /Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.REINST_MyLamp_C_0.LightSource, which should never happen in the editor but could happen at runtime with duplicate level loading or PIE
+[2017.04.24-13.24.52:587][483]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/MyLamp" FILE="F:/TheFarm51/ZadanieRekrutacyjne/Content/Blueprints/MyLamp.uasset" SILENT=true
+[2017.04.24-13.24.52:601][483]LogSavePackage: Save=11.31ms
+[2017.04.24-13.24.52:601][483]LogSavePackage: Moving 'F:/TheFarm51/ZadanieRekrutacyjne/Saved/MyLampF55753B241717294BCB67584B00A51F3.tmp' to 'F:/TheFarm51/ZadanieRekrutacyjne/Content/Blueprints/MyLamp.uasset'
+[2017.04.24-13.24.52:602][483]LogSavePackage:Display: Finished SavePackage F:/TheFarm51/ZadanieRekrutacyjne/Content/Blueprints/MyLamp.uasset
+[2017.04.24-13.24.55:160][781]BlueprintLog: New page: Compile MyLamp
+[2017.04.24-13.24.57:409][975]LogSavePackage: Save=94.34ms
+[2017.04.24-13.24.57:409][975]LogSavePackage: Moving 'F:/TheFarm51/ZadanieRekrutacyjne/Saved/Minimal_Default80927EF446C753AAC988AD81293250AF.tmp' to 'F:/TheFarm51/ZadanieRekrutacyjne/Content/StarterContent/Maps/Minimal_Default.umap'
+[2017.04.24-13.24.57:410][975]LogSavePackage:Display: Finished SavePackage F:/TheFarm51/ZadanieRekrutacyjne/Content/StarterContent/Maps/Minimal_Default.umap
+[2017.04.24-13.24.57:440][975]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/StarterContent/Maps/Minimal_Default_BuiltData" FILE="F:/TheFarm51/ZadanieRekrutacyjne/Content/StarterContent/Maps/Minimal_Default_BuiltData.uasset" SILENT=true
+[2017.04.24-13.24.57:475][975]LogSavePackage: Save=32.37ms
+[2017.04.24-13.24.57:475][975]LogSavePackage: Moving 'F:/TheFarm51/ZadanieRekrutacyjne/Saved/Minimal_Default_BuiltDataEDFBDAEE4DE14A5FF9E33FA385209748.tmp' to 'F:/TheFarm51/ZadanieRekrutacyjne/Content/StarterContent/Maps/Minimal_Default_BuiltData.uasset'
+[2017.04.24-13.24.57:475][975]LogSavePackage:Display: Finished SavePackage F:/TheFarm51/ZadanieRekrutacyjne/Content/StarterContent/Maps/Minimal_Default_BuiltData.uasset
+[2017.04.24-13.25.03:000][624]LogTemp: Repeting last play command: Selected Viewport
+[2017.04.24-13.25.03:018][624]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.24-13.25.03:019][624]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.04.24-13.25.03:019][624]PIE: New page: PIE session: Minimal_Default (Apr 24, 2017, 5:25:03 PM)
+[2017.04.24-13.25.03:019][624]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2017.04.24-13.25.03:028][624]LogPlayLevel: PIE: StaticDuplicateObject took: (0.009221s)
+[2017.04.24-13.25.03:029][624]LogAIModule: Creating AISystem for world Minimal_Default
+[2017.04.24-13.25.03:029][624]LogPlayLevel: PIE: World Init took: (0.000780s)
+[2017.04.24-13.25.03:029][624]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Minimal_Default.Minimal_Default to /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.010184s)
+[2017.04.24-13.25.03:046][624]LogInit: XAudio2 using 'Głośniki (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.04.24-13.25.03:059][624]LogInit: FAudioDevice initialized.
+[2017.04.24-13.25.03:091][624]LogLoad: Game class is 'GameModeBase'
+[2017.04.24-13.25.03:094][624]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 0) at 2017.04.24-15.25.03
+[2017.04.24-13.25.03:095][624]LogWorld: Bringing up level for play took: 0.002233
+[2017.04.24-13.25.03:096][624]PIE: Info Play in editor start time for /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default 0.285
+[2017.04.24-13.25.03:097][624]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.24-13.25.12:922][800]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.24-13.25.12:994][800]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.24-13.25.15:513][ 67]LogSavePackage: Save=95.25ms
+[2017.04.24-13.25.15:513][ 67]LogSavePackage: Moving 'F:/TheFarm51/ZadanieRekrutacyjne/Saved/Minimal_Default732466CD4BD8068D60D3DCBCB9F88366.tmp' to 'F:/TheFarm51/ZadanieRekrutacyjne/Content/StarterContent/Maps/Minimal_Default.umap'
+[2017.04.24-13.25.15:514][ 67]LogSavePackage:Display: Finished SavePackage F:/TheFarm51/ZadanieRekrutacyjne/Content/StarterContent/Maps/Minimal_Default.umap
+[2017.04.24-13.25.15:542][ 67]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/StarterContent/Maps/Minimal_Default_BuiltData" FILE="F:/TheFarm51/ZadanieRekrutacyjne/Content/StarterContent/Maps/Minimal_Default_BuiltData.uasset" SILENT=true
+[2017.04.24-13.25.15:575][ 67]LogSavePackage: Save=30.16ms
+[2017.04.24-13.25.15:575][ 67]LogSavePackage: Moving 'F:/TheFarm51/ZadanieRekrutacyjne/Saved/Minimal_Default_BuiltDataB61000C545C34B52F9603786B3FE847D.tmp' to 'F:/TheFarm51/ZadanieRekrutacyjne/Content/StarterContent/Maps/Minimal_Default_BuiltData.uasset'
+[2017.04.24-13.25.15:575][ 67]LogSavePackage:Display: Finished SavePackage F:/TheFarm51/ZadanieRekrutacyjne/Content/StarterContent/Maps/Minimal_Default_BuiltData.uasset
+[2017.04.24-13.27.31:933][995]LogHotReload: New module detected: UE4Editor-ZadanieRekrutacyjne-5322.dll
+[2017.04.24-13.27.32:606][998]LogHotReload: Starting Hot-Reload from IDE
+[2017.04.24-13.27.32:700][998]LogClass: Could not find existing class Lamp in package /Script/ZadanieRekrutacyjne for HotReload, assuming new class
+[2017.04.24-13.27.32:708][998]LogHotReload: Re-instancing Lamp after hot-reload.
+[2017.04.24-13.27.32:898][998]LogUObjectGlobals:Warning: Guid referenced by DestructibleComponent /Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.MyLamp_2.BulbDestructibleComponent is already used by DestructibleComponent /Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.REINST_MyLamp_C_0.BulbDestructibleComponent, which should never happen in the editor but could happen at runtime with duplicate level loading or PIE
+[2017.04.24-13.27.32:898][998]LogUObjectGlobals:Warning: Guid referenced by DestructibleComponent /Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.MyLamp_2.BodyDestructibleComponent is already used by DestructibleComponent /Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.REINST_MyLamp_C_0.BodyDestructibleComponent, which should never happen in the editor but could happen at runtime with duplicate level loading or PIE
+[2017.04.24-13.27.32:898][998]LogUObjectGlobals:Warning: Guid referenced by PointLightComponent /Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.MyLamp_2.LightSource is already used by PointLightComponent /Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.REINST_MyLamp_C_0.LightSource, which should never happen in the editor but could happen at runtime with duplicate level loading or PIE
+[2017.04.24-13.27.33:160][998]LogContentBrowser: Native class hierarchy updated for 'ZadanieRekrutacyjne' in 0.0011 seconds. Added 4 classes and 2 folders.
+[2017.04.24-13.27.33:162][998]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2017.04.24-13.27.33:431][998]LogContentBrowser: Native class hierarchy populated in 0.0093 seconds. Added 2251 classes and 459 folders.
+[2017.04.24-13.27.33:444][998]Display: HotReload took  0.8s.
+[2017.04.24-13.27.39:878][419]LogTemp: Repeting last play command: Selected Viewport
+[2017.04.24-13.27.39:895][419]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.24-13.27.39:895][419]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.04.24-13.27.39:895][419]PIE: New page: PIE session: Minimal_Default (Apr 24, 2017, 5:27:39 PM)
+[2017.04.24-13.27.39:895][419]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2017.04.24-13.27.39:901][419]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006011s)
+[2017.04.24-13.27.39:902][419]LogAIModule: Creating AISystem for world Minimal_Default
+[2017.04.24-13.27.39:902][419]LogPlayLevel: PIE: World Init took: (0.000894s)
+[2017.04.24-13.27.39:902][419]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Minimal_Default.Minimal_Default to /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.007114s)
+[2017.04.24-13.27.39:935][419]LogInit: XAudio2 using 'Głośniki (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.04.24-13.27.39:944][419]LogInit: FAudioDevice initialized.
+[2017.04.24-13.27.39:977][419]LogLoad: Game class is 'GameModeBase'
+[2017.04.24-13.27.39:980][419]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 0) at 2017.04.24-15.27.39
+[2017.04.24-13.27.39:980][419]LogWorld: Bringing up level for play took: 0.001660
+[2017.04.24-13.27.39:981][419]PIE: Info Play in editor start time for /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default -0.831
+[2017.04.24-13.27.39:981][419]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.24-13.27.43:955][886]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.24-13.27.44:029][886]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.24-13.29.28:435][467]LogHotReload: New module detected: UE4Editor-ZadanieRekrutacyjne-2118.dll
+[2017.04.24-13.29.29:108][470]LogHotReload: Starting Hot-Reload from IDE
+[2017.04.24-13.29.29:223][470]LogContentBrowser: Native class hierarchy updated for 'ZadanieRekrutacyjne' in 0.0011 seconds. Added 4 classes and 2 folders.
+[2017.04.24-13.29.29:226][470]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2017.04.24-13.29.29:493][470]LogContentBrowser: Native class hierarchy populated in 0.0093 seconds. Added 2251 classes and 459 folders.
+[2017.04.24-13.29.29:502][470]Display: HotReload took  0.4s.
+[2017.04.24-13.29.34:890][577]LogTemp: Repeting last play command: Selected Viewport
+[2017.04.24-13.29.34:905][577]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.24-13.29.34:905][577]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.04.24-13.29.34:905][577]PIE: New page: PIE session: Minimal_Default (Apr 24, 2017, 5:29:34 PM)
+[2017.04.24-13.29.34:905][577]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2017.04.24-13.29.34:912][577]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006461s)
+[2017.04.24-13.29.34:912][577]LogAIModule: Creating AISystem for world Minimal_Default
+[2017.04.24-13.29.34:913][577]LogPlayLevel: PIE: World Init took: (0.001025s)
+[2017.04.24-13.29.34:913][577]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Minimal_Default.Minimal_Default to /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.007702s)
+[2017.04.24-13.29.34:957][577]LogInit: XAudio2 using 'Głośniki (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.04.24-13.29.34:967][577]LogInit: FAudioDevice initialized.
+[2017.04.24-13.29.34:996][577]LogLoad: Game class is 'GameModeBase'
+[2017.04.24-13.29.34:998][577]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 0) at 2017.04.24-15.29.34
+[2017.04.24-13.29.34:998][577]LogWorld: Bringing up level for play took: 0.001504
+[2017.04.24-13.29.34:999][577]PIE: Info Play in editor start time for /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default 0.187
+[2017.04.24-13.29.34:999][577]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.24-13.29.43:780][621]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.24-13.29.43:851][621]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.24-13.29.44:817][727]LogTemp: Repeting last play command: Selected Viewport
+[2017.04.24-13.29.44:830][727]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.24-13.29.44:830][727]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.04.24-13.29.44:830][727]PIE: New page: PIE session: Minimal_Default (Apr 24, 2017, 5:29:44 PM)
+[2017.04.24-13.29.44:831][727]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2017.04.24-13.29.44:838][727]LogPlayLevel: PIE: StaticDuplicateObject took: (0.007130s)
+[2017.04.24-13.29.44:838][727]LogAIModule: Creating AISystem for world Minimal_Default
+[2017.04.24-13.29.44:839][727]LogPlayLevel: PIE: World Init took: (0.000935s)
+[2017.04.24-13.29.44:839][727]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Minimal_Default.Minimal_Default to /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.008269s)
+[2017.04.24-13.29.44:860][727]LogInit: XAudio2 using 'Głośniki (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.04.24-13.29.44:868][727]LogInit: FAudioDevice initialized.
+[2017.04.24-13.29.44:900][727]LogLoad: Game class is 'GameModeBase'
+[2017.04.24-13.29.44:903][727]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 0) at 2017.04.24-15.29.44
+[2017.04.24-13.29.44:903][727]LogWorld: Bringing up level for play took: 0.001543
+[2017.04.24-13.29.44:904][727]PIE: Info Play in editor start time for /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default 0.093
+[2017.04.24-13.29.44:905][727]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.24-13.29.53:895][803]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.24-13.29.53:966][803]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.24-13.29.55:293][951]LogTemp: Repeting last play command: Selected Viewport
+[2017.04.24-13.29.55:306][951]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.24-13.29.55:306][951]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.04.24-13.29.55:306][951]PIE: New page: PIE session: Minimal_Default (Apr 24, 2017, 5:29:55 PM)
+[2017.04.24-13.29.55:306][951]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2017.04.24-13.29.55:314][951]LogPlayLevel: PIE: StaticDuplicateObject took: (0.007286s)
+[2017.04.24-13.29.55:314][951]LogAIModule: Creating AISystem for world Minimal_Default
+[2017.04.24-13.29.55:314][951]LogPlayLevel: PIE: World Init took: (0.000689s)
+[2017.04.24-13.29.55:315][951]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Minimal_Default.Minimal_Default to /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.008206s)
+[2017.04.24-13.29.55:335][951]LogInit: XAudio2 using 'Głośniki (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.04.24-13.29.55:343][951]LogInit: FAudioDevice initialized.
+[2017.04.24-13.29.55:377][951]LogLoad: Game class is 'GameModeBase'
+[2017.04.24-13.29.55:379][951]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 0) at 2017.04.24-15.29.55
+[2017.04.24-13.29.55:379][951]LogWorld: Bringing up level for play took: 0.001443
+[2017.04.24-13.29.55:380][951]PIE: Info Play in editor start time for /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default 0.569
+[2017.04.24-13.29.55:380][951]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.24-13.30.01:482][679]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.24-13.30.01:555][679]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.24-13.30.35:367][ 99]LogHotReload: New module detected: UE4Editor-ZadanieRekrutacyjne-4835.dll
+[2017.04.24-13.30.36:039][102]LogHotReload: Starting Hot-Reload from IDE
+[2017.04.24-13.30.36:132][102]LogContentBrowser: Native class hierarchy updated for 'ZadanieRekrutacyjne' in 0.0012 seconds. Added 4 classes and 2 folders.
+[2017.04.24-13.30.36:135][102]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2017.04.24-13.30.36:408][102]LogContentBrowser: Native class hierarchy populated in 0.0091 seconds. Added 2251 classes and 459 folders.
+[2017.04.24-13.30.36:418][102]Display: HotReload took  0.4s.
+[2017.04.24-13.30.39:322][265]LogTemp: Repeting last play command: Selected Viewport
+[2017.04.24-13.30.39:336][265]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.24-13.30.39:336][265]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.04.24-13.30.39:336][265]PIE: New page: PIE session: Minimal_Default (Apr 24, 2017, 5:30:39 PM)
+[2017.04.24-13.30.39:336][265]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2017.04.24-13.30.39:343][265]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006538s)
+[2017.04.24-13.30.39:344][265]LogAIModule: Creating AISystem for world Minimal_Default
+[2017.04.24-13.30.39:344][265]LogPlayLevel: PIE: World Init took: (0.000878s)
+[2017.04.24-13.30.39:344][265]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Minimal_Default.Minimal_Default to /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.007606s)
+[2017.04.24-13.30.39:388][265]LogInit: XAudio2 using 'Głośniki (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.04.24-13.30.39:396][265]LogInit: FAudioDevice initialized.
+[2017.04.24-13.30.39:426][265]LogLoad: Game class is 'GameModeBase'
+[2017.04.24-13.30.39:428][265]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 0) at 2017.04.24-15.30.39
+[2017.04.24-13.30.39:428][265]LogWorld: Bringing up level for play took: 0.001480
+[2017.04.24-13.30.39:429][265]PIE: Info Play in editor start time for /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default 0.617
+[2017.04.24-13.30.39:429][265]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.24-13.30.51:360][686]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.24-13.30.51:430][686]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2017.04.24-13.31.37:032][310]LogContentBrowser: Native class hierarchy updated for 'DestructibleMeshEditor' in 0.0009 seconds. Added 1 classes and 2 folders.
+[2017.04.24-13.31.37:137][310]LogRenderer: Reallocating scene render targets to support 1208x964 NumSamples 1 (Frame:140862).
+[2017.04.24-13.32.55:343][527]LogHotReload: New module detected: UE4Editor-ZadanieRekrutacyjne-6329.dll
+[2017.04.24-13.32.56:016][530]LogHotReload: Starting Hot-Reload from IDE
