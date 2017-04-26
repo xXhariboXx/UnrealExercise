@@ -37,7 +37,7 @@ private:
 	/////////////////////////////////////////////////////
 	//Light bulb components
 	/** Const with filepath to Light Bulb mesh */
-	const FString LightBulbMeshPath = FString(TEXT("/Game/Blueprints/Bulb"));
+	const FString LightBulbMeshPath = FString(TEXT("/Game/MyContent/Materials/Bulb"));
 	/** Light Bulb mesh component */
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "LightBulbComponents", meta = (AllowPrivateAccess = "true"))
 		class UStaticMeshComponent *LightBulbMeshComponent;

@@ -9,6 +9,7 @@ ALightBulb::ALightBulb()
 {
 	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
+	SetReplicates(true);
 
 	InitializeComponents();
 	SetupDefaultValues();
@@ -20,8 +21,10 @@ void ALightBulb::InitializeComponents()
 	LightBulbMeshComponent = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("StaticBulbMesh"));
 	const TCHAR* link = *LightBulbMeshPath;
 	static ConstructorHelpers::FObjectFinder<UStaticMesh> LightBulbMesh(link);
-
-	LightBulbMeshComponent->SetStaticMesh(LightBulbMesh.Object);
+	if (LightBulbMesh.Succeeded())
+	{
+		LightBulbMeshComponent->SetStaticMesh(LightBulbMesh.Object);
+	}
 	LightBulbMeshComponent->SetSimulatePhysics(true);
 	LightBulbMeshComponent->SetEnableGravity(true);
 

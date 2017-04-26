@@ -6,6 +6,12 @@
 ===========================================================================*/
 
 #include "GeneratedCppIncludes.h"
+#ifndef ZADANIEREKRUTACYJNE_Damagable_generated_h
+	#include "Damagable.h"
+#endif
+#ifndef ZADANIEREKRUTACYJNE_DamagableActor_generated_h
+	#include "DamagableActor.h"
+#endif
 #ifndef ZADANIEREKRUTACYJNE_Lamp_generated_h
 	#include "Lamp.h"
 #endif

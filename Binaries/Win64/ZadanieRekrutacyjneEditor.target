@@ -2,7 +2,7 @@
 	"TargetName" : "ZadanieRekrutacyjneEditor",
 	"Platform" : "Win64",
 	"Configuration" : "Development",
-	"BuildId" : "1904a88f-818f-43c0-b544-7c2727b3ea82",
+	"BuildId" : "6033d091-1aba-489e-ba15-9c20f2b8baa1",
 	"Version" : 
 	{
 		"MajorVersion" : 4,
@@ -17,15 +17,15 @@
 	"BuildProducts" :
 	[
 		{
-			"Path" : "$(ProjectDir)/Binaries/Win64/UE4Editor-ZadanieRekrutacyjne-9039.dll",
+			"Path" : "$(ProjectDir)/Binaries/Win64/UE4Editor-ZadanieRekrutacyjne-7864.dll",
 			"Type" : "DynamicLibrary"
 		},
 		{
-			"Path" : "$(ProjectDir)/Binaries/Win64/UE4Editor-ZadanieRekrutacyjne-9039.pdb",
+			"Path" : "$(ProjectDir)/Binaries/Win64/UE4Editor-ZadanieRekrutacyjne-7864.pdb",
 			"Type" : "SymbolFile"
 		},
 		{
-			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/UE4Editor/Development/UE4Editor-ZadanieRekrutacyjne-9039.lib",
+			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/UE4Editor/Development/UE4Editor-ZadanieRekrutacyjne-7864.lib",
 			"Type" : "ImportLibrary"
 		},
 		{

@@ -16,6 +16,8 @@
 /NODEFAULTLIB:"LIBCD"
 /NODEFAULTLIB:"LIBCPD"
 "F:\GIT foldery\UnrealExercise\Intermediate\Build\Win64\UE4Editor\Development\ZadanieRekrutacyjne\PCH.ZadanieRekrutacyjne.h.obj"
+"F:\GIT foldery\UnrealExercise\Intermediate\Build\Win64\UE4Editor\Development\ZadanieRekrutacyjne\Damagable.cpp.obj"
+"F:\GIT foldery\UnrealExercise\Intermediate\Build\Win64\UE4Editor\Development\ZadanieRekrutacyjne\DamagableActor.cpp.obj"
 "F:\GIT foldery\UnrealExercise\Intermediate\Build\Win64\UE4Editor\Development\ZadanieRekrutacyjne\Lamp.cpp.obj"
 "F:\GIT foldery\UnrealExercise\Intermediate\Build\Win64\UE4Editor\Development\ZadanieRekrutacyjne\LightBulb.cpp.obj"
 "F:\GIT foldery\UnrealExercise\Intermediate\Build\Win64\UE4Editor\Development\ZadanieRekrutacyjne\ZadanieRekrutacyjne.cpp.obj"
