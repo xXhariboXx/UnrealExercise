@@ -1,0 +1,3 @@
+F:\GIT foldery\UnrealExercise\ZadanieRekrutacyjne\Source\ZadanieRekrutacyjne\ZadanieRekrutacyjne.Build.cs
+F:\GIT foldery\UnrealExercise\ZadanieRekrutacyjne\Source\ZadanieRekrutacyjne.Target.cs
+F:\GIT foldery\UnrealExercise\ZadanieRekrutacyjne\Source\ZadanieRekrutacyjneEditor.Target.cs
