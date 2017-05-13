@@ -52,12 +52,6 @@
     <ClInclude Include="..\..\Source\ZadanieRekrutacyjne\DamagableActor.h">
       <Filter>Source\ZadanieRekrutacyjne</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Source\ZadanieRekrutacyjne\LightBulbController.h">
-      <Filter>Source\ZadanieRekrutacyjne</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\ZadanieRekrutacyjne\MyPawn.h">
-      <Filter>Source\ZadanieRekrutacyjne</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\Source\ZadanieRekrutacyjne\LightBulb.cpp">
@@ -67,12 +61,6 @@
       <Filter>Source\ZadanieRekrutacyjne</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\ZadanieRekrutacyjne\DamagableActor.cpp">
-      <Filter>Source\ZadanieRekrutacyjne</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\ZadanieRekrutacyjne\LightBulbController.cpp">
-      <Filter>Source\ZadanieRekrutacyjne</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\ZadanieRekrutacyjne\MyPawn.cpp">
       <Filter>Source\ZadanieRekrutacyjne</Filter>
     </ClCompile>
   </ItemGroup>

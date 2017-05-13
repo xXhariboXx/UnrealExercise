@@ -569,14 +569,10 @@
     <ClCompile Include="..\..\Source\ZadanieRekrutacyjne\Damagable.cpp" />
     <ClCompile Include="..\..\Source\ZadanieRekrutacyjne\DamagableActor.cpp" />
     <ClCompile Include="..\..\Source\ZadanieRekrutacyjne\LightBulb.cpp" />
-    <ClCompile Include="..\..\Source\ZadanieRekrutacyjne\LightBulbController.cpp" />
-    <ClCompile Include="..\..\Source\ZadanieRekrutacyjne\MyPawn.cpp" />
     <ClCompile Include="..\..\Source\ZadanieRekrutacyjne\ZadanieRekrutacyjne.cpp" />
     <ClInclude Include="..\..\Source\ZadanieRekrutacyjne\Damagable.h" />
     <ClInclude Include="..\..\Source\ZadanieRekrutacyjne\DamagableActor.h" />
     <ClInclude Include="..\..\Source\ZadanieRekrutacyjne\LightBulb.h" />
-    <ClInclude Include="..\..\Source\ZadanieRekrutacyjne\LightBulbController.h" />
-    <ClInclude Include="..\..\Source\ZadanieRekrutacyjne\MyPawn.h" />
     <ClInclude Include="..\..\Source\ZadanieRekrutacyjne\ZadanieRekrutacyjne.h" />
     <ClCompile Include="..\..\Source\ZadanieRekrutacyjne\ZadanieRekrutacyjneGameModeBase.cpp" />
     <ClInclude Include="..\..\Source\ZadanieRekrutacyjne\ZadanieRekrutacyjneGameModeBase.h" />

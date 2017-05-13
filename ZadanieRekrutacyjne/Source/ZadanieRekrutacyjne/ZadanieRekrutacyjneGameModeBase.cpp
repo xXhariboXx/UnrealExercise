@@ -3,6 +3,3 @@
 #include "ZadanieRekrutacyjne.h"
 #include "ZadanieRekrutacyjneGameModeBase.h"
 
-
-
-

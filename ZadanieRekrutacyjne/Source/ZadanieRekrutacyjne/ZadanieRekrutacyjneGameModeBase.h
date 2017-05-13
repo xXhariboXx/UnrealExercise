@@ -6,14 +6,11 @@
 #include "ZadanieRekrutacyjneGameModeBase.generated.h"
 
 /**
- * 
+ *
  */
 UCLASS()
 class ZADANIEREKRUTACYJNE_API AZadanieRekrutacyjneGameModeBase : public AGameModeBase
 {
 	GENERATED_BODY()
-	
-	
-	
-	
+
 };

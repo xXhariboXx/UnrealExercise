@@ -6,14 +6,58 @@
 ===========================================================================*/
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+struct FLinearColor;
 #ifdef ZADANIEREKRUTACYJNE_MyPawn_generated_h
 #error "MyPawn.generated.h already included, missing '#pragma once' in MyPawn.h"
 #endif
 #define ZADANIEREKRUTACYJNE_MyPawn_generated_h
 
-#define ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_MyPawn_h_11_RPC_WRAPPERS
-#define ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_MyPawn_h_11_RPC_WRAPPERS_NO_PURE_DECLS
-#define ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_MyPawn_h_11_INCLASS_NO_PURE_DECLS \
+#define ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_MyPawn_h_12_RPC_WRAPPERS \
+	virtual bool ServerSetLightColor_Validate(FLinearColor ); \
+	virtual void ServerSetLightColor_Implementation(FLinearColor color); \
+ \
+	DECLARE_FUNCTION(execServerSetLightColor) \
+	{ \
+		P_GET_STRUCT(FLinearColor,Z_Param_color); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		if (!this->ServerSetLightColor_Validate(Z_Param_color)) \
+		{ \
+			RPC_ValidateFailed(TEXT("ServerSetLightColor_Validate")); \
+			return; \
+		} \
+		this->ServerSetLightColor_Implementation(Z_Param_color); \
+		P_NATIVE_END; \
+	}
+
+
+#define ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_MyPawn_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execServerSetLightColor) \
+	{ \
+		P_GET_STRUCT(FLinearColor,Z_Param_color); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		if (!this->ServerSetLightColor_Validate(Z_Param_color)) \
+		{ \
+			RPC_ValidateFailed(TEXT("ServerSetLightColor_Validate")); \
+			return; \
+		} \
+		this->ServerSetLightColor_Implementation(Z_Param_color); \
+		P_NATIVE_END; \
+	}
+
+
+#define ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_MyPawn_h_12_EVENT_PARMS \
+	struct MyPawn_eventServerSetLightColor_Parms \
+	{ \
+		FLinearColor color; \
+	};
+
+
+extern ZADANIEREKRUTACYJNE_API  FName ZADANIEREKRUTACYJNE_ServerSetLightColor;
+#define ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_MyPawn_h_12_CALLBACK_WRAPPERS
+#define ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_MyPawn_h_12_INCLASS_NO_PURE_DECLS \
 	private: \
 	static void StaticRegisterNativesAMyPawn(); \
 	friend ZADANIEREKRUTACYJNE_API class UClass* Z_Construct_UClass_AMyPawn(); \
@@ -24,7 +68,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
 
 
-#define ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_MyPawn_h_11_INCLASS \
+#define ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_MyPawn_h_12_INCLASS \
 	private: \
 	static void StaticRegisterNativesAMyPawn(); \
 	friend ZADANIEREKRUTACYJNE_API class UClass* Z_Construct_UClass_AMyPawn(); \
@@ -35,7 +79,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
 
 
-#define ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_MyPawn_h_11_STANDARD_CONSTRUCTORS \
+#define ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_MyPawn_h_12_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AMyPawn(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AMyPawn) \
@@ -48,7 +92,7 @@ private: \
 public:
 
 
-#define ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_MyPawn_h_11_ENHANCED_CONSTRUCTORS \
+#define ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_MyPawn_h_12_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AMyPawn(AMyPawn&&); \
@@ -59,26 +103,31 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AMyPawn); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AMyPawn)
 
 
-#define ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_MyPawn_h_11_PRIVATE_PROPERTY_OFFSET
-#define ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_MyPawn_h_8_PROLOG
-#define ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_MyPawn_h_11_GENERATED_BODY_LEGACY \
+#define ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_MyPawn_h_12_PRIVATE_PROPERTY_OFFSET
+#define ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_MyPawn_h_9_PROLOG \
+	ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_MyPawn_h_12_EVENT_PARMS
+
+
+#define ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_MyPawn_h_12_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_MyPawn_h_11_PRIVATE_PROPERTY_OFFSET \
-	ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_MyPawn_h_11_RPC_WRAPPERS \
-	ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_MyPawn_h_11_INCLASS \
-	ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_MyPawn_h_11_STANDARD_CONSTRUCTORS \
+	ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_MyPawn_h_12_PRIVATE_PROPERTY_OFFSET \
+	ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_MyPawn_h_12_RPC_WRAPPERS \
+	ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_MyPawn_h_12_CALLBACK_WRAPPERS \
+	ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_MyPawn_h_12_INCLASS \
+	ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_MyPawn_h_12_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_MyPawn_h_11_GENERATED_BODY \
+#define ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_MyPawn_h_12_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_MyPawn_h_11_PRIVATE_PROPERTY_OFFSET \
-	ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_MyPawn_h_11_RPC_WRAPPERS_NO_PURE_DECLS \
-	ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_MyPawn_h_11_INCLASS_NO_PURE_DECLS \
-	ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_MyPawn_h_11_ENHANCED_CONSTRUCTORS \
+	ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_MyPawn_h_12_PRIVATE_PROPERTY_OFFSET \
+	ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_MyPawn_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
+	ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_MyPawn_h_12_CALLBACK_WRAPPERS \
+	ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_MyPawn_h_12_INCLASS_NO_PURE_DECLS \
+	ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_MyPawn_h_12_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

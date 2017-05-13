@@ -3,6 +3,7 @@
 #pragma once
 
 #include "GameFramework/Pawn.h"
+#include "LightBulb.h"
 #include "MyPawn.generated.h"
 
 UCLASS()
@@ -24,7 +25,14 @@ public:
 
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
-
+	
+	
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "LightBulbComponents", meta = (AllowPrivateAccess = "true"))
+		class ALightBulb *LightBulb;
+	UFUNCTION(Server, Reliable, WithValidation)
+		void ServerSetLightColor(FLinearColor color);
+	virtual void ServerSetLightColor_Implementation(FLinearColor color);
+	virtual bool ServerSetLightColor_Validate(FLinearColor color);
 	
 	
 };

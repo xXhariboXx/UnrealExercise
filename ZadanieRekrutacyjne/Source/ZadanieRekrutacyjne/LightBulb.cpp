@@ -12,7 +12,7 @@ ALightBulb::ALightBulb()
 	SetReplicates(true);
 	//HoldingActor->AttachRootComponentToActor(this);
 	//this->SetOwner(this);
-	//setOwner();
+	//this->SetOwner();
 	InitializeComponents();
 	SetupDefaultValues();
 }
@@ -53,8 +53,17 @@ void ALightBulb::BeginPlay()
 	APlayerController* PlayerController = GetWorld()->GetFirstPlayerController();
 	EnableInput(PlayerController);
 	SetupInput();
-	//LightSource->SetLightColor(SetLightColorRandom());
-	SetLightColorRandom();
+	if (Role < ROLE_Authority)
+	{
+		SetOwner(UGameplayStatics::GetPlayerController(GetWorld(), 0));
+		UE_LOG(LogTemp, Warning, TEXT("Set owner"));
+		if(HasNetOwner())
+			UE_LOG(LogTemp, Warning, TEXT("Has owner"));
+	}
+	if (Role == ROLE_Authority)
+	{
+		SetLightColorRandom();
+	}
 }
 
 //////////////////////////////////////////////////////////////////////////
@@ -118,9 +127,6 @@ void ALightBulb::SetLightColourRed()
 	float red = 1;
 	float green = 0;
 	float blue = 0;
-	//FLinearColor temp = LightSource->LightColor;
-	//CurrentColour = FLinearColor(red, green, blue, 1);
-	//LightSource->SetLightColor(CurrentColour, true);
 	SetLightColour_MultiplayerHandler(FLinearColor(red, green, blue, 1));
 }
 
@@ -129,9 +135,6 @@ void ALightBulb::SetLightColourGreen()
 	float red = 0;
 	float green = 1;
 	float blue = 0;
-	//CurrentColour = FLinearColor(red, green, blue, 1);
-	//LightSource->SetLightColor(CurrentColour, true);
-	//SetLightColour_MultiplayerHandler
 	SetLightColour_MultiplayerHandler(FLinearColor(red, green, blue, 1));
 }
 
@@ -140,9 +143,6 @@ void ALightBulb::SetLightColourBlue()
 	float red = 0;
 	float green = 0;
 	float blue = 1;
-	//CurrentColour = FLinearColor(red, green, blue, 1);
-	//LightSource->SetLightColor(CurrentColour, true);
-	//SetLightColour_MultiplayerHandler
 	SetLightColour_MultiplayerHandler(FLinearColor(red, green, blue, 1));
 }
 
@@ -151,7 +151,7 @@ void ALightBulb::SetLightColorRandom()
 	float red = std::rand() % 1000 * 0.001f;
 	float green = std::rand() % 1000 * 0.001f;
 	float blue = std::rand() % 1000 * 0.001f;
-	//return FLinearColor(red, green, blue, 1);
+	//ServerSetLightColor(FLinearColor(red, green, blue, 1));
 	SetLightColour_MultiplayerHandler(FLinearColor(red, green, blue, 1));
 }
 
@@ -161,25 +161,32 @@ void ALightBulb::SetLightColour_MultiplayerHandler(FLinearColor newColor)
 	if (Role < ROLE_Authority)
 	{
 		//we are client	
-		UE_LOG(LogTemp, Warning, TEXT("Client changed colour"));
-		LightSource->SetLightColor(newColor, true);
+		//UE_LOG(LogTemp, Warning, TEXT("Client changed colour"));
+		//LightSource->SetLightColor(newColor, true);
 		UE_LOG(LogTemp, Warning, TEXT("Client calling for server"));
 		ServerSetLightColor(newColor);
 	}
 	else if (Role == ROLE_Authority)
 	{
 		//we are server
-		UE_LOG(LogTemp, Warning, TEXT("Server is calling to clients"));		
+		UE_LOG(LogTemp, Warning, TEXT("Server is calling to clients"));
 		NetMulticastSetColor(newColor);
 	}
 }
 
 void ALightBulb::ServerSetLightColor_Implementation(FLinearColor color)
 {
-	UE_LOG(LogTemp, Warning, TEXT("Server changing colour"));
-	LightSource->SetLightColor(color, true);
-	UE_LOG(LogTemp, Warning, TEXT("Server calling for clients"));
-	NetMulticastSetColor(color);
+	if (Role == ROLE_Authority)
+	{
+		UE_LOG(LogTemp, Warning, TEXT("Server changing colour"));
+		//LightSource->SetLightColor(color, true);
+		UE_LOG(LogTemp, Warning, TEXT("Server calling for clients"));
+		NetMulticastSetColor(color);
+	}
+	else
+	{
+		UE_LOG(LogTemp, Warning, TEXT("defuq"));
+	}
 }
 
 bool ALightBulb::ServerSetLightColor_Validate(FLinearColor color)

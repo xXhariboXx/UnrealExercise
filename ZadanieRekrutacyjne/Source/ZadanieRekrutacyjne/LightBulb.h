@@ -4,6 +4,7 @@
 
 #include "GameFramework/Actor.h"
 #include <ctime>
+#include "Net/UnrealNetwork.h"
 #include "LightBulb.generated.h"
 
 UCLASS()
@@ -109,7 +110,7 @@ private:
 	void SetLightColorRandom();
 
 	void SetLightColour_MultiplayerHandler(FLinearColor newColor);
-	UFUNCTION(Server, Reliable, WithValidation)
+	UFUNCTION(Server, Unreliable, WithValidation)
 		void ServerSetLightColor(FLinearColor color);
 	virtual void ServerSetLightColor_Implementation(FLinearColor color);
 	virtual bool ServerSetLightColor_Validate(FLinearColor color);

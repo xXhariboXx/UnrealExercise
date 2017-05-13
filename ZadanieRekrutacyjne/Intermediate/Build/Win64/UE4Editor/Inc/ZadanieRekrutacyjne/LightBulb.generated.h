@@ -12,7 +12,7 @@ struct FLinearColor;
 #endif
 #define ZADANIEREKRUTACYJNE_LightBulb_generated_h
 
-#define ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_LightBulb_h_12_RPC_WRAPPERS \
+#define ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_LightBulb_h_13_RPC_WRAPPERS \
 	virtual bool NetMulticastSetColor_Validate(FLinearColor ); \
 	virtual void NetMulticastSetColor_Implementation(FLinearColor color); \
 	virtual bool ServerSetLightColor_Validate(FLinearColor ); \
@@ -47,7 +47,7 @@ struct FLinearColor;
 	}
 
 
-#define ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_LightBulb_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
+#define ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_LightBulb_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execNetMulticastSetColor) \
 	{ \
@@ -78,7 +78,7 @@ struct FLinearColor;
 	}
 
 
-#define ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_LightBulb_h_12_EVENT_PARMS \
+#define ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_LightBulb_h_13_EVENT_PARMS \
 	struct LightBulb_eventNetMulticastSetColor_Parms \
 	{ \
 		FLinearColor color; \
@@ -91,8 +91,8 @@ struct FLinearColor;
 
 extern ZADANIEREKRUTACYJNE_API  FName ZADANIEREKRUTACYJNE_NetMulticastSetColor;
 extern ZADANIEREKRUTACYJNE_API  FName ZADANIEREKRUTACYJNE_ServerSetLightColor;
-#define ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_LightBulb_h_12_CALLBACK_WRAPPERS
-#define ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_LightBulb_h_12_INCLASS_NO_PURE_DECLS \
+#define ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_LightBulb_h_13_CALLBACK_WRAPPERS
+#define ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_LightBulb_h_13_INCLASS_NO_PURE_DECLS \
 	private: \
 	static void StaticRegisterNativesALightBulb(); \
 	friend ZADANIEREKRUTACYJNE_API class UClass* Z_Construct_UClass_ALightBulb(); \
@@ -103,7 +103,7 @@ extern ZADANIEREKRUTACYJNE_API  FName ZADANIEREKRUTACYJNE_ServerSetLightColor;
 	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
 
 
-#define ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_LightBulb_h_12_INCLASS \
+#define ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_LightBulb_h_13_INCLASS \
 	private: \
 	static void StaticRegisterNativesALightBulb(); \
 	friend ZADANIEREKRUTACYJNE_API class UClass* Z_Construct_UClass_ALightBulb(); \
@@ -114,7 +114,7 @@ extern ZADANIEREKRUTACYJNE_API  FName ZADANIEREKRUTACYJNE_ServerSetLightColor;
 	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
 
 
-#define ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_LightBulb_h_12_STANDARD_CONSTRUCTORS \
+#define ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_LightBulb_h_13_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API ALightBulb(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ALightBulb) \
@@ -127,7 +127,7 @@ private: \
 public:
 
 
-#define ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_LightBulb_h_12_ENHANCED_CONSTRUCTORS \
+#define ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_LightBulb_h_13_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API ALightBulb(ALightBulb&&); \
@@ -138,35 +138,35 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ALightBulb); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(ALightBulb)
 
 
-#define ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_LightBulb_h_12_PRIVATE_PROPERTY_OFFSET \
+#define ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_LightBulb_h_13_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__LightBulbMeshComponent() { return STRUCT_OFFSET(ALightBulb, LightBulbMeshComponent); } \
 	FORCEINLINE static uint32 __PPO__LightSource() { return STRUCT_OFFSET(ALightBulb, LightSource); }
 
 
-#define ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_LightBulb_h_9_PROLOG \
-	ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_LightBulb_h_12_EVENT_PARMS
+#define ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_LightBulb_h_10_PROLOG \
+	ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_LightBulb_h_13_EVENT_PARMS
 
 
-#define ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_LightBulb_h_12_GENERATED_BODY_LEGACY \
+#define ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_LightBulb_h_13_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_LightBulb_h_12_PRIVATE_PROPERTY_OFFSET \
-	ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_LightBulb_h_12_RPC_WRAPPERS \
-	ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_LightBulb_h_12_CALLBACK_WRAPPERS \
-	ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_LightBulb_h_12_INCLASS \
-	ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_LightBulb_h_12_STANDARD_CONSTRUCTORS \
+	ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_LightBulb_h_13_PRIVATE_PROPERTY_OFFSET \
+	ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_LightBulb_h_13_RPC_WRAPPERS \
+	ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_LightBulb_h_13_CALLBACK_WRAPPERS \
+	ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_LightBulb_h_13_INCLASS \
+	ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_LightBulb_h_13_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_LightBulb_h_12_GENERATED_BODY \
+#define ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_LightBulb_h_13_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_LightBulb_h_12_PRIVATE_PROPERTY_OFFSET \
-	ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_LightBulb_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
-	ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_LightBulb_h_12_CALLBACK_WRAPPERS \
-	ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_LightBulb_h_12_INCLASS_NO_PURE_DECLS \
-	ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_LightBulb_h_12_ENHANCED_CONSTRUCTORS \
+	ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_LightBulb_h_13_PRIVATE_PROPERTY_OFFSET \
+	ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_LightBulb_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
+	ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_LightBulb_h_13_CALLBACK_WRAPPERS \
+	ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_LightBulb_h_13_INCLASS_NO_PURE_DECLS \
+	ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_LightBulb_h_13_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

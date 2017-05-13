@@ -15,9 +15,6 @@
 #ifndef ZADANIEREKRUTACYJNE_LightBulb_generated_h
 	#include "LightBulb.h"
 #endif
-#ifndef ZADANIEREKRUTACYJNE_LightBulbController_generated_h
-	#include "LightBulbController.h"
-#endif
 #ifndef ZADANIEREKRUTACYJNE_MyPawn_generated_h
 	#include "MyPawn.h"
 #endif
