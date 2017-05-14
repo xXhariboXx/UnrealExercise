@@ -18,6 +18,9 @@
 #ifndef ZADANIEREKRUTACYJNE_MyPawn_generated_h
 	#include "MyPawn.h"
 #endif
+#ifndef ZADANIEREKRUTACYJNE_ZadanieRekrutacyjneController_generated_h
+	#include "ZadanieRekrutacyjneController.h"
+#endif
 #ifndef ZADANIEREKRUTACYJNE_ZadanieRekrutacyjneGameModeBase_generated_h
 	#include "ZadanieRekrutacyjneGameModeBase.h"
 #endif

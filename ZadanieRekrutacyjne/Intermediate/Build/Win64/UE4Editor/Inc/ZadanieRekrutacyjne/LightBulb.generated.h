@@ -15,8 +15,6 @@ struct FLinearColor;
 #define ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_LightBulb_h_13_RPC_WRAPPERS \
 	virtual bool NetMulticastSetColor_Validate(FLinearColor ); \
 	virtual void NetMulticastSetColor_Implementation(FLinearColor color); \
-	virtual bool ServerSetLightColor_Validate(FLinearColor ); \
-	virtual void ServerSetLightColor_Implementation(FLinearColor color); \
  \
 	DECLARE_FUNCTION(execNetMulticastSetColor) \
 	{ \
@@ -29,20 +27,6 @@ struct FLinearColor;
 			return; \
 		} \
 		this->NetMulticastSetColor_Implementation(Z_Param_color); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execServerSetLightColor) \
-	{ \
-		P_GET_STRUCT(FLinearColor,Z_Param_color); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		if (!this->ServerSetLightColor_Validate(Z_Param_color)) \
-		{ \
-			RPC_ValidateFailed(TEXT("ServerSetLightColor_Validate")); \
-			return; \
-		} \
-		this->ServerSetLightColor_Implementation(Z_Param_color); \
 		P_NATIVE_END; \
 	}
 
@@ -61,20 +45,6 @@ struct FLinearColor;
 		} \
 		this->NetMulticastSetColor_Implementation(Z_Param_color); \
 		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execServerSetLightColor) \
-	{ \
-		P_GET_STRUCT(FLinearColor,Z_Param_color); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		if (!this->ServerSetLightColor_Validate(Z_Param_color)) \
-		{ \
-			RPC_ValidateFailed(TEXT("ServerSetLightColor_Validate")); \
-			return; \
-		} \
-		this->ServerSetLightColor_Implementation(Z_Param_color); \
-		P_NATIVE_END; \
 	}
 
 
@@ -82,15 +52,10 @@ struct FLinearColor;
 	struct LightBulb_eventNetMulticastSetColor_Parms \
 	{ \
 		FLinearColor color; \
-	}; \
-	struct LightBulb_eventServerSetLightColor_Parms \
-	{ \
-		FLinearColor color; \
 	};
 
 
 extern ZADANIEREKRUTACYJNE_API  FName ZADANIEREKRUTACYJNE_NetMulticastSetColor;
-extern ZADANIEREKRUTACYJNE_API  FName ZADANIEREKRUTACYJNE_ServerSetLightColor;
 #define ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_LightBulb_h_13_CALLBACK_WRAPPERS
 #define ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_LightBulb_h_13_INCLASS_NO_PURE_DECLS \
 	private: \

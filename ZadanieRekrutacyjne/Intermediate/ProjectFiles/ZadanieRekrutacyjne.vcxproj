@@ -574,7 +574,9 @@
     <ClInclude Include="..\..\Source\ZadanieRekrutacyjne\DamagableActor.h" />
     <ClInclude Include="..\..\Source\ZadanieRekrutacyjne\LightBulb.h" />
     <ClInclude Include="..\..\Source\ZadanieRekrutacyjne\ZadanieRekrutacyjne.h" />
+    <ClCompile Include="..\..\Source\ZadanieRekrutacyjne\ZadanieRekrutacyjneController.cpp" />
     <ClCompile Include="..\..\Source\ZadanieRekrutacyjne\ZadanieRekrutacyjneGameModeBase.cpp" />
+    <ClInclude Include="..\..\Source\ZadanieRekrutacyjne\ZadanieRekrutacyjneController.h" />
     <ClInclude Include="..\..\Source\ZadanieRekrutacyjne\ZadanieRekrutacyjneGameModeBase.h" />
   </ItemGroup>
   <PropertyGroup>

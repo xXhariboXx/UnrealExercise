@@ -52,6 +52,9 @@
     <ClInclude Include="..\..\Source\ZadanieRekrutacyjne\DamagableActor.h">
       <Filter>Source\ZadanieRekrutacyjne</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Source\ZadanieRekrutacyjne\ZadanieRekrutacyjneController.h">
+      <Filter>Source\ZadanieRekrutacyjne</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\Source\ZadanieRekrutacyjne\LightBulb.cpp">
@@ -61,6 +64,9 @@
       <Filter>Source\ZadanieRekrutacyjne</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\ZadanieRekrutacyjne\DamagableActor.cpp">
+      <Filter>Source\ZadanieRekrutacyjne</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\ZadanieRekrutacyjne\ZadanieRekrutacyjneController.cpp">
       <Filter>Source\ZadanieRekrutacyjne</Filter>
     </ClCompile>
   </ItemGroup>
