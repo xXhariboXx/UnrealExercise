@@ -111,8 +111,10 @@ private:
 	//	void ServerSetLightColor(FLinearColor color);
 	//virtual void ServerSetLightColor_Implementation(FLinearColor color);
 	//virtual bool ServerSetLightColor_Validate(FLinearColor color);
-	//UFUNCTION(Netmulticast, Reliable, WithValidation)
-	//	void NetMulticastSetColor(FLinearColor color);
-	//virtual void NetMulticastSetColor_Implementation(FLinearColor color);
-	//virtual bool NetMulticastSetColor_Validate(FLinearColor color);
+public:
+	UFUNCTION(Netmulticast, Reliable, WithValidation)
+		void NetMulticastSetColor(FLinearColor color);
+private:
+	virtual void NetMulticastSetColor_Implementation(FLinearColor color);
+	virtual bool NetMulticastSetColor_Validate(FLinearColor color);
 };

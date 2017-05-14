@@ -53,6 +53,7 @@ void ALightBulb::BeginPlay()
 	PlayerController = GetWorld()->GetFirstPlayerController();
 	EnableInput(PlayerController);
 	SetupInput();
+	SetOwner(PlayerController);
 
 	//for (FConstPlayerControllerIterator Iterator = GetWorld()->GetPlayerControllerIterator(); Iterator; ++Iterator)
 	//{
@@ -167,17 +168,15 @@ void  ALightBulb::Pulsing(float fDeltaTime)
 //	return true;
 //}
 //
-//void ALightBulb::NetMulticastSetColor_Implementation(FLinearColor color)
-//{
-//	//UE_LOG(LogTemp, Warning, TEXT("Owner name is %s"), *GetNetOwner()->GetName());
-//	UE_LOG(LogTemp, Warning, TEXT("Server executing clients"));
-//	LightSource->SetLightColor(color, true);
-//}
-//
-//bool ALightBulb::NetMulticastSetColor_Validate(FLinearColor color)
-//{
-//	return true;
-//}
+void ALightBulb::NetMulticastSetColor_Implementation(FLinearColor color)
+{
+	LightSource->SetLightColor(color, true);
+}
+
+bool ALightBulb::NetMulticastSetColor_Validate(FLinearColor color)
+{
+	return true;
+}
 
 void ALightBulb::ToggleLight()
 {

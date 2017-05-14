@@ -42,8 +42,4 @@ private:
 		void ServerSetLightColor(ALightBulb *lightBulbActor, FLinearColor color);
 	virtual void ServerSetLightColor_Implementation(ALightBulb *lightBulbActor, FLinearColor color);
 	virtual bool ServerSetLightColor_Validate(ALightBulb *lightBulbActor, FLinearColor color);
-	UFUNCTION(Netmulticast, Reliable, WithValidation)
-		void NetMulticastSetColor(ALightBulb *lightBulbActor, FLinearColor color);
-	virtual void NetMulticastSetColor_Implementation(ALightBulb *lightBulbActor, FLinearColor color);
-	virtual bool NetMulticastSetColor_Validate(ALightBulb *lightBulbActor, FLinearColor color);
 };

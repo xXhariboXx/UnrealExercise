@@ -14,9 +14,6 @@ AZadanieRekrutacyjneController::AZadanieRekrutacyjneController()
 void AZadanieRekrutacyjneController::BeginPlay()
 {
 	Super::BeginPlay();
-	//APlayerController* PlayerController = GetWorld()->GetFirstPlayerController();
-	//EnableInput(PlayerController);
-	//SetupInputComponent();
 }
 
 void AZadanieRekrutacyjneController::SetupInputComponent()
@@ -74,45 +71,26 @@ void AZadanieRekrutacyjneController::SetLightColour_MultiplayerHandler(FLinearCo
 {
 	for (TActorIterator<AActor> ActorItr(GetWorld()); ActorItr; ++ActorItr)
 	{
-		ALightBulb * bulb = Cast<ALightBulb>(*ActorItr);
-		if (IsBulbServer(bulb))
-		//if(Role == ROLE_Authority)
+		ALightBulb * lightBulbActor = Cast<ALightBulb>(*ActorItr);
+		if (IsBulbServer(lightBulbActor))
 		{
 			//we are server
-			UE_LOG(LogTemp, Warning, TEXT("Server is calling to clients"));
-			NetMulticastSetColor(bulb, newColor);
+			lightBulbActor->NetMulticastSetColor(newColor);
 		}
-		//else
-		else if (IsBulbClient(bulb))
+		else if (IsBulbClient(lightBulbActor))
 		{
 			//we are client	
-			UE_LOG(LogTemp, Warning, TEXT("Client calling for server"));
-			ServerSetLightColor(bulb, newColor);
+			ServerSetLightColor(lightBulbActor, newColor);
 		}
 	}
 }
 
 void AZadanieRekrutacyjneController::ServerSetLightColor_Implementation(ALightBulb *lightBulbActor, FLinearColor color)
 {
-	UE_LOG(LogTemp, Warning, TEXT("Server changing colour"));
-	UE_LOG(LogTemp, Warning, TEXT("Server calling for clients"));
-	NetMulticastSetColor(lightBulbActor, color);
-
+	lightBulbActor->NetMulticastSetColor(color);
 }
 
 bool AZadanieRekrutacyjneController::ServerSetLightColor_Validate(ALightBulb *lightBulbActor, FLinearColor color)
-{
-	return true;
-}
-
-void AZadanieRekrutacyjneController::NetMulticastSetColor_Implementation(ALightBulb *lightBulbActor, FLinearColor color)
-{
-	UE_LOG(LogTemp, Warning, TEXT("Server executing clients"));
-	//LightSource->SetLightColor(color, true);
-	lightBulbActor->SetLightColor(color);
-}
-
-bool AZadanieRekrutacyjneController::NetMulticastSetColor_Validate(ALightBulb *lightBulbActor, FLinearColor color)
 {
 	return true;
 }
