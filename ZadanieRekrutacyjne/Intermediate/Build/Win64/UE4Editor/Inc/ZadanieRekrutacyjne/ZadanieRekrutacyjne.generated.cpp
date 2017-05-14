@@ -13,7 +13,12 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCode1ZadanieRekrutacyjne() {}
 FName ZADANIEREKRUTACYJNE_HandleDamage = FName(TEXT("HandleDamage"));
 FName ZADANIEREKRUTACYJNE_NetMulticastSetColor = FName(TEXT("NetMulticastSetColor"));
+FName ZADANIEREKRUTACYJNE_NetMulticastToggleLight = FName(TEXT("NetMulticastToggleLight"));
+FName ZADANIEREKRUTACYJNE_NetMulticastTogglePulsing = FName(TEXT("NetMulticastTogglePulsing"));
 FName ZADANIEREKRUTACYJNE_ServerSetLightColor = FName(TEXT("ServerSetLightColor"));
+FName ZADANIEREKRUTACYJNE_ServerToggleLight = FName(TEXT("ServerToggleLight"));
+FName ZADANIEREKRUTACYJNE_ServerTogglePulsing = FName(TEXT("ServerTogglePulsing"));
+FName ZADANIEREKRUTACYJNE_ServerUpdateHealth = FName(TEXT("ServerUpdateHealth"));
 	void IDamagable::HandleDamage(float fDamageValue)
 	{
 		check(0 && "Do not directly call Event functions in Interfaces. Call Execute_HandleDamage instead.");
@@ -45,22 +50,39 @@ FName ZADANIEREKRUTACYJNE_ServerSetLightColor = FName(TEXT("ServerSetLightColor"
 		Parms.fDamageValue=fDamageValue;
 		ProcessEvent(FindFunctionChecked(ZADANIEREKRUTACYJNE_HandleDamage),&Parms);
 	}
+	void ADamagableActor::ServerUpdateHealth(float fDamage)
+	{
+		DamagableActor_eventServerUpdateHealth_Parms Parms;
+		Parms.fDamage=fDamage;
+		ProcessEvent(FindFunctionChecked(ZADANIEREKRUTACYJNE_ServerUpdateHealth),&Parms);
+	}
 	void ADamagableActor::StaticRegisterNativesADamagableActor()
 	{
 		FNativeFunctionRegistrar::RegisterFunction(ADamagableActor::StaticClass(), "HandleDamage",(Native)&ADamagableActor::execHandleDamage);
+		FNativeFunctionRegistrar::RegisterFunction(ADamagableActor::StaticClass(), "ServerUpdateHealth",(Native)&ADamagableActor::execServerUpdateHealth);
 	}
-	IMPLEMENT_CLASS(ADamagableActor, 4085819390);
+	IMPLEMENT_CLASS(ADamagableActor, 2233551862);
 	void ALightBulb::NetMulticastSetColor(FLinearColor color)
 	{
 		LightBulb_eventNetMulticastSetColor_Parms Parms;
 		Parms.color=color;
 		ProcessEvent(FindFunctionChecked(ZADANIEREKRUTACYJNE_NetMulticastSetColor),&Parms);
 	}
+	void ALightBulb::NetMulticastToggleLight()
+	{
+		ProcessEvent(FindFunctionChecked(ZADANIEREKRUTACYJNE_NetMulticastToggleLight),NULL);
+	}
+	void ALightBulb::NetMulticastTogglePulsing()
+	{
+		ProcessEvent(FindFunctionChecked(ZADANIEREKRUTACYJNE_NetMulticastTogglePulsing),NULL);
+	}
 	void ALightBulb::StaticRegisterNativesALightBulb()
 	{
 		FNativeFunctionRegistrar::RegisterFunction(ALightBulb::StaticClass(), "NetMulticastSetColor",(Native)&ALightBulb::execNetMulticastSetColor);
+		FNativeFunctionRegistrar::RegisterFunction(ALightBulb::StaticClass(), "NetMulticastToggleLight",(Native)&ALightBulb::execNetMulticastToggleLight);
+		FNativeFunctionRegistrar::RegisterFunction(ALightBulb::StaticClass(), "NetMulticastTogglePulsing",(Native)&ALightBulb::execNetMulticastTogglePulsing);
 	}
-	IMPLEMENT_CLASS(ALightBulb, 408845294);
+	IMPLEMENT_CLASS(ALightBulb, 1785972130);
 	void AMyPawn::ServerSetLightColor(FLinearColor color)
 	{
 		MyPawn_eventServerSetLightColor_Parms Parms;
@@ -79,11 +101,25 @@ FName ZADANIEREKRUTACYJNE_ServerSetLightColor = FName(TEXT("ServerSetLightColor"
 		Parms.color=color;
 		ProcessEvent(FindFunctionChecked(ZADANIEREKRUTACYJNE_ServerSetLightColor),&Parms);
 	}
+	void AZadanieRekrutacyjneController::ServerToggleLight(ALightBulb* lightBulbActor)
+	{
+		ZadanieRekrutacyjneController_eventServerToggleLight_Parms Parms;
+		Parms.lightBulbActor=lightBulbActor;
+		ProcessEvent(FindFunctionChecked(ZADANIEREKRUTACYJNE_ServerToggleLight),&Parms);
+	}
+	void AZadanieRekrutacyjneController::ServerTogglePulsing(ALightBulb* lightBulbActor)
+	{
+		ZadanieRekrutacyjneController_eventServerTogglePulsing_Parms Parms;
+		Parms.lightBulbActor=lightBulbActor;
+		ProcessEvent(FindFunctionChecked(ZADANIEREKRUTACYJNE_ServerTogglePulsing),&Parms);
+	}
 	void AZadanieRekrutacyjneController::StaticRegisterNativesAZadanieRekrutacyjneController()
 	{
 		FNativeFunctionRegistrar::RegisterFunction(AZadanieRekrutacyjneController::StaticClass(), "ServerSetLightColor",(Native)&AZadanieRekrutacyjneController::execServerSetLightColor);
+		FNativeFunctionRegistrar::RegisterFunction(AZadanieRekrutacyjneController::StaticClass(), "ServerToggleLight",(Native)&AZadanieRekrutacyjneController::execServerToggleLight);
+		FNativeFunctionRegistrar::RegisterFunction(AZadanieRekrutacyjneController::StaticClass(), "ServerTogglePulsing",(Native)&AZadanieRekrutacyjneController::execServerTogglePulsing);
 	}
-	IMPLEMENT_CLASS(AZadanieRekrutacyjneController, 3730573030);
+	IMPLEMENT_CLASS(AZadanieRekrutacyjneController, 3502061938);
 	void AZadanieRekrutacyjneGameModeBase::StaticRegisterNativesAZadanieRekrutacyjneGameModeBase()
 	{
 	}
@@ -103,15 +139,20 @@ FName ZADANIEREKRUTACYJNE_ServerSetLightColor = FName(TEXT("ServerSetLightColor"
 	ZADANIEREKRUTACYJNE_API class UClass* Z_Construct_UClass_UDamagable_NoRegister();
 	ZADANIEREKRUTACYJNE_API class UClass* Z_Construct_UClass_UDamagable();
 	ZADANIEREKRUTACYJNE_API class UFunction* Z_Construct_UFunction_ADamagableActor_HandleDamage();
+	ZADANIEREKRUTACYJNE_API class UFunction* Z_Construct_UFunction_ADamagableActor_ServerUpdateHealth();
 	ZADANIEREKRUTACYJNE_API class UClass* Z_Construct_UClass_ADamagableActor_NoRegister();
 	ZADANIEREKRUTACYJNE_API class UClass* Z_Construct_UClass_ADamagableActor();
 	ZADANIEREKRUTACYJNE_API class UFunction* Z_Construct_UFunction_ALightBulb_NetMulticastSetColor();
+	ZADANIEREKRUTACYJNE_API class UFunction* Z_Construct_UFunction_ALightBulb_NetMulticastToggleLight();
+	ZADANIEREKRUTACYJNE_API class UFunction* Z_Construct_UFunction_ALightBulb_NetMulticastTogglePulsing();
 	ZADANIEREKRUTACYJNE_API class UClass* Z_Construct_UClass_ALightBulb_NoRegister();
 	ZADANIEREKRUTACYJNE_API class UClass* Z_Construct_UClass_ALightBulb();
 	ZADANIEREKRUTACYJNE_API class UFunction* Z_Construct_UFunction_AMyPawn_ServerSetLightColor();
 	ZADANIEREKRUTACYJNE_API class UClass* Z_Construct_UClass_AMyPawn_NoRegister();
 	ZADANIEREKRUTACYJNE_API class UClass* Z_Construct_UClass_AMyPawn();
 	ZADANIEREKRUTACYJNE_API class UFunction* Z_Construct_UFunction_AZadanieRekrutacyjneController_ServerSetLightColor();
+	ZADANIEREKRUTACYJNE_API class UFunction* Z_Construct_UFunction_AZadanieRekrutacyjneController_ServerToggleLight();
+	ZADANIEREKRUTACYJNE_API class UFunction* Z_Construct_UFunction_AZadanieRekrutacyjneController_ServerTogglePulsing();
 	ZADANIEREKRUTACYJNE_API class UClass* Z_Construct_UClass_AZadanieRekrutacyjneController_NoRegister();
 	ZADANIEREKRUTACYJNE_API class UClass* Z_Construct_UClass_AZadanieRekrutacyjneController();
 	ZADANIEREKRUTACYJNE_API class UClass* Z_Construct_UClass_AZadanieRekrutacyjneGameModeBase_NoRegister();
@@ -187,6 +228,23 @@ FName ZADANIEREKRUTACYJNE_ServerSetLightColor = FName(TEXT("ServerSetLightColor"
 		}
 		return ReturnFunction;
 	}
+	UFunction* Z_Construct_UFunction_ADamagableActor_ServerUpdateHealth()
+	{
+		UObject* Outer=Z_Construct_UClass_ADamagableActor();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("ServerUpdateHealth"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x80240CC1, 65535, sizeof(DamagableActor_eventServerUpdateHealth_Parms));
+			UProperty* NewProp_fDamage = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("fDamage"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(fDamage, DamagableActor_eventServerUpdateHealth_Parms), 0x0010000000000080);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("DamagableActor.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
 	UClass* Z_Construct_UClass_ADamagableActor_NoRegister()
 	{
 		return ADamagableActor::StaticClass();
@@ -205,22 +263,35 @@ FName ZADANIEREKRUTACYJNE_ServerSetLightColor = FName(TEXT("ServerSetLightColor"
 				OuterClass->ClassFlags |= 0x20900080;
 
 				OuterClass->LinkChild(Z_Construct_UFunction_ADamagableActor_HandleDamage());
+				OuterClass->LinkChild(Z_Construct_UFunction_ADamagableActor_ServerUpdateHealth());
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 				UProperty* NewProp_BaseComponent = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("BaseComponent"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(BaseComponent, ADamagableActor), 0x00400000000a000d, Z_Construct_UClass_UDestructibleComponent_NoRegister());
+				CPP_BOOL_PROPERTY_BITMASK_STRUCT(bIsDead, ADamagableActor, bool);
+				UProperty* NewProp_bIsDead = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("bIsDead"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bIsDead, ADamagableActor), 0x0040000000000020, CPP_BOOL_PROPERTY_BITMASK(bIsDead, ADamagableActor), sizeof(bool), true);
+				UProperty* NewProp_fCurrentHealth = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("fCurrentHealth"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(fCurrentHealth, ADamagableActor), 0x0040000000000020);
+				UProperty* NewProp_fMaxHealth = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("fMaxHealth"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(fMaxHealth, ADamagableActor), 0x0040000000000020);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ADamagableActor_HandleDamage(), "HandleDamage"); // 677233061
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ADamagableActor_ServerUpdateHealth(), "ServerUpdateHealth"); // 2617099573
 				OuterClass->Interfaces.Add(FImplementedInterface(Z_Construct_UClass_UDamagable_NoRegister(), VTABLE_OFFSET(ADamagableActor, IDamagable), false ));
 				OuterClass->StaticLink();
 #if WITH_METADATA
 				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
 				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("DamagableActor.h"));
 				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("DamagableActor.h"));
+				MetaData->SetValue(OuterClass, TEXT("ObjectInitializerConstructorDeclared"), TEXT(""));
 				MetaData->SetValue(NewProp_BaseComponent, TEXT("AllowPrivateAccess"), TEXT("true"));
 				MetaData->SetValue(NewProp_BaseComponent, TEXT("Category"), TEXT("BaseComponent"));
 				MetaData->SetValue(NewProp_BaseComponent, TEXT("EditInline"), TEXT("true"));
 				MetaData->SetValue(NewProp_BaseComponent, TEXT("ModuleRelativePath"), TEXT("DamagableActor.h"));
 				MetaData->SetValue(NewProp_BaseComponent, TEXT("ToolTip"), TEXT("Base destructable component"));
+				MetaData->SetValue(NewProp_bIsDead, TEXT("ModuleRelativePath"), TEXT("DamagableActor.h"));
+				MetaData->SetValue(NewProp_bIsDead, TEXT("ToolTip"), TEXT("True when actor is dead - health <= 0"));
+				MetaData->SetValue(NewProp_fCurrentHealth, TEXT("ModuleRelativePath"), TEXT("DamagableActor.h"));
+				MetaData->SetValue(NewProp_fCurrentHealth, TEXT("ToolTip"), TEXT("Current health value"));
+				MetaData->SetValue(NewProp_fMaxHealth, TEXT("ModuleRelativePath"), TEXT("DamagableActor.h"));
+				MetaData->SetValue(NewProp_fMaxHealth, TEXT("ToolTip"), TEXT("Max health value"));
 #endif
 			}
 		}
@@ -237,6 +308,38 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 		{
 			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("NetMulticastSetColor"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x80824CC0, 65535, sizeof(LightBulb_eventNetMulticastSetColor_Parms));
 			UProperty* NewProp_color = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("color"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(color, LightBulb_eventNetMulticastSetColor_Parms), 0x0010000000000080, Z_Construct_UScriptStruct_FLinearColor());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("LightBulb.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_ALightBulb_NetMulticastToggleLight()
+	{
+		UObject* Outer=Z_Construct_UClass_ALightBulb();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("NetMulticastToggleLight"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x80024CC0, 65535);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("LightBulb.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_ALightBulb_NetMulticastTogglePulsing()
+	{
+		UObject* Outer=Z_Construct_UClass_ALightBulb();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("NetMulticastTogglePulsing"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x80024CC0, 65535);
 			ReturnFunction->Bind();
 			ReturnFunction->StaticLink();
 #if WITH_METADATA
@@ -264,12 +367,16 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				OuterClass->ClassFlags |= 0x20900080;
 
 				OuterClass->LinkChild(Z_Construct_UFunction_ALightBulb_NetMulticastSetColor());
+				OuterClass->LinkChild(Z_Construct_UFunction_ALightBulb_NetMulticastToggleLight());
+				OuterClass->LinkChild(Z_Construct_UFunction_ALightBulb_NetMulticastTogglePulsing());
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 				UProperty* NewProp_LightSource = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("LightSource"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(LightSource, ALightBulb), 0x00400000000a001d, Z_Construct_UClass_UPointLightComponent_NoRegister());
 				UProperty* NewProp_LightBulbMeshComponent = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("LightBulbMeshComponent"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(LightBulbMeshComponent, ALightBulb), 0x00400000000a001d, Z_Construct_UClass_UStaticMeshComponent_NoRegister());
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ALightBulb_NetMulticastSetColor(), "NetMulticastSetColor"); // 2395894842
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ALightBulb_NetMulticastToggleLight(), "NetMulticastToggleLight"); // 1801239707
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ALightBulb_NetMulticastTogglePulsing(), "NetMulticastTogglePulsing"); // 4237309756
 				OuterClass->StaticLink();
 #if WITH_METADATA
 				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
@@ -368,6 +475,42 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 		}
 		return ReturnFunction;
 	}
+	UFunction* Z_Construct_UFunction_AZadanieRekrutacyjneController_ServerToggleLight()
+	{
+		UObject* Outer=Z_Construct_UClass_AZadanieRekrutacyjneController();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("ServerToggleLight"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x80240CC1, 65535, sizeof(ZadanieRekrutacyjneController_eventServerToggleLight_Parms));
+			UProperty* NewProp_lightBulbActor = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("lightBulbActor"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(lightBulbActor, ZadanieRekrutacyjneController_eventServerToggleLight_Parms), 0x0010000000000080, Z_Construct_UClass_ALightBulb_NoRegister());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("ZadanieRekrutacyjneController.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Handles server light toggle and sends toggle request to all actors at all clients"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_AZadanieRekrutacyjneController_ServerTogglePulsing()
+	{
+		UObject* Outer=Z_Construct_UClass_AZadanieRekrutacyjneController();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("ServerTogglePulsing"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x80240CC1, 65535, sizeof(ZadanieRekrutacyjneController_eventServerTogglePulsing_Parms));
+			UProperty* NewProp_lightBulbActor = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("lightBulbActor"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(lightBulbActor, ZadanieRekrutacyjneController_eventServerTogglePulsing_Parms), 0x0010000000000080, Z_Construct_UClass_ALightBulb_NoRegister());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("ZadanieRekrutacyjneController.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Handles server pulsing toggle and sends toggle request to all actors at all clients"));
+#endif
+		}
+		return ReturnFunction;
+	}
 	UClass* Z_Construct_UClass_AZadanieRekrutacyjneController_NoRegister()
 	{
 		return AZadanieRekrutacyjneController::StaticClass();
@@ -386,8 +529,12 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				OuterClass->ClassFlags |= 0x20900284;
 
 				OuterClass->LinkChild(Z_Construct_UFunction_AZadanieRekrutacyjneController_ServerSetLightColor());
+				OuterClass->LinkChild(Z_Construct_UFunction_AZadanieRekrutacyjneController_ServerToggleLight());
+				OuterClass->LinkChild(Z_Construct_UFunction_AZadanieRekrutacyjneController_ServerTogglePulsing());
 
 				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AZadanieRekrutacyjneController_ServerSetLightColor(), "ServerSetLightColor"); // 802433317
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AZadanieRekrutacyjneController_ServerToggleLight(), "ServerToggleLight"); // 3633067453
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AZadanieRekrutacyjneController_ServerTogglePulsing(), "ServerTogglePulsing"); // 3128051786
 				OuterClass->ClassConfigName = FName(TEXT("Game"));
 				OuterClass->StaticLink();
 #if WITH_METADATA
@@ -444,8 +591,8 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), NULL, FName(TEXT("/Script/ZadanieRekrutacyjne")), false, false));
 			ReturnPackage->SetPackageFlags(PKG_CompiledIn | 0x00000000);
 			FGuid Guid;
-			Guid.A = 0xBBC96255;
-			Guid.B = 0xF32D5D4E;
+			Guid.A = 0x0327C806;
+			Guid.B = 0x87934014;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;
 			ReturnPackage->SetGuid(Guid);

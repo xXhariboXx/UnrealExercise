@@ -13,9 +13,13 @@ struct FLinearColor;
 #endif
 #define ZADANIEREKRUTACYJNE_ZadanieRekrutacyjneController_generated_h
 
-#define ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_ZadanieRekrutacyjneController_h_15_RPC_WRAPPERS \
+#define ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_ZadanieRekrutacyjneController_h_16_RPC_WRAPPERS \
 	virtual bool ServerSetLightColor_Validate(ALightBulb* , FLinearColor ); \
 	virtual void ServerSetLightColor_Implementation(ALightBulb* lightBulbActor, FLinearColor color); \
+	virtual bool ServerToggleLight_Validate(ALightBulb* ); \
+	virtual void ServerToggleLight_Implementation(ALightBulb* lightBulbActor); \
+	virtual bool ServerTogglePulsing_Validate(ALightBulb* ); \
+	virtual void ServerTogglePulsing_Implementation(ALightBulb* lightBulbActor); \
  \
 	DECLARE_FUNCTION(execServerSetLightColor) \
 	{ \
@@ -30,10 +34,38 @@ struct FLinearColor;
 		} \
 		this->ServerSetLightColor_Implementation(Z_Param_lightBulbActor,Z_Param_color); \
 		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execServerToggleLight) \
+	{ \
+		P_GET_OBJECT(ALightBulb,Z_Param_lightBulbActor); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		if (!this->ServerToggleLight_Validate(Z_Param_lightBulbActor)) \
+		{ \
+			RPC_ValidateFailed(TEXT("ServerToggleLight_Validate")); \
+			return; \
+		} \
+		this->ServerToggleLight_Implementation(Z_Param_lightBulbActor); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execServerTogglePulsing) \
+	{ \
+		P_GET_OBJECT(ALightBulb,Z_Param_lightBulbActor); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		if (!this->ServerTogglePulsing_Validate(Z_Param_lightBulbActor)) \
+		{ \
+			RPC_ValidateFailed(TEXT("ServerTogglePulsing_Validate")); \
+			return; \
+		} \
+		this->ServerTogglePulsing_Implementation(Z_Param_lightBulbActor); \
+		P_NATIVE_END; \
 	}
 
 
-#define ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_ZadanieRekrutacyjneController_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+#define ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_ZadanieRekrutacyjneController_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execServerSetLightColor) \
 	{ \
@@ -48,20 +80,58 @@ struct FLinearColor;
 		} \
 		this->ServerSetLightColor_Implementation(Z_Param_lightBulbActor,Z_Param_color); \
 		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execServerToggleLight) \
+	{ \
+		P_GET_OBJECT(ALightBulb,Z_Param_lightBulbActor); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		if (!this->ServerToggleLight_Validate(Z_Param_lightBulbActor)) \
+		{ \
+			RPC_ValidateFailed(TEXT("ServerToggleLight_Validate")); \
+			return; \
+		} \
+		this->ServerToggleLight_Implementation(Z_Param_lightBulbActor); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execServerTogglePulsing) \
+	{ \
+		P_GET_OBJECT(ALightBulb,Z_Param_lightBulbActor); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		if (!this->ServerTogglePulsing_Validate(Z_Param_lightBulbActor)) \
+		{ \
+			RPC_ValidateFailed(TEXT("ServerTogglePulsing_Validate")); \
+			return; \
+		} \
+		this->ServerTogglePulsing_Implementation(Z_Param_lightBulbActor); \
+		P_NATIVE_END; \
 	}
 
 
-#define ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_ZadanieRekrutacyjneController_h_15_EVENT_PARMS \
+#define ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_ZadanieRekrutacyjneController_h_16_EVENT_PARMS \
 	struct ZadanieRekrutacyjneController_eventServerSetLightColor_Parms \
 	{ \
 		ALightBulb* lightBulbActor; \
 		FLinearColor color; \
+	}; \
+	struct ZadanieRekrutacyjneController_eventServerToggleLight_Parms \
+	{ \
+		ALightBulb* lightBulbActor; \
+	}; \
+	struct ZadanieRekrutacyjneController_eventServerTogglePulsing_Parms \
+	{ \
+		ALightBulb* lightBulbActor; \
 	};
 
 
 extern ZADANIEREKRUTACYJNE_API  FName ZADANIEREKRUTACYJNE_ServerSetLightColor;
-#define ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_ZadanieRekrutacyjneController_h_15_CALLBACK_WRAPPERS
-#define ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_ZadanieRekrutacyjneController_h_15_INCLASS_NO_PURE_DECLS \
+extern ZADANIEREKRUTACYJNE_API  FName ZADANIEREKRUTACYJNE_ServerToggleLight;
+extern ZADANIEREKRUTACYJNE_API  FName ZADANIEREKRUTACYJNE_ServerTogglePulsing;
+#define ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_ZadanieRekrutacyjneController_h_16_CALLBACK_WRAPPERS
+#define ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_ZadanieRekrutacyjneController_h_16_INCLASS_NO_PURE_DECLS \
 	private: \
 	static void StaticRegisterNativesAZadanieRekrutacyjneController(); \
 	friend ZADANIEREKRUTACYJNE_API class UClass* Z_Construct_UClass_AZadanieRekrutacyjneController(); \
@@ -72,7 +142,7 @@ extern ZADANIEREKRUTACYJNE_API  FName ZADANIEREKRUTACYJNE_ServerSetLightColor;
 	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
 
 
-#define ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_ZadanieRekrutacyjneController_h_15_INCLASS \
+#define ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_ZadanieRekrutacyjneController_h_16_INCLASS \
 	private: \
 	static void StaticRegisterNativesAZadanieRekrutacyjneController(); \
 	friend ZADANIEREKRUTACYJNE_API class UClass* Z_Construct_UClass_AZadanieRekrutacyjneController(); \
@@ -83,7 +153,7 @@ extern ZADANIEREKRUTACYJNE_API  FName ZADANIEREKRUTACYJNE_ServerSetLightColor;
 	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
 
 
-#define ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_ZadanieRekrutacyjneController_h_15_STANDARD_CONSTRUCTORS \
+#define ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_ZadanieRekrutacyjneController_h_16_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AZadanieRekrutacyjneController(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AZadanieRekrutacyjneController) \
@@ -96,7 +166,7 @@ private: \
 public:
 
 
-#define ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_ZadanieRekrutacyjneController_h_15_ENHANCED_CONSTRUCTORS \
+#define ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_ZadanieRekrutacyjneController_h_16_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AZadanieRekrutacyjneController(AZadanieRekrutacyjneController&&); \
@@ -107,31 +177,31 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AZadanieRekrutacyjneController); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AZadanieRekrutacyjneController)
 
 
-#define ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_ZadanieRekrutacyjneController_h_15_PRIVATE_PROPERTY_OFFSET
-#define ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_ZadanieRekrutacyjneController_h_12_PROLOG \
-	ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_ZadanieRekrutacyjneController_h_15_EVENT_PARMS
+#define ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_ZadanieRekrutacyjneController_h_16_PRIVATE_PROPERTY_OFFSET
+#define ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_ZadanieRekrutacyjneController_h_13_PROLOG \
+	ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_ZadanieRekrutacyjneController_h_16_EVENT_PARMS
 
 
-#define ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_ZadanieRekrutacyjneController_h_15_GENERATED_BODY_LEGACY \
+#define ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_ZadanieRekrutacyjneController_h_16_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_ZadanieRekrutacyjneController_h_15_PRIVATE_PROPERTY_OFFSET \
-	ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_ZadanieRekrutacyjneController_h_15_RPC_WRAPPERS \
-	ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_ZadanieRekrutacyjneController_h_15_CALLBACK_WRAPPERS \
-	ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_ZadanieRekrutacyjneController_h_15_INCLASS \
-	ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_ZadanieRekrutacyjneController_h_15_STANDARD_CONSTRUCTORS \
+	ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_ZadanieRekrutacyjneController_h_16_PRIVATE_PROPERTY_OFFSET \
+	ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_ZadanieRekrutacyjneController_h_16_RPC_WRAPPERS \
+	ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_ZadanieRekrutacyjneController_h_16_CALLBACK_WRAPPERS \
+	ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_ZadanieRekrutacyjneController_h_16_INCLASS \
+	ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_ZadanieRekrutacyjneController_h_16_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_ZadanieRekrutacyjneController_h_15_GENERATED_BODY \
+#define ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_ZadanieRekrutacyjneController_h_16_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_ZadanieRekrutacyjneController_h_15_PRIVATE_PROPERTY_OFFSET \
-	ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_ZadanieRekrutacyjneController_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
-	ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_ZadanieRekrutacyjneController_h_15_CALLBACK_WRAPPERS \
-	ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_ZadanieRekrutacyjneController_h_15_INCLASS_NO_PURE_DECLS \
-	ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_ZadanieRekrutacyjneController_h_15_ENHANCED_CONSTRUCTORS \
+	ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_ZadanieRekrutacyjneController_h_16_PRIVATE_PROPERTY_OFFSET \
+	ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_ZadanieRekrutacyjneController_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
+	ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_ZadanieRekrutacyjneController_h_16_CALLBACK_WRAPPERS \
+	ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_ZadanieRekrutacyjneController_h_16_INCLASS_NO_PURE_DECLS \
+	ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_ZadanieRekrutacyjneController_h_16_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

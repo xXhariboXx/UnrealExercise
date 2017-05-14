@@ -15,6 +15,10 @@ struct FLinearColor;
 #define ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_LightBulb_h_13_RPC_WRAPPERS \
 	virtual bool NetMulticastSetColor_Validate(FLinearColor ); \
 	virtual void NetMulticastSetColor_Implementation(FLinearColor color); \
+	virtual bool NetMulticastToggleLight_Validate(); \
+	virtual void NetMulticastToggleLight_Implementation(); \
+	virtual bool NetMulticastTogglePulsing_Validate(); \
+	virtual void NetMulticastTogglePulsing_Implementation(); \
  \
 	DECLARE_FUNCTION(execNetMulticastSetColor) \
 	{ \
@@ -27,6 +31,32 @@ struct FLinearColor;
 			return; \
 		} \
 		this->NetMulticastSetColor_Implementation(Z_Param_color); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execNetMulticastToggleLight) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		if (!this->NetMulticastToggleLight_Validate()) \
+		{ \
+			RPC_ValidateFailed(TEXT("NetMulticastToggleLight_Validate")); \
+			return; \
+		} \
+		this->NetMulticastToggleLight_Implementation(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execNetMulticastTogglePulsing) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		if (!this->NetMulticastTogglePulsing_Validate()) \
+		{ \
+			RPC_ValidateFailed(TEXT("NetMulticastTogglePulsing_Validate")); \
+			return; \
+		} \
+		this->NetMulticastTogglePulsing_Implementation(); \
 		P_NATIVE_END; \
 	}
 
@@ -45,6 +75,32 @@ struct FLinearColor;
 		} \
 		this->NetMulticastSetColor_Implementation(Z_Param_color); \
 		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execNetMulticastToggleLight) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		if (!this->NetMulticastToggleLight_Validate()) \
+		{ \
+			RPC_ValidateFailed(TEXT("NetMulticastToggleLight_Validate")); \
+			return; \
+		} \
+		this->NetMulticastToggleLight_Implementation(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execNetMulticastTogglePulsing) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		if (!this->NetMulticastTogglePulsing_Validate()) \
+		{ \
+			RPC_ValidateFailed(TEXT("NetMulticastTogglePulsing_Validate")); \
+			return; \
+		} \
+		this->NetMulticastTogglePulsing_Implementation(); \
+		P_NATIVE_END; \
 	}
 
 
@@ -56,6 +112,8 @@ struct FLinearColor;
 
 
 extern ZADANIEREKRUTACYJNE_API  FName ZADANIEREKRUTACYJNE_NetMulticastSetColor;
+extern ZADANIEREKRUTACYJNE_API  FName ZADANIEREKRUTACYJNE_NetMulticastToggleLight;
+extern ZADANIEREKRUTACYJNE_API  FName ZADANIEREKRUTACYJNE_NetMulticastTogglePulsing;
 #define ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_LightBulb_h_13_CALLBACK_WRAPPERS
 #define ZadanieRekrutacyjne_Source_ZadanieRekrutacyjne_LightBulb_h_13_INCLASS_NO_PURE_DECLS \
 	private: \

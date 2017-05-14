@@ -1,12 +1,20 @@
 ﻿  Compiling game modules for hot reload
   Parsing headers for ZadanieRekrutacyjneEditor
     Running UnrealHeaderTool "F:\GIT foldery\UnrealExercise\ZadanieRekrutacyjne\ZadanieRekrutacyjne.uproject" "F:\GIT foldery\UnrealExercise\ZadanieRekrutacyjne\Intermediate\Build\Win64\ZadanieRekrutacyjneEditor\Development\ZadanieRekrutacyjneEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
-  Reflection code generated for ZadanieRekrutacyjneEditor in 3,0395327 seconds
-  Performing 3 actions (4 in parallel)
+  Reflection code generated for ZadanieRekrutacyjneEditor in 3,0111141 seconds
+  Performing 7 actions (4 in parallel)
+  ZadanieRekrutacyjneGameModeBase.cpp
+  MyPawn.cpp
   ZadanieRekrutacyjneController.cpp
-  [2/3] Link UE4Editor-ZadanieRekrutacyjne-8666.dll
-  [3/3] Link UE4Editor-ZadanieRekrutacyjne-8666.lib
-     Creating library F:\GIT foldery\UnrealExercise\ZadanieRekrutacyjne\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-ZadanieRekrutacyjne-8666.lib and object F:\GIT foldery\UnrealExercise\ZadanieRekrutacyjne\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-ZadanieRekrutacyjne-8666.exp
-     Creating library F:\GIT foldery\UnrealExercise\ZadanieRekrutacyjne\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-ZadanieRekrutacyjne-8666.suppressed.lib and object F:\GIT foldery\UnrealExercise\ZadanieRekrutacyjne\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-ZadanieRekrutacyjne-8666.suppressed.exp
+  LightBulb.cpp
+F:\GIT foldery\UnrealExercise\ZadanieRekrutacyjne\Source\ZadanieRekrutacyjne\LightBulb.cpp(34): warning C4996: 'USceneComponent::AttachTo': This function is deprecated, please use AttachToComponent instead. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+  C:\Program Files\Epic Games\UE_4.15\Engine\Source\Runtime\Engine\Classes\Components/SceneComponent.h(614): note: see declaration of 'USceneComponent::AttachTo'
+  ZadanieRekrutacyjne.generated.cpp
+F:\GIT foldery\UnrealExercise\ZadanieRekrutacyjne\Source\ZadanieRekrutacyjne\ZadanieRekrutacyjneController.cpp(20): warning C4996: 'AActor::GetActorClass': Use GetClass() instead of GetActorClass() Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+  C:\Program Files\Epic Games\UE_4.15\Engine\Source\Runtime\Engine\Classes\GameFramework/Actor.h(2912): note: see declaration of 'AActor::GetActorClass'
+  [6/7] Link UE4Editor-ZadanieRekrutacyjne-369.dll
+  [7/7] Link UE4Editor-ZadanieRekrutacyjne-369.lib
+     Creating library F:\GIT foldery\UnrealExercise\ZadanieRekrutacyjne\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-ZadanieRekrutacyjne-369.lib and object F:\GIT foldery\UnrealExercise\ZadanieRekrutacyjne\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-ZadanieRekrutacyjne-369.exp
+     Creating library F:\GIT foldery\UnrealExercise\ZadanieRekrutacyjne\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-ZadanieRekrutacyjne-369.suppressed.lib and object F:\GIT foldery\UnrealExercise\ZadanieRekrutacyjne\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-ZadanieRekrutacyjne-369.suppressed.exp
   Deploying ZadanieRekrutacyjneEditor Win64 Development...
-  Total build time: 7,97 seconds (Local executor: 2,35 seconds)
+  Total build time: 25,61 seconds (Local executor: 17,82 seconds)

@@ -26,9 +26,6 @@
     <Filter Include="Source\ZadanieRekrutacyjne">
       <UniqueIdentifier>{918DB641-82AA-4AB5-B2D5-BB47A9E96154}</UniqueIdentifier>
     </Filter>
-    <None Include="..\..\Source\ZadanieRekrutacyjne\ZadanieRekrutacyjne.Build.cs">
-      <Filter>Source\ZadanieRekrutacyjne</Filter>
-    </None>
     <ClCompile Include="..\..\Source\ZadanieRekrutacyjne\ZadanieRekrutacyjne.cpp">
       <Filter>Source\ZadanieRekrutacyjne</Filter>
     </ClCompile>
