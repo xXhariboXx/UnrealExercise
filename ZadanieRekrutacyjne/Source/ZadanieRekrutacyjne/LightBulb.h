@@ -12,7 +12,6 @@ class ZADANIEREKRUTACYJNE_API ALightBulb : public AActor
 {
 	GENERATED_BODY()
 
-
 private:
 	/////////////////////////////////////////////////////
 	//Light values
@@ -33,11 +32,8 @@ private:
 	bool bIsLightPulsingEnabled;
 	/** True when light is brightning up */
 	bool bIsPoolsingUp;
-
-	//UPROPERTY(Replicated)
+	/** Current light intensity value*/
 	float fCurrentIntensity;
-	//UPROPERTY(Replicated)
-	FLinearColor CurrentColour;
 
 	/////////////////////////////////////////////////////
 	//Light bulb components
@@ -49,8 +45,6 @@ private:
 	/** Point Light component */
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "LightBulbComponents", meta = (AllowPrivateAccess = "true"))
 		class UPointLightComponent *LightSource;
-
-	APlayerController * PlayerController;
 
 public:
 	// Sets default values for this actor's properties
@@ -82,39 +76,48 @@ public:
 	float GetPulsingSpeed() { return fPulsingSpeed; }
 	/** Sets pulsing speed */
 	void SetPulsingSpeed(float fSpeed) { fPulsingSpeed = fSpeed; }
-
-	void SetLightColor(FLinearColor color) { LightSource->SetLightColor(color); }
+	/** Returns light color */
 	FLinearColor GetLightColor() { return LightSource->GetLightColor(); }
+	/** Sets light color */
+	void SetLightColor(FLinearColor color) { LightSource->SetLightColor(color); }
 
-	/** Toggle pulsing */
-	void TogglePulsing();
-	/** Toggles light */
-	void ToggleLight();
 
 private:
 	/** Initializes components */
 	void InitializeComponents();
 	/** Sets default values to fields */
 	void SetupDefaultValues();
-	/** Initialize sterring input */
-	void SetupInput();
 
 	/** Method that decides if pulse light */
 	void LightPulsing(float fDeltaTime);
 	/** Method that makes light pulsing */
 	void Pulsing(float fDeltaTime);
-	/** Retrun wheter light can or can'y pulse */
+	/** Retrun wheter light can or can't pulse */
 	bool CanPulse();
+	/** Returns random color */
+	FLinearColor GetRandomColor();
 
-	//void SetLightColour_MultiplayerHandler(FLinearColor newColor);
-	//UFUNCTION(Server, Reliable, WithValidation)
-	//	void ServerSetLightColor(FLinearColor color);
-	//virtual void ServerSetLightColor_Implementation(FLinearColor color);
-	//virtual bool ServerSetLightColor_Validate(FLinearColor color);
+	/////////////////////////////////////////////////////
+	//Multiplayer functions
+	/** Handles multiplayer light color changing */
 public:
 	UFUNCTION(Netmulticast, Reliable, WithValidation)
 		void NetMulticastSetColor(FLinearColor color);
 private:
 	virtual void NetMulticastSetColor_Implementation(FLinearColor color);
-	virtual bool NetMulticastSetColor_Validate(FLinearColor color);
+	virtual bool NetMulticastSetColor_Validate(FLinearColor color) { return true; }
+	/** Handles multiplayer toggling pulsing */
+public:
+	UFUNCTION(Netmulticast, Reliable, WithValidation)
+		void NetMulticastTogglePulsing();
+private:
+	virtual void NetMulticastTogglePulsing_Implementation();
+	virtual bool NetMulticastTogglePulsing_Validate() { return true; }
+	/** Handles multiplayer toggling light */
+public:
+	UFUNCTION(Netmulticast, Reliable, WithValidation)
+		void NetMulticastToggleLight();
+private:
+	virtual void NetMulticastToggleLight_Implementation();
+	virtual bool NetMulticastToggleLight_Validate() { return true; }
 };

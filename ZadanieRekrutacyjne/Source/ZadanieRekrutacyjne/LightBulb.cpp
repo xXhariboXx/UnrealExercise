@@ -7,12 +7,10 @@
 // Sets default values
 ALightBulb::ALightBulb()
 {
-	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
-	SetReplicates(true);
-	//HoldingActor->AttachRootComponentToActor(this);
-	//this->SetOwner(this);
-	//this->SetOwner();
+	bReplicates = true;
+	bReplicateMovement = true;
+
 	InitializeComponents();
 	SetupDefaultValues();
 }
@@ -50,39 +48,6 @@ void ALightBulb::BeginPlay()
 {
 	Super::BeginPlay();
 	srand(time(NULL));
-	PlayerController = GetWorld()->GetFirstPlayerController();
-	EnableInput(PlayerController);
-	SetupInput();
-	SetOwner(PlayerController);
-
-	//for (FConstPlayerControllerIterator Iterator = GetWorld()->GetPlayerControllerIterator(); Iterator; ++Iterator)
-	//{
-	//	if (Iterator->Get()->IsLocalPlayerController())
-	//	{
-	//		//SetOwner(Iterator->Get());
-	//		PlayerController = Iterator->Get();
-	//		SetOwner(PlayerController);
-	//		break;
-	//	}
-	//}
-	//if (Role == ROLE_Authority)
-	//{
-	//SetOwner(UGameplayStatics::GetPlayerController(GetWorld(), 0));
-	//SetLightColorRandom();
-	//}
-	//GetNetOwner()->GetName().GetCharArray().GetData();
-	//SetOwner(PlayerController);
-	//NetMulticastSetColor(FLinearColor(1, 0, 0, 1));
-}
-
-//////////////////////////////////////////////////////////////////////////
-// Input Setup
-void ALightBulb::SetupInput()
-{
-	//Set up gameplay key bindings
-	check(InputComponent);
-	InputComponent->BindAction("TogglePulse", IE_Pressed, this, &ALightBulb::TogglePulsing);	//Set on 'P' keyboard button
-	InputComponent->BindAction("ToggleLight", IE_Pressed, this, &ALightBulb::ToggleLight);		//Set on 'L' keyboard button
 }
 
 // Called every frame
@@ -94,8 +59,6 @@ void ALightBulb::Tick(float DeltaTime)
 
 ////////////////////////////////////////////////////
 //Light manipulation methods
-
-
 void ALightBulb::LightPulsing(float fDeltaTime)
 {
 	if (CanPulse())
@@ -127,58 +90,20 @@ void  ALightBulb::Pulsing(float fDeltaTime)
 	}
 }
 
+FLinearColor ALightBulb::GetRandomColor()
+{
+	float red = std::rand() % 1000 * 0.001f;
+	float green = std::rand() % 1000 * 0.001f;
+	float blue = std::rand() % 1000 * 0.001f;
+	return FLinearColor(red, green, blue, 1);
+}
 
-
-//void ALightBulb::SetLightColour_MultiplayerHandler(FLinearColor newColor)
-//{
-//	if (Role == ROLE_Authority)
-//	{
-//		//we are server
-//		UE_LOG(LogTemp, Warning, TEXT("Server is calling to clients"));
-//		NetMulticastSetColor(newColor);
-//	}
-//	else
-//	{
-//		//we are client	
-//		//UE_LOG(LogTemp, Warning, TEXT("Client changed colour"));
-//		//LightSource->SetLightColor(newColor, true);
-//		UE_LOG(LogTemp, Warning, TEXT("Client calling for server"));
-//		ServerSetLightColor(newColor);
-//	}
-//}
-
-//void ALightBulb::ServerSetLightColor_Implementation(FLinearColor color)
-//{
-//	GEngine->AddOnScreenDebugMessage(-1, 3.0f, FColor::Blue, TEXT("Server called from client"));
-//	if (Role == ROLE_Authority)
-//	{
-//		UE_LOG(LogTemp, Warning, TEXT("Server changing colour"));
-//		//LightSource->SetLightColor(color, true);
-//		UE_LOG(LogTemp, Warning, TEXT("Server calling for clients"));
-//		NetMulticastSetColor(color);
-//	}
-//	else
-//	{
-//		UE_LOG(LogTemp, Warning, TEXT("defuq"));
-//	}
-//}
-//
-//bool ALightBulb::ServerSetLightColor_Validate(FLinearColor color)
-//{
-//	return true;
-//}
-//
 void ALightBulb::NetMulticastSetColor_Implementation(FLinearColor color)
 {
 	LightSource->SetLightColor(color, true);
 }
 
-bool ALightBulb::NetMulticastSetColor_Validate(FLinearColor color)
-{
-	return true;
-}
-
-void ALightBulb::ToggleLight()
+void ALightBulb::NetMulticastToggleLight_Implementation()
 {
 	if (bIsLightSourceSwitchedOn)
 	{
@@ -194,11 +119,10 @@ void ALightBulb::ToggleLight()
 	}
 }
 
-void ALightBulb::TogglePulsing()
+void ALightBulb::NetMulticastTogglePulsing_Implementation()
 {
 	if (bIsLightPulsingEnabled)
 	{
-		fCurrentIntensity = fBaseIntensity;
 		bIsLightPulsingEnabled = false;
 		LightSource->SetIntensity(fCurrentIntensity);
 	}

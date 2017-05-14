@@ -5,6 +5,8 @@
 #include "GameFramework/Actor.h"
 #include "Engine/DestructibleMesh.h"
 #include "Damagable.h"
+#include "UnrealNetwork.h"
+#include "Core.h"
 #include "DamagableActor.generated.h"
 
 UCLASS()
@@ -14,10 +16,13 @@ class ZADANIEREKRUTACYJNE_API ADamagableActor : public AActor, public IDamagable
 
 private:
 	/** Max health value */
+	UPROPERTY(Replicated)
 	float fMaxHealth = 100;
 	/** Current health value */
+	UPROPERTY(Replicated)
 	float fCurrentHealth;
 	/**  True when actor is dead - health <= 0 */
+	UPROPERTY(Replicated)
 	bool bIsDead;
 
 	/** Const with filepath to base component destructable mesh */
@@ -28,7 +33,7 @@ private:
 
 public:
 	// Sets default values for this actor's properties
-	ADamagableActor();
+	ADamagableActor(const FObjectInitializer& ObjectInitializer);
 
 protected:
 	// Called when the game starts or when spawned
@@ -58,4 +63,10 @@ private:
 	void CalculateHealth(float fDamage);
 	/** Makes death action - eplodes destructible component */
 	void MakeDeathAction();
+
+	/** Call CalculateHealth method on the server, which updates replicated property fCurrentHealth */
+	UFUNCTION(Server, Reliable, WithValidation)
+		void ServerUpdateHealth(float fDamage);
+	virtual void ServerUpdateHealth_Implementation(float fDamage);
+	virtual bool ServerUpdateHealth_Validate(float fDamage) { return true; }
 };

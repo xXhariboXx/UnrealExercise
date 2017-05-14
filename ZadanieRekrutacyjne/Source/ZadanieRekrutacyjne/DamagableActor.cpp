@@ -5,15 +5,16 @@
 
 
 // Sets default values
-ADamagableActor::ADamagableActor()
+ADamagableActor::ADamagableActor(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer)
 {
 	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
-	SetReplicates(true);
+	bReplicates = true;
+	bReplicateMovement = true;
+
 	BaseComponent = CreateDefaultSubobject<UDestructibleComponent>(TEXT("BaseComponent"));
 	const TCHAR* link = *DestructableMeshPath;
 	static ConstructorHelpers::FObjectFinder<UDestructibleMesh> BaseComponentMesh(link);
-
 	if (BaseComponentMesh.Succeeded())
 	{
 		BaseComponent->SetDestructibleMesh(BaseComponentMesh.Object);
@@ -23,6 +24,15 @@ ADamagableActor::ADamagableActor()
 
 	bIsDead = false;
 	fCurrentHealth = fMaxHealth;
+}
+
+void ADamagableActor::GetLifetimeReplicatedProps(TArray< FLifetimeProperty > & OutLifetimeProps) const
+{
+	Super::GetLifetimeReplicatedProps(OutLifetimeProps);
+
+	DOREPLIFETIME(ADamagableActor, fMaxHealth);
+	DOREPLIFETIME(ADamagableActor, fCurrentHealth);
+	DOREPLIFETIME(ADamagableActor, bIsDead);
 }
 
 // Called when the game starts or when spawned
@@ -35,7 +45,11 @@ void ADamagableActor::BeginPlay()
 void ADamagableActor::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-	CalculateHealth(1);	//line added for easier debugging
+	if (Role != ROLE_Authority)
+	{
+		//clients do damage
+		ServerUpdateHealth(0.1);	//line added for easier debugging
+	}
 	if (bIsDead)
 	{
 		MakeDeathAction();
@@ -44,7 +58,7 @@ void ADamagableActor::Tick(float DeltaTime)
 
 void ADamagableActor::HandleDamage_Implementation(float fDamageValue)
 {
-	CalculateHealth(fDamageValue);
+	ServerUpdateHealth(fDamageValue);
 }
 
 void ADamagableActor::CalculateHealth(float fDamage)
@@ -68,4 +82,9 @@ bool ADamagableActor::IsDead()
 void ADamagableActor::MakeDeathAction()
 {
 	BaseComponent->ApplyDamage(250, GetActorLocation(), GetActorLocation(), 0.0f);
+}
+
+void ADamagableActor::ServerUpdateHealth_Implementation(float fDamage)
+{
+	CalculateHealth(fDamage);
 }
