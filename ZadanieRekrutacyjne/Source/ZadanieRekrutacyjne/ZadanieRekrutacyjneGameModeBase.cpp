@@ -3,3 +3,9 @@
 #include "ZadanieRekrutacyjne.h"
 #include "ZadanieRekrutacyjneGameModeBase.h"
 
+AZadanieRekrutacyjneGameModeBase::AZadanieRekrutacyjneGameModeBase()
+	:
+	AGameModeBase()
+{
+	PlayerControllerClass = AZadanieRekrutacyjneController::StaticClass();
+}

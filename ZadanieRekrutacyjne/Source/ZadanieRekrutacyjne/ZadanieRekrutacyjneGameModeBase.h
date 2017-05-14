@@ -3,6 +3,7 @@
 #pragma once
 
 #include "GameFramework/GameModeBase.h"
+#include "ZadanieRekrutacyjneController.h"
 #include "ZadanieRekrutacyjneGameModeBase.generated.h"
 
 /**
@@ -13,4 +14,8 @@ class ZADANIEREKRUTACYJNE_API AZadanieRekrutacyjneGameModeBase : public AGameMod
 {
 	GENERATED_BODY()
 
+public:
+	AZadanieRekrutacyjneGameModeBase();
+
+	//virtual void StartPlay() override;
 };

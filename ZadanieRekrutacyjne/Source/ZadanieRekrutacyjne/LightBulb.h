@@ -50,6 +50,8 @@ private:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "LightBulbComponents", meta = (AllowPrivateAccess = "true"))
 		class UPointLightComponent *LightSource;
 
+	APlayerController * PlayerController;
+
 public:
 	// Sets default values for this actor's properties
 	ALightBulb();
@@ -80,6 +82,10 @@ public:
 	float GetPulsingSpeed() { return fPulsingSpeed; }
 	/** Sets pulsing speed */
 	void SetPulsingSpeed(float fSpeed) { fPulsingSpeed = fSpeed; }
+
+	void SetLightColor(FLinearColor color) { LightSource->SetLightColor(color); }
+	FLinearColor GetLightColor() { return LightSource->GetLightColor(); }
+
 	/** Toggle pulsing */
 	void TogglePulsing();
 	/** Toggles light */
@@ -99,23 +105,14 @@ private:
 	void Pulsing(float fDeltaTime);
 	/** Retrun wheter light can or can'y pulse */
 	bool CanPulse();
-	/** Sets the light colour to red */
-	void SetLightColourRed();
-	//UFUNCTION(reliable, server, WithValidation)
-	/** Sets the light colour to green */
-	void SetLightColourGreen();
-	/** Sets the light colour to blue */
-	void SetLightColourBlue();
-	/** Sets the light colour to random generated colour */
-	void SetLightColorRandom();
 
-	void SetLightColour_MultiplayerHandler(FLinearColor newColor);
-	UFUNCTION(Server, Unreliable, WithValidation)
-		void ServerSetLightColor(FLinearColor color);
-	virtual void ServerSetLightColor_Implementation(FLinearColor color);
-	virtual bool ServerSetLightColor_Validate(FLinearColor color);
-	UFUNCTION(Netmulticast, Unreliable, WithValidation)
-		void NetMulticastSetColor(FLinearColor color);
-	virtual void NetMulticastSetColor_Implementation(FLinearColor color);
-	virtual bool NetMulticastSetColor_Validate(FLinearColor color);
+	//void SetLightColour_MultiplayerHandler(FLinearColor newColor);
+	//UFUNCTION(Server, Reliable, WithValidation)
+	//	void ServerSetLightColor(FLinearColor color);
+	//virtual void ServerSetLightColor_Implementation(FLinearColor color);
+	//virtual bool ServerSetLightColor_Validate(FLinearColor color);
+	//UFUNCTION(Netmulticast, Reliable, WithValidation)
+	//	void NetMulticastSetColor(FLinearColor color);
+	//virtual void NetMulticastSetColor_Implementation(FLinearColor color);
+	//virtual bool NetMulticastSetColor_Validate(FLinearColor color);
 };
